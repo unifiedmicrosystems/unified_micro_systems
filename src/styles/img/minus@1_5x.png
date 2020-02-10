@@ -1,0 +1,15 @@
+
+    public static function getApiAccessCredentials($resources = null, Integration $integrationModel = null)
+    {
+        if (!self::$_apiCredentials) {
+            $integration = $integrationModel === null ? self::_createIntegration($resources) : $integrationModel;
+            $objectManager = Bootstrap::getObjectManager();
+            /** @var \Magento\Integration\Api\OauthServiceInterface $oauthService */
+            $oauthService = $objectManager->get(\Magento\Integration\Api\OauthServiceInterface::class);
+            $oauthService->createAccessToken($integration->getConsumerId());
+            $accessToken = $oauthService->getAccessToken($integration->getConsumerId());
+            if (!$accessToken) {
+                throw new LogicException('Access token was not created.');
+            }
+            $consumer = $oauthService->loadConsumer($integration->getConsumerId());
+            $credentials = new Credentials($consumer->getKey(), $co

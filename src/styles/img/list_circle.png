@@ -1,0 +1,17 @@
+BundleProductPriceViewRange" stepKey="createBundleProduct2">
+                <requiredEntity createDataKey="createSubCategory"/>
+            </createData>
+            <createData entity="DropDownBundleOption" stepKey="createBundleOption2_1">
+                <requiredEntity createDataKey="createBundleProduct2"/>
+            </createData>
+            <createData entity="RadioButtonsOption" stepKey="createBundleOption2_2">
+                <requiredEntity createDataKey="createBundleProduct2"/>
+            </createData>
+            <createData entity="ApiBundleLink" stepKey="linkOptionToProduct5">
+                <requiredEntity createDataKey="createBundleProduct2"/>
+                <requiredEntity createDataKey="createBundleOption2_1"/>
+                <requiredEntity createDataKey="simpleProduct1"/>
+                <field key="qty">2</field>
+            </createData>
+            <createData entity="ApiBundleLink" stepKey="linkOptionToProduct6">
+                <requir

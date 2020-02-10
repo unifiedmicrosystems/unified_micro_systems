@@ -1,0 +1,39 @@
+sset($this->properties[$propertyName]);
+    }
+
+    /**
+     * @param  array $methods
+     * @return self
+     */
+    public function addMethods(array $methods)
+    {
+        foreach ($methods as $method) {
+            if ($method instanceof MethodGenerator) {
+                $this->addMethodFromGenerator($method);
+            } else {
+                if (is_string($method)) {
+                    $this->addMethod($method);
+                } elseif (is_array($method)) {
+                    $this->addMethod(...array_values($method));
+                }
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * Add Method from scalars
+     *
+     * @param  string $name
+     * @param  array $parameters
+     * @param  int $flags
+     * @param  string $body
+     * @param  string $docBlock
+     * @throws Exception\InvalidArgumentException
+     * @return self
+     */
+    public function addMethod(
+        $name,
+        array $parameters = [],
+        $flags = MethodGenerator::FLAG_PUBL

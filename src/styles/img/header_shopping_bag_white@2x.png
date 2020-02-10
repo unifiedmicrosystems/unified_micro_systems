@@ -1,0 +1,52 @@
+<?php
+/**
+ * @see       https://github.com/zendframework/zend-mail for the canonical source repository
+ * @copyright Copyright (c) 2005-2018 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license   https://github.com/zendframework/zend-mail/blob/master/LICENSE.md New BSD License
+ */
+
+namespace Zend\Mail\Storage\Writable;
+
+use RecursiveIteratorIterator;
+use Zend\Mail\Exception as MailException;
+use Zend\Mail\Storage;
+use Zend\Mail\Storage\Exception as StorageException;
+use Zend\Mail\Storage\Folder;
+use Zend\Stdlib\ErrorHandler;
+
+class Maildir extends Folder\Maildir implements WritableInterface
+{
+    // TODO: init maildir (+ constructor option create if not found)
+
+    /**
+     * use quota and size of quota if given
+     *
+     * @var bool|int
+     */
+    protected $quota;
+
+    /**
+     * create a new maildir
+     *
+     * If the given dir is already a valid maildir this will not fail.
+     *
+     * @param string $dir directory for the new maildir (may already exist)
+     * @throws \Zend\Mail\Storage\Exception\RuntimeException
+     * @throws \Zend\Mail\Storage\Exception\InvalidArgumentException
+     */
+    public static function initMaildir($dir)
+    {
+        if (file_exists($dir)) {
+            if (! is_dir($dir)) {
+                throw new StorageException\InvalidArgumentException('maildir must be a directory if already exists');
+            }
+        } else {
+            ErrorHandler::start();
+            $test  = mkdir($dir);
+            $error = ErrorHandler::stop();
+            if (! $test) {
+                $dir = dirname($dir);
+                if (! file_exists($dir)) {
+                    throw new StorageException\InvalidArgumentException("parent $dir not found", 0, $error);
+                } elseif (! is_dir($dir)) {
+                    throw new StorageException\InvalidArgumentException("parent $dir not a directory

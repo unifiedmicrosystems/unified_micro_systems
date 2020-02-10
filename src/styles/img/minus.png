@@ -1,0 +1,28 @@
+eption\ExceptionInterface
+     */
+    public function select($box = 'INBOX')
+    {
+        return $this->examineOrSelect('SELECT', $box);
+    }
+
+    /**
+     * examine folder
+     *
+     * @param  string $box examine this folder
+     * @return bool|array see examineOrselect()
+     * @throws \Zend\Mail\Protocol\Exception\ExceptionInterface
+     */
+    public function examine($box = 'INBOX')
+    {
+        return $this->examineOrSelect('EXAMINE', $box);
+    }
+
+    /**
+     * fetch one or more items of one or more messages
+     *
+     * @param  string|array $items items to fetch from message(s) as string (if only one item)
+     *                             or array of strings
+     * @param  int|array    $from  message for items or start message if $to !== null
+     * @param  int|null     $to    if null only one message ($from) is fetched, else it's the
+     *                             last message, INF means last message available
+     * @param  bool         $uid   set to true if pas
