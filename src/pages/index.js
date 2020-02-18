@@ -3,11 +3,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-export default ({ data }) => {
+/*const webpack = require('webpack');
+const module = typeof window !== `undefined` ? require("module") : null
+*/export default ({ data }) => {
   return (
     <Layout>
       <div>
         <h1>ARTICLES</h1>
+        <Link to="/page-2/">Home</Link>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
@@ -22,6 +25,7 @@ export default ({ data }) => {
             </Link>
           </div>
         ))}
+
       </div>
     </Layout>
   )
@@ -44,5 +48,4 @@ export const query = graphql`
         }
       }
     }
-  }
-`
+  }`

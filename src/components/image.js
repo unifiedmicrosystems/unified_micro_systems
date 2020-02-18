@@ -22,6 +22,7 @@ const Image = () => {
             ...GatsbyImageSharpFluid
           }
         }
+        publicURL
       }
     }
   `)
