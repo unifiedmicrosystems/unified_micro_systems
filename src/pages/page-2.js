@@ -531,7 +531,7 @@ const SecondPage = () => (
       <div className="empty-space-50">&nbsp;</div>
       <div id="client-testimonials-owl" className="owl-carousel owl-theme">
       {(typeof window !== 'undefined') ? (
-      <OwlCarousel className="owl-carousel owl-theme test" loop margin={10} items={3} autoplay={true} autoplayTimeout={2000}>
+      <OwlCarousel className="owl-carousel owl-theme" loop margin={10} items={3} autoplay={true} autoplayTimeout={2000} >
         <div className="item">
           <div className="testimonial_content_inner">
             <div className="testimonial_title_holder">
