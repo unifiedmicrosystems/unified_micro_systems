@@ -148,7 +148,7 @@ li.menu-item.wide .second{left: inherit !important;right: 0;}
 .read-more {display:inline-block;width: 100%;margin: 10px 0;}
 /**************inner banner******************/
 .banner-with-title{float:left;width:100%;}
-.bn-title {background-image:url(/../../images/background-4.jpg);float:left;width:100%;text-align:center;padding-top:72px;padding-bottom:72px;}
+.bn-title {background-image:url(../../images/background-4.jpg);float:left;width:100%;text-align:center;padding-top:72px;padding-bottom:72px;}
 .bn-title h1{font-size:47px;line-height:60px;color:#303030;padding: 0;text-transform: uppercase;letter-spacing: 1px;font-weight: 600;}
 .bn-title h1 span{position: relative;}
 .bn-title h1 span:after{content:'';position: absolute;width: 30px;background: #333;height:2px;bottom:-10px;left:44%;}
@@ -185,7 +185,7 @@ li.menu-item.wide .second{left: inherit !important;right: 0;}
 .qbutton:hover{background-color: #f5f5f5;color: #333;}
 
 /************our-blog***********/
-.our-blog{/*background-image:url(../images/background-4.jpg);*/float: left;width: 100%;}
+.our-blog{background-image:url(../../images/background-4.jpg);float: left;width: 100%;}
 .blog-section{float:left;width:100%;padding-top:50px;}
 a{color: #929292;}
 a:hover{color: #be1522;}
@@ -229,7 +229,7 @@ h4, .h4, h4 a {color:#4f4f4f;font-size:23px;line-height:33px;font-style:normal;f
 div#our-customers-owl {float:left;width:100%;}
 /**************Testimonials*******************/
 
-.client-testimonials{padding-top:100px;padding-bottom:100px;float:left;width:100%;/*background-image:url('../images/background-4.jpg');*/}
+.client-testimonials{padding-top:100px;padding-bottom:100px;float:left;width:100%;background-image:url('../../images/background-4.jpg');}
 .testimonials-service{float:left;width:100%;}
 div#client-testimonials-owl {float:left;width:100%;}
 .testimonial_content_inner {
@@ -437,7 +437,7 @@ h5, .h5, h5 a, .q_icon_with_title .icon_text_holder h5.icon_title {
     -moz-transition: opacity .3s ease-out; transition: opacity .3s ease-out;
 }   
 /*******************************************/
-.systems-we-support{/*background-image: url(../images/background-4.jpg);*/float: left;width: 100%;}
+.systems-we-support{background-image: url(../../images/background-4.jpg);float: left;width: 100%;}
 .systems-cut{float:left;width:100%;}
 .systems_holder {display: block;position: relative;border-color: #f6f6f6;border-width: 1px;border-style: none;float: left;width: 100%;}
 .systems_inner {display: block;position: relative;list-style: none;margin: 0;padding: 0;}
@@ -668,7 +668,7 @@ h5.icon_title{color:#4f4f4f;font-size:18px;line-height:28px;font-style:normal;fo
 /****************network-end-point-security******************/
 .network-end-point-security .pr-image {text-align: center;}
 .network-end-point-security .pr-image img {width: auto;}
-.security-fabric{float:left;width:100%;/*background-image:url(../images/background-4.jpg);*/}
+.security-fabric{float:left;width:100%;background-image:url(../../images/background-4.jpg);}
 .single-img{float:left;width:100%;}
 .fortinet-solutions{float:left;width:100%;}
 .icon-with-title{float:left;width:100%;}
@@ -728,7 +728,7 @@ ul.check-service li{float:left;width:100%;margin-bottom:15px;padding:2px 0;}
 .best-of-breed {float: left;width: 100%;background: #F5F5F5;}
 .patch-ing{float: left;width: 100%;}
 .patch-ing p{color: #000;}
-.intelligent-patching{float:left;width:100%;background-image:url(/../../images/background-4.jpg);background-position:center center;    background-size:cover;
+.intelligent-patching{float:left;width:100%;background-image:url(../../images/background-4.jpg);background-position:center center;    background-size:cover;
 }
 .intelligent-wireless{float: left;width: 100%;}
 .wireless-solution{float:left;width: 100%;}

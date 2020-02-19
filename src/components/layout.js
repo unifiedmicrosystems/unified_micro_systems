@@ -106,7 +106,7 @@ return (
                               <ul>
                                 <li className="sub-menu-item"><Link to="/our-story/"><i className="menu_icon blank fa"></i><span>Our Story</span></Link></li>
                                 <li className="sub-menu-item"><Link to="/technology_partners" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span></Link></li>
-                                <li className="sub-menu-item"><Link to="resellers-business-partners.html" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></Link></li>
+                                <li className="sub-menu-item"><Link to="/reseller_business_partners" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></Link></li>
                                 <li className="sub-menu-item"><Link to="terms-and-conditions.html" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></Link></li>
                                <li className="sub-menu-item"><Link to="careers.html" className=""><i className="menu_icon blank fa"></i><span>Careers</span></Link></li>
                               </ul>

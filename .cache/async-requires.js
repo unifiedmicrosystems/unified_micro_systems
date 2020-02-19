@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-our-story-js": () => import("./../src/pages/our-story.js" /* webpackChunkName: "component---src-pages-our-story-js" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
+  "component---src-pages-reseller-business-partners-js": () => import("./../src/pages/reseller_business_partners.js" /* webpackChunkName: "component---src-pages-reseller-business-partners-js" */),
   "component---src-pages-technology-partners-js": () => import("./../src/pages/technology_partners.js" /* webpackChunkName: "component---src-pages-technology-partners-js" */)
 }
 
