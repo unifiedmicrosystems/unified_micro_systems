@@ -26,6 +26,9 @@ const webpack = require('webpack');
     })
   }
 }*/
+if (process.env.NODE_ENV === 'development') {
+  process.env.GATSBY_WEBPACK_PUBLICPATH = '/'
+}
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const {fmImagesToRelative} = require('gatsby-remark-relative-images')
 exports.onCreateNode = ({ node, getNode, actions }) => {

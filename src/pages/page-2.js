@@ -12,7 +12,6 @@ import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>HOME</h1>
           <header className="page_header">
         <div className="header_inner">
         <form role="search" id="searchform" action="https://www.unifiedmicro.systems/" className="qode_search_form" method="get">
@@ -86,13 +85,13 @@ const SecondPage = () => (
                   </div>
                   <div className="d-flex justify-content-end col-sm-9">
                       <ul className="menus">
-                        <li><a href="https://www.unifiedmicro.systems/" className="current"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></a></li>
+                        <li><Link to="/page-2/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
                           <a href="#" className=""><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></a>
                           <div className="second">
                             <div className="inner">
                               <ul>
-                                <li className="sub-menu-item"><a href="https://www.unifiedmicro.systems/our-story/" className=""><i className="menu_icon blank fa"></i><span>Our Story</span><span className="plus"></span></a></li>
+                                <li className="sub-menu-item"><Link to="/our-story/"><i className="menu_icon blank fa"></i><span>Our Story</span><span className="plus"></span></Link></li>
                                 <li className="sub-menu-item"><a href="https://www.unifiedmicro.systems/technology-partners/" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span><span className="plus"></span></a></li>
                                 <li className="sub-menu-item"><a href="https://www.unifiedmicro.systems/resellers-business-partners/" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span><span className="plus"></span></a></li>
                                 <li className="sub-menu-item"><a href="https://www.unifiedmicro.systems/terms-and-conditions/" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span><span className="plus"></span></a></li>

@@ -3,6 +3,17 @@ import { Link } from "gatsby"
 import ReactDOM from "react-dom";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import logo from "../images/Unified-Logo-2-2.png"
+import improvement from "../images/improvement-1.png"
+import experience from "../images/experience-1-1.png"
+import Unified from "../images/Unified-1.png"
+import results from "../images/results-1-1.png"
+import circlelogo from "../images/circle-logo-1.png"
+import OnTimeBrandPromise from "../images/On-Time-Brand-Promise-300x83.png"
+import microsoft from "../images/microsoft.png"
+import Fortinet from "../images/Fortinet.png"
+import avaya from "../images/avaya.png"
+import cisco from "../images/cisco.png"
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
@@ -86,17 +97,17 @@ const ThirdPage = () => (
                     </span>
                   </div>
                   <div className="d-flex justify-content-start col-sm-8 col-md-3 logo-lg">
-                    <div className="logos"><a href="index.html"><img src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/Unified-Logo-2-2.png" /></a></div>
+                    <div className="logos"><a href="index.html"><img src={logo} /></a></div>
                   </div>
                   <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
                       <ul className="menus">
-                        <li><a href="index.html" className=""><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></a></li>
+                        <li><Link to="/page-2/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
                           <a href="javascript:void(0)" className="current"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></a>
                           <div className="second">
                             <div className="inner">
                               <ul>
-                                <li className="sub-menu-item"><a href="our-story.html" className=""><i className="menu_icon blank fa"></i><span>Our Story</span></a></li>
+                                <li className="sub-menu-item"><Link to="/our-story/"><i className="menu_icon blank fa"></i><span>Our Story</span></Link></li>
                                 <li className="sub-menu-item"><a href="technology-partners.html" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span></a></li>
                                 <li className="sub-menu-item"><a href="resellers-business-partners.html" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></a></li>
                                 <li className="sub-menu-item"><a href="terms-and-conditions.html" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></a></li>
@@ -304,7 +315,7 @@ const ThirdPage = () => (
             <span className="line"></span>
             <div className="qode-workflow-item-inner ">
               <div className="qode-workflow-image right">
-                <img width="193" height="120" src="images/improvement-1.png" className="attachment-full size-full" alt="" />        
+                <img width="193" height="120" src={improvement} className="attachment-full size-full" alt="" />        
               </div>
               <div className="qode-workflow-text">
                 <span className="circle"></span>
@@ -318,7 +329,7 @@ const ThirdPage = () => (
             <span className="line"></span>
             <div className="qode-workflow-item-inner reverse">
               <div className="qode-workflow-image left">
-                  <img width="193" height="120" src="images/experience-1-1.png" className="attachment-full size-full" alt="" />        
+                  <img width="193" height="120" src={experience} className="attachment-full size-full" alt="" />        
               </div>
               <div className="qode-workflow-text">
                 <span className="circle"></span>
@@ -332,7 +343,7 @@ const ThirdPage = () => (
             <span className="line"></span>
             <div className="qode-workflow-item-inner">
               <div className="qode-workflow-image right">
-                <img width="193" height="120" src="images/Unified-1.png" className="attachment-full size-full" alt="" />        
+                <img width="193" height="120" src={Unified} className="attachment-full size-full" alt="" />        
               </div>
               <div className="qode-workflow-text">
                 <span className="circle"></span>
@@ -346,7 +357,7 @@ const ThirdPage = () => (
             <span className="line"></span>
             <div className="qode-workflow-item-inner reverse">
               <div className="qode-workflow-image left">
-                  <img width="193" height="120" src="images/results-1-1.png" className="attachment-full size-full" alt="" />        
+                  <img width="193" height="120" src={results} className="attachment-full size-full" alt="" />        
               </div>
               <div className="qode-workflow-text">
                 <span className="circle"></span>
@@ -360,7 +371,7 @@ const ThirdPage = () => (
             <span className="line"></span>
             <div className="qode-workflow-item-inner">
               <div className="qode-workflow-image right">
-                <img width="193" height="120" src="images/circle-logo-1.png" className="attachment-full size-full" alt="" />        
+                <img width="193" height="120" src={circlelogo} className="attachment-full size-full" alt="" />        
               </div>
               <div className="qode-workflow-text">
                 <span className="circle"></span>
@@ -454,7 +465,7 @@ const ThirdPage = () => (
           <h4 className="aline-center">Best of breed technologies alongside our IT governance model delivers solutions of exceptional quality and value for money, aligned to your business strategy.</h4>
           <div className="empty-space-50">&nbsp;</div>
           <div className="tim-st-image">
-            <img src="images/On-Time-Brand-Promise-300x83.png" />
+            <img src={OnTimeBrandPromise} />
           </div>          
         </div>
       </div>
@@ -473,10 +484,10 @@ const ThirdPage = () => (
         <div className="empty-space-15">&nbsp;</div>
         <div className="through-knowledge">
           <ul>
-            <li><img src="images/microsoft.png" /></li>
-            <li><img src="images/Fortinet.png" /></li>
-            <li><img src="images/avaya.png" /></li>
-            <li><img src="images/cisco.png" /></li>
+            <li><img src={microsoft} /></li>
+            <li><img src={Fortinet} /></li>
+            <li><img src={avaya} /></li>
+            <li><img src={cisco} /></li>
           </ul>
         </div>
       </div>
