@@ -294,7 +294,7 @@ const SecondPage = () => (
                     <p>Everything about us is Unified… our team, our approach, our integration and our technology.</p>
                 </div>
                 <div className="uni-link">
-                  <a itemProp="url" href="https://www.unifiedmicro.systems/our-story/" target="_self" className="qbutton">OUR STORY</a>
+                  <Link to="/our-story/" itemProp="url" target="_self" className="qbutton">OUR STORY</Link>
                 </div>
               </div>
               <div className="unifi-time">
@@ -476,7 +476,7 @@ const SecondPage = () => (
             </div>
           </div>
           <div className="career-lg"> 
-            <a itemProp="url" href="https://www.unifiedmicro.systems/our-story/" target="_self" className="qbutton">VIEW AVAILABLE CAREERS</a>
+            <Link to="/our-story/" itemProp="url" target="_self" className="qbutton">VIEW AVAILABLE CAREERS</Link>
           </div>
         </div>
     </div>

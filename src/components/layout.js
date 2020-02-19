@@ -17,7 +17,9 @@ import "./layout.css"
 
  const Layout = ({ children }) => {
 return (
+
 	    <body>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
         <form role="search" id="searchform" action="#" className="qode_search_form" method="get">
@@ -107,7 +109,7 @@ return (
                                 <li className="sub-menu-item"><Link to="/our-story/"><i className="menu_icon blank fa"></i><span>Our Story</span></Link></li>
                                 <li className="sub-menu-item"><Link to="/technology_partners" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span></Link></li>
                                 <li className="sub-menu-item"><Link to="/reseller_business_partners" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></Link></li>
-                                <li className="sub-menu-item"><Link to="terms-and-conditions.html" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></Link></li>
+                                <li className="sub-menu-item"><Link to="/terms_and_conditions" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></Link></li>
                                <li className="sub-menu-item"><Link to="careers.html" className=""><i className="menu_icon blank fa"></i><span>Careers</span></Link></li>
                               </ul>
                             </div>
