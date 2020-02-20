@@ -3,8 +3,10 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-article-template-js": () => import("./../src/templates/articleTemplate.js" /* webpackChunkName: "component---src-templates-article-template-js" */),
+  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-managed-services-uae-phillippines-js": () => import("./../src/pages/managed_services_uae_phillippines.js" /* webpackChunkName: "component---src-pages-managed-services-uae-phillippines-js" */),
   "component---src-pages-our-story-js": () => import("./../src/pages/our-story.js" /* webpackChunkName: "component---src-pages-our-story-js" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-reseller-business-partners-js": () => import("./../src/pages/reseller_business_partners.js" /* webpackChunkName: "component---src-pages-reseller-business-partners-js" */),
