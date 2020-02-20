@@ -70,12 +70,7 @@ const reseller_business_partners = () => (
                 </div>
               </div>
             </div> 
-            <div>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-            name<input type="text" name="firstname" required />
-            <input type="submit" name="submit" value="submit" />
-            </form>
-            </div>
+
             <div className="col-sm-6 col-md-6">
               <div className="empty-space-25">&nbsp;</div>
               <div className="partner-content">
@@ -84,28 +79,28 @@ const reseller_business_partners = () => (
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
                       <p><label> First Name *<br />
-                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /></span> </label></p>
+                      <input type="text" name="your-name" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /> </label></p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Last Name *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Email *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-6">
                       <p><label>number *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-12">
                     <p><label> Your Message<br />
-                      <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label>
+                      <textarea name="your-message" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea> </label>
                     </p>
                     <p><input type="submit" value="Send" className="qbutton" /></p>  
                     </div>
