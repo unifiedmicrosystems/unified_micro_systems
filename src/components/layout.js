@@ -146,9 +146,9 @@ return (
                                 <li className="sub-menu-item">
                                   <Link to="javascript:void(0)" className=" no_link" style={{cursor: 'default'}} ><i className="menu_icon blank fa"></i><span>Communications</span></Link>
                                   <ul>
-                                    <li className="sub-menu-item"><Link to="unified-communications.html" className=""><i className="menu_icon blank fa"></i><span>Unified Communications</span><span className="plus"></span></Link></li>
-                                    <li className="sub-menu-item"><Link to="contact-centers.html" className=""><i className="menu_icon blank fa"></i><span>Contact Centers</span><span className="plus"></span></Link></li>
-                                    <li className="sub-menu-item"><Link to="hold-music-ivr-voice-recording.html" className=""><i className="menu_icon blank fa"></i><span>Hold Music &amp; IVR Voice Recording</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/unified_communications" className=""><i className="menu_icon blank fa"></i><span>Unified Communications</span><span className="plus"></span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/contact_centers" className=""><i className="menu_icon blank fa"></i><span>Contact Centers</span><span className="plus"></span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/hold_music_ivr_voice_recording" className=""><i className="menu_icon blank fa"></i><span>Hold Music &amp; IVR Voice Recording</span></Link></li>
                                   </ul>
                                 </li>
                               </ul>

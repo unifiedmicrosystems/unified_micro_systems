@@ -5,7 +5,9 @@ exports.components = {
   "component---src-templates-article-template-js": () => import("./../src/templates/articleTemplate.js" /* webpackChunkName: "component---src-templates-article-template-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-careers-js": () => import("./../src/pages/careers.js" /* webpackChunkName: "component---src-pages-careers-js" */),
+  "component---src-pages-contact-centers-js": () => import("./../src/pages/contact_centers.js" /* webpackChunkName: "component---src-pages-contact-centers-js" */),
   "component---src-pages-disaster-recovery-business-continuity-js": () => import("./../src/pages/disaster_recovery_business_continuity.js" /* webpackChunkName: "component---src-pages-disaster-recovery-business-continuity-js" */),
+  "component---src-pages-hold-music-ivr-voice-recording-js": () => import("./../src/pages/hold_music_ivr_voice_recording.js" /* webpackChunkName: "component---src-pages-hold-music-ivr-voice-recording-js" */),
   "component---src-pages-hosted-solutions-js": () => import("./../src/pages/hosted_solutions.js" /* webpackChunkName: "component---src-pages-hosted-solutions-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-it-office-setup-uae-phillippines-js": () => import("./../src/pages/it_office_setup_uae_phillippines.js" /* webpackChunkName: "component---src-pages-it-office-setup-uae-phillippines-js" */),
@@ -19,6 +21,7 @@ exports.components = {
   "component---src-pages-strategic-it-planning-architecture-js": () => import("./../src/pages/strategic_it_planning_architecture.js" /* webpackChunkName: "component---src-pages-strategic-it-planning-architecture-js" */),
   "component---src-pages-structured-cabling-wireless-js": () => import("./../src/pages/structured_cabling_wireless.js" /* webpackChunkName: "component---src-pages-structured-cabling-wireless-js" */),
   "component---src-pages-technology-partners-js": () => import("./../src/pages/technology_partners.js" /* webpackChunkName: "component---src-pages-technology-partners-js" */),
-  "component---src-pages-terms-and-conditions-js": () => import("./../src/pages/terms_and_conditions.js" /* webpackChunkName: "component---src-pages-terms-and-conditions-js" */)
+  "component---src-pages-terms-and-conditions-js": () => import("./../src/pages/terms_and_conditions.js" /* webpackChunkName: "component---src-pages-terms-and-conditions-js" */),
+  "component---src-pages-unified-communications-js": () => import("./../src/pages/unified_communications.js" /* webpackChunkName: "component---src-pages-unified-communications-js" */)
 }
 
