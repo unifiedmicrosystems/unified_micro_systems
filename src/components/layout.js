@@ -132,7 +132,7 @@ return (
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/strategic_it_planning_architecture" className=""><i className="menu_icon blank fa"></i><span>Strategic IT Planning &amp; Architecture</span><span className="plus"></span></Link></li>
                                     <li className="sub-menu-item"><Link to="/network_end_point_security" className=""><i className="menu_icon blank fa"></i><span>Network &amp; End-Point Security Solutions</span><span className="plus"></span></Link></li>
-                                    <li className="sub-menu-item"><Link to="software-development.html" className=""><i className="menu_icon blank fa"></i><span>Software Development</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/software_development" className=""><i className="menu_icon blank fa"></i><span>Software Development</span></Link></li>
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">
