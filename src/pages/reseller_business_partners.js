@@ -76,26 +76,27 @@ const reseller_business_partners = () => (
               <div className="partner-content">
                 <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" />
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
                       <p><label> First Name *<br />
-                      <input type="text" name="your-name" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /> </label></p>
+                      <input type="text" name="your-name" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /> </label></p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Last Name *<br />
-                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
+                        <input type="email" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Email *<br />
-                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
+                        <input type="email" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-6">
                       <p><label>number *<br />
-                        <input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
+                        <input type="email" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-12">
