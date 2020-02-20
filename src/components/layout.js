@@ -110,7 +110,7 @@ return (
                                 <li className="sub-menu-item"><Link to="/technology_partners" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span></Link></li>
                                 <li className="sub-menu-item"><Link to="/reseller_business_partners" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></Link></li>
                                 <li className="sub-menu-item"><Link to="/terms_and_conditions" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></Link></li>
-                               <li className="sub-menu-item"><Link to="careers.html" className=""><i className="menu_icon blank fa"></i><span>Careers</span></Link></li>
+                               <li className="sub-menu-item"><Link to="/careers" className=""><i className="menu_icon blank fa"></i><span>Careers</span></Link></li>
                               </ul>
                             </div>
                           </div>
@@ -122,7 +122,7 @@ return (
                               <ul>
                                 <li className="sub-menu-item"><Link to="javascript:void(0)" className=" no_link"><i className="menu_icon blank fa"></i><span>Service Delivery</span></Link>
                                   <ul>
-                                    <li className="sub-menu-item"><Link to="managed-services-uae-philippines.html" className=""><i className="menu_icon blank fa"></i><span>Managed Services in UAE &amp; Philippines</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/managed_services_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>Managed Services in UAE &amp; Philippines</span></Link></li>
                                     <li className="sub-menu-item"><Link to="hosted-solutions.html" className=""><i className="menu_icon blank fa"></i><span>Hosted Solutions</span></Link></li>
                                     <li className="sub-menu-item"><Link to="disaster-recovery-business-continuity.html" className=""><i className="menu_icon blank fa"></i><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
                                   </ul>
