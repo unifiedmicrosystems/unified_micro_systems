@@ -74,7 +74,7 @@ const reseller_business_partners = () => (
             <div className="col-sm-6 col-md-6">
               <div className="empty-space-25">&nbsp;</div>
               <div className="partner-content">
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="contact" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="bot-field" />
                   <div className="row">
