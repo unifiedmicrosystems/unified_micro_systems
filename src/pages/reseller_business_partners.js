@@ -72,7 +72,8 @@ const reseller_business_partners = () => (
             </div> 
             <div>
             <form action="#" method="POST">
-            <input type="text" name="firstname" required />
+            name<input type="text" name="firstname" required />
+            <input type="submit" name="submit" value="submit" />
             </form>
             </div>
             <div className="col-sm-6 col-md-6">
