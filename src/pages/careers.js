@@ -362,11 +362,11 @@ const careers = () => (
             </p>
             <p>
               <label>Portfolio URL<br />
-              <span className="portfolio-url"><input type="text" name="portfolio-url" value="" size="40" className="" /></span> </label>
+              <span className="portfolio-url"><input type="text" name="portfolio-url" size="40" className="" /></span> </label>
             </p>
             <p>
               <label>Job role interested in<br />
-              <span className="job-interested"><input type="text" name="job-interested" value="" size="40" className="" /></span> </label>
+              <span className="job-interested"><input type="text" name="job-interested" size="40" className="" /></span> </label>
             </p>
             <p>
               <label>Notice period<br />
