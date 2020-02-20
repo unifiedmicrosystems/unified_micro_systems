@@ -299,25 +299,26 @@ const careers = () => (
         <h3>Application Form</h3>
         <div className="application-form-contact">
           <form name="application_form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="application_form" />
+                <input type="hidden" name="form-name" value="application_form" />                
+                <input type="hidden" name="bot-field" />
               <p>
                 <label>Name*<br />
-                  <span className="your-name"><input type="text" name="your-name" value="" size="40" className="" /></span> 
+                  <span className="your-name"><input type="text" name="your-name" size="40" className="" /></span> 
                 </label>
               </p>
               <p>
                 <label>Email*<br />
-                 <span className="your-email"><input type="email" name="your-email" value="" size="40" className="" /></span> 
+                 <span className="your-email"><input type="email" name="your-email" size="40" className="" /></span> 
                 </label>
               </p>
               <p>
                 <label>Number*<br />
-                  <span className="Number"><input type="tel" name="Number" value="" size="40" className="" /></span> 
+                  <span className="Number"><input type="tel" name="Number" size="40" className="" /></span> 
                 </label>
               </p>
               <p>
                 <label>City<br />
-                <span className="City"><input type="text" name="City" value="" size="40" className="" /></span> </label>
+                <span className="City"><input type="text" name="City" size="40" className="" /></span> </label>
               </p>
               <p>
                 <label>Country<br />
