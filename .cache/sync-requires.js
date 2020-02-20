@@ -17,6 +17,7 @@ exports.components = {
   "component---src-pages-our-story-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/our-story.js"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/page-2.js"))),
   "component---src-pages-reseller-business-partners-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/reseller_business_partners.js"))),
+  "component---src-pages-smart-building-home-automation-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/smart_building_home_automation.js"))),
   "component---src-pages-software-development-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/software_development.js"))),
   "component---src-pages-strategic-it-planning-architecture-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/strategic_it_planning_architecture.js"))),
   "component---src-pages-technology-partners-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/technology_partners.js"))),
