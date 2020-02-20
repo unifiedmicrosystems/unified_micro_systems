@@ -77,8 +77,8 @@ const reseller_business_partners = () => (
                 <input type="hidden" name="form-name" value="contact" />
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
-                      <p><label> First Name *</label><br />
-                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /></span> </p>
+                      <p><label> First Name *<br />
+                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /></span> </label></p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
