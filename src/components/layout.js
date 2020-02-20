@@ -124,7 +124,7 @@ return (
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/managed_services_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>Managed Services in UAE &amp; Philippines</span></Link></li>
                                     <li className="sub-menu-item"><Link to="/hosted_solutions" className=""><i className="menu_icon blank fa"></i><span>Hosted Solutions</span></Link></li>
-                                    <li className="sub-menu-item"><Link to="disaster-recovery-business-continuity.html" className=""><i className="menu_icon blank fa"></i><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/disaster_recovery_business_continuity" className=""><i className="menu_icon blank fa"></i><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">

@@ -5,6 +5,7 @@ exports.components = {
   "component---src-templates-article-template-js": () => import("./../src/templates/articleTemplate.js" /* webpackChunkName: "component---src-templates-article-template-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-careers-js": () => import("./../src/pages/careers.js" /* webpackChunkName: "component---src-pages-careers-js" */),
+  "component---src-pages-disaster-recovery-business-continuity-js": () => import("./../src/pages/disaster_recovery_business_continuity.js" /* webpackChunkName: "component---src-pages-disaster-recovery-business-continuity-js" */),
   "component---src-pages-hosted-solutions-js": () => import("./../src/pages/hosted_solutions.js" /* webpackChunkName: "component---src-pages-hosted-solutions-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-managed-services-uae-phillippines-js": () => import("./../src/pages/managed_services_uae_phillippines.js" /* webpackChunkName: "component---src-pages-managed-services-uae-phillippines-js" */),

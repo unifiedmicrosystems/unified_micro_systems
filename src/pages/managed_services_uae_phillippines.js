@@ -617,7 +617,7 @@ const managed_services_uae_phillippines = () => (
             <div className="col-sm-2">&nbsp;</div>
             <div className="col-sm-5">
               <p className="aline-right">
-                <a className="" href="#"><span className="bk-name">DISASTER RECOVERY &amp; BUSINESS CONTINUITY </span> <span data-type="normal" className="qode_icon_shortcode  q_font_awsome_icon fa-2x pull-right "><i className="qode_icon_font_awesome fa fa-angle-right qode_icon_element" style={{color: '#be1522'}}></i></span></a>
+                <Link to="/disaster_recovery_business_continuity"><span className="bk-name">DISASTER RECOVERY &amp; BUSINESS CONTINUITY </span> <span data-type="normal" className="qode_icon_shortcode  q_font_awsome_icon fa-2x pull-right "><i className="qode_icon_font_awesome fa fa-angle-right qode_icon_element" style={{color: '#be1522'}}></i></span></Link>
               </p>
             </div>
           </div> 
