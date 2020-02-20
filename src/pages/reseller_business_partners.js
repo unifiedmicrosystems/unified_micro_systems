@@ -70,10 +70,15 @@ const reseller_business_partners = () => (
                 </div>
               </div>
             </div> 
+            <div>
+            <form action="#" method="POST">
+            <input type="text" name="firstname" required />
+            </form>
+            </div>
             <div className="col-sm-6 col-md-6">
               <div className="empty-space-25">&nbsp;</div>
               <div className="partner-content">
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
@@ -93,7 +98,7 @@ const reseller_business_partners = () => (
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-6">
-                      <p><label>Number *<br />
+                      <p><label>number *<br />
                         <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
                       </p>
                     </div>
