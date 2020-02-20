@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-hosted-solutions-js": () => import("./../src/pages/hosted_solutions.js" /* webpackChunkName: "component---src-pages-hosted-solutions-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-managed-services-uae-phillippines-js": () => import("./../src/pages/managed_services_uae_phillippines.js" /* webpackChunkName: "component---src-pages-managed-services-uae-phillippines-js" */),
+  "component---src-pages-network-end-point-security-js": () => import("./../src/pages/network_end_point_security.js" /* webpackChunkName: "component---src-pages-network-end-point-security-js" */),
   "component---src-pages-our-story-js": () => import("./../src/pages/our-story.js" /* webpackChunkName: "component---src-pages-our-story-js" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-reseller-business-partners-js": () => import("./../src/pages/reseller_business_partners.js" /* webpackChunkName: "component---src-pages-reseller-business-partners-js" */),
