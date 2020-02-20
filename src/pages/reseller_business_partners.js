@@ -85,7 +85,7 @@ const reseller_business_partners = () => (
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Last Name *<br />
-                        <input type="text" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
+                        <input type="text" name="your-last-name" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
 
@@ -96,7 +96,7 @@ const reseller_business_partners = () => (
                     </div>
                     <div className="col-sm-12 col-md-6">
                       <p><label>number *<br />
-                        <input type="number" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
+                        <input type="number" name="your-number" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-12">
