@@ -71,7 +71,7 @@ const reseller_business_partners = () => (
               </div>
             </div> 
             <div>
-            <form action="#" method="POST">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             name<input type="text" name="firstname" required />
             <input type="submit" name="submit" value="submit" />
             </form>
