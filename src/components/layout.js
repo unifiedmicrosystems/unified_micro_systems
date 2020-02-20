@@ -140,7 +140,7 @@ return (
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/it_office_setup_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
                                     <li className="sub-menu-item"><Link to="/smart_building_home_automation" className=""><i className="menu_icon blank fa"></i><span>Smart Building, Office &amp; Home Automation Solutions</span></Link></li>
-                                    <li className="sub-menu-item"><Link to="structured-cabling-wireless.html" className=""><i className="menu_icon blank fa"></i><span>Structured Cabling &amp; Wireless</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/structured_cabling_wireless" className=""><i className="menu_icon blank fa"></i><span>Structured Cabling &amp; Wireless</span></Link></li>
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">

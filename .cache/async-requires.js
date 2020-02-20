@@ -17,6 +17,7 @@ exports.components = {
   "component---src-pages-smart-building-home-automation-js": () => import("./../src/pages/smart_building_home_automation.js" /* webpackChunkName: "component---src-pages-smart-building-home-automation-js" */),
   "component---src-pages-software-development-js": () => import("./../src/pages/software_development.js" /* webpackChunkName: "component---src-pages-software-development-js" */),
   "component---src-pages-strategic-it-planning-architecture-js": () => import("./../src/pages/strategic_it_planning_architecture.js" /* webpackChunkName: "component---src-pages-strategic-it-planning-architecture-js" */),
+  "component---src-pages-structured-cabling-wireless-js": () => import("./../src/pages/structured_cabling_wireless.js" /* webpackChunkName: "component---src-pages-structured-cabling-wireless-js" */),
   "component---src-pages-technology-partners-js": () => import("./../src/pages/technology_partners.js" /* webpackChunkName: "component---src-pages-technology-partners-js" */),
   "component---src-pages-terms-and-conditions-js": () => import("./../src/pages/terms_and_conditions.js" /* webpackChunkName: "component---src-pages-terms-and-conditions-js" */)
 }

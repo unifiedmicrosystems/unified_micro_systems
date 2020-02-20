@@ -20,6 +20,7 @@ exports.components = {
   "component---src-pages-smart-building-home-automation-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/smart_building_home_automation.js"))),
   "component---src-pages-software-development-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/software_development.js"))),
   "component---src-pages-strategic-it-planning-architecture-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/strategic_it_planning_architecture.js"))),
+  "component---src-pages-structured-cabling-wireless-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/structured_cabling_wireless.js"))),
   "component---src-pages-technology-partners-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/technology_partners.js"))),
   "component---src-pages-terms-and-conditions-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/terms_and_conditions.js")))
 }
