@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-disaster-recovery-business-continuity-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/disaster_recovery_business_continuity.js"))),
   "component---src-pages-hosted-solutions-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/hosted_solutions.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/index.js"))),
+  "component---src-pages-it-office-setup-uae-phillippines-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/it_office_setup_uae_phillippines.js"))),
   "component---src-pages-managed-services-uae-phillippines-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/managed_services_uae_phillippines.js"))),
   "component---src-pages-network-end-point-security-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/network_end_point_security.js"))),
   "component---src-pages-our-story-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/our-story.js"))),

@@ -138,7 +138,7 @@ return (
                                 <li className="sub-menu-item">
                                   <Link to="javascript:void(0)" className="no_link"><i className="menu_icon blank fa"></i><span>Infrastructure</span></Link>
                                   <ul>
-                                    <li className="sub-menu-item"><Link to="it-office-setup-uae-philippines.html" className=""><i className="menu_icon blank fa"></i><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/it_office_setup_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
                                     <li className="sub-menu-item"><Link to="smart-building-home-automation.html" className=""><i className="menu_icon blank fa"></i><span>Smart Building, Office &amp; Home Automation Solutions</span></Link></li>
                                     <li className="sub-menu-item"><Link to="structured-cabling-wireless.html" className=""><i className="menu_icon blank fa"></i><span>Structured Cabling &amp; Wireless</span></Link></li>
                                   </ul>
