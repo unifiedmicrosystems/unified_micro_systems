@@ -231,7 +231,7 @@ div#our-customers-owl {float:left;width:100%;}
 
 .client-testimonials{padding-top:100px;padding-bottom:100px;float:left;width:100%;background-image:url('../../images/background-4.jpg');}
 .testimonials-service{float:left;width:100%;}
-div#client-testimonials-owl {float:left;width:100%;}
+div#client-testimonials-owl {display:block;float:left;width:100%;}
 .testimonial_content_inner {
     padding:53px 45px 39px;box-shadow:0 4px 9px 0 rgba(23,28,33,.06);background:#ffffff;box-sizing: border-box;text-align:center;
 }
@@ -723,7 +723,7 @@ ul.check-service li{float:left;width:100%;margin-bottom:15px;padding:2px 0;}
 .fiber-stk{float: left;width: 100%;}
 .structured-cabling{float: left;width: 100%;}
 .structured-cabling ul.check-service {margin-top: 10px;}
-.owl-carousel img {width: 100%; display: block !important;}
+.owl-carousel img {width: 100%;}
 #our-crousel-owl .owl-controls{display: none !important;}
 .best-of-breed {float: left;width: 100%;background: #F5F5F5;}
 .patch-ing{float: left;width: 100%;}
