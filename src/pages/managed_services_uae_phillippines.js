@@ -62,7 +62,7 @@ const managed_services_uae_phillippines = () => (
         <div className="row">
           <div className="col-sm-12 col-md-6 services-support-left">
             <div className="pr-image">
-              <img src="images/Managed-Services.png" />
+              <img src="../../Managed-Services.png" />
             </div>
           </div>
           <div className="col-sm-12 col-md-6 services-support-right">
@@ -609,9 +609,9 @@ const managed_services_uae_phillippines = () => (
           <div className="row">
             <div className="col-sm-5">
               <p>
-                <a href="#">
+                <Link to="/hosted_solutions">
                   <span data-type="normal" className="qode_icon_shortcode  q_font_awsome_icon fa-2x pull-left"><i className="qode_icon_font_awesome fa fa-angle-left qode_icon_element" style={{color: '#be1522'}}></i></span><span className="bk-name">HOSTED SOLUTIONS</span>
-                </a>
+                </Link>
               </p> 
             </div>
             <div className="col-sm-2">&nbsp;</div>
@@ -638,28 +638,28 @@ const managed_services_uae_phillippines = () => (
         {(typeof window !== 'undefined') ? (
       <OwlCarousel classNameName="owl-carousel owl-theme test" loop margin={10} items={3} autoplay={true} autoplayTimeout={2000}>
             <div className="item">
-              <img itemprop="image" src="images/carrerfour-1.png" alt="carousel image" />
+              <img itemprop="image" src="../../carrerfour-1.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/cathay-pacific-1.png" alt="carousel image" />
+              <img itemprop="image" src="../../cathay-pacific-1.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/Fagerhult.png" alt="carousel image" />
+              <img itemprop="image" src="../../Fagerhult.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/fit-republic.png" alt="carousel image" />
+              <img itemprop="image" src="../../fit-republic.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/novomed.png" alt="carousel image" />
+              <img itemprop="image" src="../../novomed.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/sentor_electrical.png" alt="carousel image" />
+              <img itemprop="image" src="../../sentor_electrical.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/Toyota-logo.png" alt="carousel image" />
+              <img itemprop="image" src="../../Toyota-logo.png" alt="carousel image" />
             </div>
             <div className="item">
-              <img itemprop="image" src="images/wsp.png" alt="carousel image" />
+              <img itemprop="image" src="../../wsp.png" alt="carousel image" />
             </div>
           </OwlCarousel>
        ) : null}

@@ -123,7 +123,7 @@ return (
                                 <li className="sub-menu-item"><Link to="javascript:void(0)" className=" no_link"><i className="menu_icon blank fa"></i><span>Service Delivery</span></Link>
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/managed_services_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>Managed Services in UAE &amp; Philippines</span></Link></li>
-                                    <li className="sub-menu-item"><Link to="hosted-solutions.html" className=""><i className="menu_icon blank fa"></i><span>Hosted Solutions</span></Link></li>
+                                    <li className="sub-menu-item"><Link to="/hosted_solutions" className=""><i className="menu_icon blank fa"></i><span>Hosted Solutions</span></Link></li>
                                     <li className="sub-menu-item"><Link to="disaster-recovery-business-continuity.html" className=""><i className="menu_icon blank fa"></i><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
                                   </ul>
                                 </li>
