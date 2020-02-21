@@ -7,7 +7,7 @@ link: https://www.unifiedmicro.systems/articles/securing-cloud-for-teams/
 slug: securing-cloud-for-teams
 title: 'Data Security: Securing the Cloud for Teams'
 wordpress_id: 1491
-featuredImage: home-banner-1.jpg
+featuredImage: "home-banner-1.jpg"
 categories:
 - Articles
 ---

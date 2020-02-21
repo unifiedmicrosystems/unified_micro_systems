@@ -7,7 +7,7 @@ link: https://www.unifiedmicro.systems/articles/designing-and-executing-bc-dr-st
 slug: designing-and-executing-bc-dr-strategy
 title: Key Essentials to Consider when Designing and Executing a BC/DR Strategy
 wordpress_id: 1483
-featuredImage: ransomware-2321110__340.jpg
+featuredImage: "ransomware-2321110__340.jpg"
 categories:
 - Articles
 ---

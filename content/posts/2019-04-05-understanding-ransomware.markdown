@@ -7,7 +7,7 @@ link: https://www.unifiedmicro.systems/articles/understanding-ransomware/
 slug: understanding-ransomware
 title: Understanding Ransomware and measures to avoid being held hostage
 wordpress_id: 1549
-featuredImage: connect-1586220__340.jpg
+featuredImage: "connect-1586220__340.jpg"
 categories:
 - Articles
 ---
