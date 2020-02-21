@@ -166,7 +166,7 @@ return (
                             </div>
                           </div>
                         </li>
-                        <li className="menu-item"><Link to="contact.html" className=""><i className="menu_icon blank fa"></i><span>Contact</span></Link></li>
+                        <li className="menu-item"><Link to="/contact" className=""><i className="menu_icon blank fa"></i><span>Contact</span></Link></li>
 
                         <li className="search">
                           <div className="header_inner_right">
@@ -269,6 +269,7 @@ return (
         </div>
     </div>
   </footer>
+  <span id="back-top" class="fa fa-arrow-up"></span>
     </body>
   )
 }
