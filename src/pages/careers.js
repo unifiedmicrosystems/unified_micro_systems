@@ -1,6 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import ReactDOM from "react-dom";
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
+ 
+// Demo styles, see 'Styles' section below for some notes on use.
+import 'react-accessible-accordion/dist/fancy-example.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/Unified-Logo-2-2.png"
@@ -85,7 +95,11 @@ const careers = () => (
         <div className="col-md-12 padding-zero careers-accordion">
           <div className="accordion-container">
               <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Infrastructure Manager (Manila and Dubai)</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Infrastructure Manager (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                       <p>We are looking for an experienced infrastructure manager with a DevOps affinity to join our growing team.</p>
                       <div className="content-box">
@@ -111,9 +125,15 @@ const careers = () => (
                         </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name">  Server Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name">  Server Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                      <div className="content-box">
                         <p>We are looking for an experienced server engineer to join our growing team.</p>
@@ -144,9 +164,15 @@ const careers = () => (
                         </ul>
                       </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Remote Desktop Support Engineer (Manila) </span><i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Remote Desktop Support Engineer (Manila) </span><i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We are looking for an experienced support desk engineer to join our growing team.</p>
@@ -177,9 +203,15 @@ const careers = () => (
                       </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
               <div className="set">
-                   <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Project Manager (Manila)</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                   <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Project Manager (Manila)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                   </AccordionItemHeading>
+                   <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We are looking for an experienced project manager to join our growing team.</p>
@@ -207,9 +239,15 @@ const careers = () => (
                       </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Sales Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Sales Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We are looking for an experienced project manager to join our growing team.</p>
@@ -232,9 +270,15 @@ const careers = () => (
                       </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Senior BMS Engineer (Manila) </span><i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Senior BMS Engineer (Manila) </span><i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We require a talented Senior BMS engineer to join our growing team with the following capabilities:</p>
@@ -259,9 +303,15 @@ const careers = () => (
                       </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
               </div>
                <div className="set">
-                  <a href="javascript:void(0);"><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Software Engineer (Manila)</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Software Engineer (Manila)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We are looking for a talented software engineer to develop exciting database systems, line of business applications and website applications. You will get to work with the latest Microsoft technologies with C#, ASP, .NET Core, WebAPI, MVC and other technologies such as communication and front-end SPA frameworks.</p>
@@ -290,6 +340,9 @@ const careers = () => (
                       </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
               </div>
           </div>
       </div>  
