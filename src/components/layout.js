@@ -160,7 +160,7 @@ return (
                           <div className="second">
                             <div className="inner">
                               <ul>
-                                <li className="sub-menu-item"><Link to="articles.html" className=""><i className="menu_icon blank fa"></i><span>Articles</span><span className="plus"></span></Link></li>
+                                <li className="sub-menu-item"><Link to="/articles" className=""><i className="menu_icon blank fa"></i><span>Articles</span><span className="plus"></span></Link></li>
                                 <li className="sub-menu-item"><Link to="/open_source_software" className=""><i className="menu_icon blank fa"></i><span>Open Source Software</span></Link></li>
                               </ul>
                             </div>
