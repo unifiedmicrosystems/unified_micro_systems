@@ -3,9 +3,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */export default ({ data }) => {
+  let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
@@ -15,7 +17,7 @@ const module = typeof window !== `undefined` ? require("module") : null
           <div class="post-blog-content">
             <div class="blog-post-image">
               <a itemprop="url" href="#" title="">
-                <img  src="images/home-banner-1.jpg" class="attachment-full" alt="strategy" />            
+                <img  fluid={featuredImgFluid} class="attachment-full" alt="strategy" />            
               </a>
             </div>
 
@@ -51,6 +53,13 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug
