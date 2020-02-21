@@ -6,7 +6,6 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-article-template-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/templates/articleTemplate.js"))),
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/404.js"))),
   "component---src-pages-careers-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/careers.js"))),
   "component---src-pages-contact-centers-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/contact_centers.js"))),
@@ -17,6 +16,7 @@ exports.components = {
   "component---src-pages-it-office-setup-uae-phillippines-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/it_office_setup_uae_phillippines.js"))),
   "component---src-pages-managed-services-uae-phillippines-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/managed_services_uae_phillippines.js"))),
   "component---src-pages-network-end-point-security-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/network_end_point_security.js"))),
+  "component---src-pages-open-source-software-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/open_source_software.js"))),
   "component---src-pages-our-story-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/our-story.js"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/page-2.js"))),
   "component---src-pages-reseller-business-partners-js": hot(preferDefault(require("/opt/lampp/htdocs/unifiedmicro_systems/src/pages/reseller_business_partners.js"))),

@@ -161,7 +161,7 @@ return (
                             <div className="inner">
                               <ul>
                                 <li className="sub-menu-item"><Link to="articles.html" className=""><i className="menu_icon blank fa"></i><span>Articles</span><span className="plus"></span></Link></li>
-                                <li className="sub-menu-item"><Link to="open-source-software.html" className=""><i className="menu_icon blank fa"></i><span>Open Source Software</span></Link></li>
+                                <li className="sub-menu-item"><Link to="/open_source_software" className=""><i className="menu_icon blank fa"></i><span>Open Source Software</span></Link></li>
                               </ul>
                             </div>
                           </div>

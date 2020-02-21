@@ -3,7 +3,6 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-article-template-js": () => import("./../src/templates/articleTemplate.js" /* webpackChunkName: "component---src-templates-article-template-js" */),
-  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-careers-js": () => import("./../src/pages/careers.js" /* webpackChunkName: "component---src-pages-careers-js" */),
   "component---src-pages-contact-centers-js": () => import("./../src/pages/contact_centers.js" /* webpackChunkName: "component---src-pages-contact-centers-js" */),
@@ -14,6 +13,7 @@ exports.components = {
   "component---src-pages-it-office-setup-uae-phillippines-js": () => import("./../src/pages/it_office_setup_uae_phillippines.js" /* webpackChunkName: "component---src-pages-it-office-setup-uae-phillippines-js" */),
   "component---src-pages-managed-services-uae-phillippines-js": () => import("./../src/pages/managed_services_uae_phillippines.js" /* webpackChunkName: "component---src-pages-managed-services-uae-phillippines-js" */),
   "component---src-pages-network-end-point-security-js": () => import("./../src/pages/network_end_point_security.js" /* webpackChunkName: "component---src-pages-network-end-point-security-js" */),
+  "component---src-pages-open-source-software-js": () => import("./../src/pages/open_source_software.js" /* webpackChunkName: "component---src-pages-open-source-software-js" */),
   "component---src-pages-our-story-js": () => import("./../src/pages/our-story.js" /* webpackChunkName: "component---src-pages-our-story-js" */),
   "component---src-pages-page-2-js": () => import("./../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-reseller-business-partners-js": () => import("./../src/pages/reseller_business_partners.js" /* webpackChunkName: "component---src-pages-reseller-business-partners-js" */),
