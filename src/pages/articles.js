@@ -12,26 +12,26 @@ const module = typeof window !== `undefined` ? require("module") : null
     <Layout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
-        <article class="post-view">
-          <div class="post-blog-content">
-            <div class="blog-post-image">
+        <article className="post-view">
+          <div className="post-blog-content">
+            <div className="blog-post-image">
               <a itemprop="url" href="#" title="">
-                <img  fluid={featuredImgFluid} class="attachment-full" alt="strategy" />            
+                <img  fluid={featuredImgFluid} className="attachment-full" alt="strategy" />            
               </a>
             </div>
 
-            <div class="blog-post-text">
-              <div class="blog-post-text-inner">
-                <h2 itemprop="name" class="entry_title">
+            <div className="blog-post-text">
+              <div className="blog-post-text-inner">
+                <h2 itemprop="name" className="entry_title">
                   <Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link>
                 </h2>
-                <div class="blog-post-info">
-                  <span class="time">{node.frontmatter.date}</span> in Articles
-                  <span class="dots"><i class="fa fa-square"></i></span>
+                <div className="blog-post-info">
+                  <span className="time">{node.frontmatter.date}</span> in Articles
+                  <span className="dots"><i className="fa fa-square"></i></span>
                 </div>
-                <p itemprop="description" class="blog-excerpt">{node.excerpt}</p>
-                <div class="post_more">
-                  <Link to={node.fields.slug} class="qbutton small">Read More</Link>
+                <p itemprop="description" className="blog-excerpt">{node.excerpt}</p>
+                <div className="post_more">
+                  <Link to={node.fields.slug} className="qbutton small">Read More</Link>
                 </div>
               </div>
             </div>

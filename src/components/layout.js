@@ -117,7 +117,7 @@ return (
                         </li>
                         <li className="menu-item wide">
                           <Link to="javascript:void(0)" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></Link>
-                           <div className="second">
+                           <div className="second" style={{width:'1140px'}}>
                             <div className="inner">
                               <ul>
                                 <li className="sub-menu-item"><Link to="javascript:void(0)" className=" no_link"><i className="menu_icon blank fa"></i><span>Service Delivery</span></Link>

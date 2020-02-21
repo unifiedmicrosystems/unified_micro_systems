@@ -9,7 +9,7 @@ title: Managed Web Hosting - An Option Worth Considering for Your Business
 wordpress_id: 987
 categories:
 - Articles
-featuredImage: "pexels-photo-267507.jpg"
+featuredImage: "../../pexels-photo-267507.jpg"
 ---
 
 For those unfamiliar with technical online terminology like ‘web hosting’, it may be difficult to fully grasp its importance and understand how it affects companies conducting business on the World Wide Web. Web hosting basically refers to the particular service which enables your website to be accessible through the Internet.
