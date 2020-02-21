@@ -58,6 +58,8 @@ module.exports = {
       options: {
             resolve: `gatsby-remark-images`,
             options: {
+              name: `images`,
+              path: `${__dirname}/static`,
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
