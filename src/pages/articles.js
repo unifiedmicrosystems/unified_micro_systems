@@ -8,25 +8,36 @@ const module = typeof window !== `undefined` ? require("module") : null
 */export default ({ data }) => {
   return (
     <Layout>
-      <div>
-        <h1>ARTICLES</h1>
-        <Link to="/page-2/">Home</Link>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
-            <Link to={node.fields.slug}>
-              <h3>
-                {node.frontmatter.title}{" "}
-                <span>
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
-            </Link>
+        <article class="post-view">
+          <div class="post-blog-content">
+            <div class="blog-post-image">
+              <a itemprop="url" href="#" title="">
+                <img  src="images/home-banner-1.jpg" class="attachment-full" alt="strategy" />            
+              </a>
+            </div>
+
+            <div class="blog-post-text">
+              <div class="blog-post-text-inner">
+                <h2 itemprop="name" class="entry_title">
+                  <Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link>
+                </h2>
+                <div class="blog-post-info">
+                  <span class="time">{node.frontmatter.date}</span> in Articles
+                  <span class="dots"><i class="fa fa-square"></i></span>
+                </div>
+                <p itemprop="description" class="blog-excerpt">{node.excerpt}</p>
+                <div class="post_more">
+                  <Link to={node.fields.slug} class="qbutton small">Read More</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
           </div>
         ))}
-
-      </div>
     </Layout>
   )
 }
