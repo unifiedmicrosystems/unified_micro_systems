@@ -16,7 +16,7 @@ const module = typeof window !== `undefined` ? require("module") : null
           <div className="post-blog-content">
             <div className="blog-post-image">
               <a itemprop="url" href="#" title="">
-                <img  fluid={featuredImgFluid} className="attachment-full" alt="strategy" />            
+                <img fluid={featuredImgFluid} className="attachment-full" alt="strategy" />            
               </a>
             </div>
 
@@ -38,7 +38,7 @@ const module = typeof window !== `undefined` ? require("module") : null
           </div>
         </article>
           </div>
-        ))}
+        )
     </Layout>
   )
 }
@@ -55,7 +55,7 @@ export const query = graphql`
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
+                  GatsbyImageSharpFluid
                 }
               }
             }
