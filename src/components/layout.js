@@ -96,7 +96,7 @@ return (
                     </span>
                   </div>
                   <div className="d-flex justify-content-start col-sm-8 col-md-3 logo-lg">
-                    <div className="logos"><Link to="index.html"><img src={logo} /></Link></div>
+                    <div className="logos"><Link to="/"><img src={logo} /></Link></div>
                   </div>
                   <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
                       <ul className="menus">
