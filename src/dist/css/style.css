@@ -795,3 +795,12 @@ ul.check-service li{float:left;width:100%;margin-bottom:15px;padding:2px 0;}
     width: 100%;
 }
 .page-not-found{float: left;width: 100%;}
+/*******accordion********/
+.accordion-container .set {
+float: left;
+width: 100%;
+}
+
+.accordion-container .set .content {
+display: block;
+}
