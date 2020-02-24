@@ -171,9 +171,9 @@ return (
                         <li className="search">
                           <div className="header_inner_right">
                             <div className="side_menu_button">
-                              <Link className="search_button fullscreen_search normal" to="javascript:void(0)">
+                              <a className="search_button fullscreen_search normal" href="javascript:void(0)">
                                 <i className="qode_icon_font_awesome fa fa-search "></i>  
-                              </Link>
+                              </a>
                             </div>
                           </div>
                         </li>
