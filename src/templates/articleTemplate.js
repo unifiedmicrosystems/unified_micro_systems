@@ -22,7 +22,6 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-    edges {
       node {
       html
         frontmatter {
@@ -36,6 +35,6 @@ export const query = graphql`
             }
         }
       }
-    }
+    
     }
   }`
