@@ -11,6 +11,9 @@ export default ({ data }) => {
 //console.log(data)
   return (
     <Layout>
+      <div class="blog-posts">
+      <div class="container">
+      <div class="blog-st">
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
 
@@ -42,6 +45,9 @@ export default ({ data }) => {
           </div>
         </article>
         ))}
+          </div>
+          </div>
+          </div>
     </Layout>
     )
 }
