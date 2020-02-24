@@ -16,7 +16,7 @@ const module = typeof window !== `undefined` ? require("module") : null
           <div className="post-blog-content">
             <div className="blog-post-image">
               <a itemprop="url" href="#" title="">
-                <img className="attachment-full" alt="strategy" />            
+                <img src="" className="attachment-full" alt="strategy" />            
               </a>
             </div>
 
