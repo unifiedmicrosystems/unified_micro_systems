@@ -54,6 +54,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            path
             date(formatString: "DD MMMM, YYYY")
             featuredImage{ 
               childImageSharp {
