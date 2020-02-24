@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 const module = typeof window !== `undefined` ? require("module") : null
 */export default ({ data }) => {
   //let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+  console.log("--------------------------------------"+data)
   return (
     <Layout>
         {data.allMarkdownRemark.edges.map(({ node }) => (
