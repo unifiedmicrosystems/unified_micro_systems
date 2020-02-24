@@ -273,6 +273,7 @@ return (
     </div>
   </footer>
   <span id="back-top" class="fa fa-arrow-up"></span>
+  <script>
   $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -289,6 +290,7 @@ return (
         }
     }
 })
+</script>
     </body>
   )
 }
