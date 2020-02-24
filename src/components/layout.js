@@ -102,7 +102,7 @@ return (
                       <ul className="menus">
                         <li><Link to="/" activeStyle={{ color: "red" }} partiallyActive={true}><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
-                          <Link to="javascript:void(0)" className="current"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
+                          <Link to="javascript:void(0)"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
                           <div className="second">
                             <div className="inner">
                               <ul>

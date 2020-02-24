@@ -1,0 +1,233 @@
+@media only screen and (max-width: 640px){
+    .mobile-menu ul li a, .mobile-menu ul li h3 {font-size: 14px !important;}
+    .second{display: none !important;}
+    .hm-serv{width: 80%;margin:auto;}
+    body h2, body h2 a {font-size: 39px !important;line-height: 45px !important;}
+    .client-testimonials .testimonial_content_inner {padding: 40px 25px 40px;}
+    h3, h3 a {font-size:20px !important;line-height: 26px !important;}
+    h4, h4 a {font-size: 18px;line-height: 24px;}
+
+}
+
+@media only screen and (max-width: 675px){
+    .header-top{display: none;}
+}
+
+@media only screen and (max-width: 767px){
+    h2, h2 a {font-size: 70px !important;line-height: 78px !important;}
+    /*********banner**********/
+    .full-section p {font-size: 15px;line-height: 25px;}
+    .home-slide {height: auto;}
+    .form-right {margin-top:20px;}
+    .services-support-right {margin-top: 25px;}
+    .bn-title h1 span {float: left;width: 100%;}
+    .bn-title h1 span:after {left: 0 !important;right: 0 !important;margin: auto;}
+    .bn-title {background-size: contain;}
+    /*****************OPEN SOURCE SOFTWARE****************/
+    .quoted-wrapper ul li{margin-bottom: 15px;}
+    .source-tools-wrapper ul li{margin-bottom: 15px;}
+    /***********careers*********/
+    span.fq-name {font-size: 16px; float: left;width: 76%;word-wrap: break-word;word-break: break-all;}
+    .set > a .qode_icon_font_awesome{float: left;padding-top: 5px;}
+    /***********hosted-solutions***********/   
+    .data-loaction {margin-bottom: 20px;}
+
+    /**********strategic-it-planning-architecture***********/
+    .row-flex {width: 100%;margin-bottom: 20px;}
+    .enterprise-view .row:nth-child(2) {margin-top: 20px;}
+
+    /************network-end-point-security**********/
+    .network-end-point-security .pr-image img {width: 100%;}
+    .network-end-point-security .row{margin-right: 0px;margin-left: 0px;}
+    .single-img img {width: 100%;}
+    .recommend-section {width: 100%;margin-bottom: 10px;}
+
+    /***********managed-services-uae-philippines***************/
+    .nxt-pre-solution p {text-align: center !important;}
+    .nxt-pre-solution p span{float: none;line-height: 0;}
+    .nxt-pre-solution p span i {position: relative;top: 4px;}
+    /*****************structured-cabling-wireless**************/
+    .structured-cabling .row {margin: 0;}
+    .copper-fibre-networks .pr-image img {width: 100%;}
+    .fiber-stk .row {margin: 0;}
+    /***********************************/
+    .integration-queries .col-sm-12.col-md-4 {margin-bottom: 20px;}
+    .integration-queries .row:nth-child(2){margin-top: 0px;}
+    .integration-queries .row:nth-child(3){margin-top: 0px;}
+    .status-dashboard {margin-bottom: 25px;}
+
+}
+
+@media only screen and (max-width:619px){
+    .work-flow .main-line{display: none;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-image.right {padding: 0;text-align: left;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-image, .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-text{width: 100% !important;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-text{padding: 0px !important;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-text .circle{display: none;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner.reverse .qode-workflow-text{text-align: left;}
+    .work-flow .qode-workflow-item {max-width: 100%;}
+
+    /*********technology-partners*******/
+    .unified-solution ul li {width: 100%;}
+
+    /************resellers-business-partners************/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 829px) {
+    .hm-serv .md-comn {flex: 0 0 50%;max-width: 50%;}
+    .bn-title h1 span:after {left:0%;right: 0;margin: auto;}
+    /***********Benefits of Working ***********/
+    .working-benifits .col-sm-12.col-md-6 {flex: 0 0 100%;max-width: 100%;}
+    .working-right {margin-top: 25px;}
+    .qode-int-icon-showcase {width: 550px; height: 550px; margin: auto;padding: 0px;}
+
+    /*********our-story************/
+    .unified-approach .delivery-circles-holder.four_columns .delivery-circle-outer {width: 50%;margin-bottom: 20px;min-height:430px;}
+    .delivery-circles-holder.four_columns:before{display:none;}
+    .work-flow .qode-workflow-item {max-width: 100%;}
+
+    .delivery-circles-holder.four_columns .delivery-circle-outer {width: 50%;margin-bottom: 20px;min-height:380px;}
+
+    /*********technology-partners*******/
+    .unified-solution ul li {width: 32%;}
+
+    /***********hosted-solutions***********/ 
+    .icon-view p {width: 92%;line-height: 15px;}
+    /************disaster-recovery-business-continuity******************/
+    .aspect-design .aspect-design-list {width: 33%;flex: 0 0 33%;max-width: 33%;}
+    .cl-form label {font-size: 11px;}
+
+    /**********strategic-it-planning-architecture***********/
+    h5.icon_title{font-size: 14px;line-height: 20px;}
+
+    /************network-end-point-security**********/
+    .network-end-point-security .pr-image img {width: 100%;}
+    .network-end-point-security .row{margin-right: 0px;margin-left: 0px;}
+    .single-img img {width: 100%;}
+    .recommend-section {width: 50%;margin-bottom: 10px;min-height: 215px;}
+    .network-end-point-security .aspect-design .aspect-design-list {width: 50%;flex: 0 0 50%;max-width: 50%;margin-bottom: 10px;}
+
+    /**********************/
+    .nxt-pre-solution .col-sm-4 {padding: 0;}
+    .nxt-pre-solution p a {font-size: 12px;}
+
+    /***********it-office-setup-uae-philippines************/
+    .office-city .iocn-with-text {max-width: 50%;flex: 0 0 50%;margin-bottom: 30px;}
+    .office-city .row:nth-child(2) {margin-top: 0px;}
+
+    /***************structured-cabling-wireless************/
+    .fiber-stk .row {margin: 0;}
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1000px) {
+    .container {max-width: 800px;}
+    .hm-serv .md-comn {flex: 0 0 50%;max-width: 50%;}
+    .bn-title h1 span {float: left;width: 100%;}
+    .bn-title h1 span:after {left: 0%;right: 0;margin: auto;}
+    .bn-title h1 {float: left;width: 100%;}
+    /***********Benefits of Working ***********/
+    .working-benifits .col-sm-12.col-md-6 {flex: 0 0 100%;max-width: 100%;}
+    .working-right {margin-top: 25px;}
+    .qode-int-icon-showcase {width: 550px; height: 550px; margin: auto;padding: 0px;}
+
+    /*********our-story************/
+    .unified-approach .delivery-circles-holder.four_columns .delivery-circle-outer {width: 50%;margin-bottom: 20px;min-height:430px;}
+    .delivery-circles-holder.four_columns:before{display:none;}
+    .work-flow .qode-workflow-item {max-width: 100%;}
+
+    .delivery-circles-holder.four_columns .delivery-circle-outer {width: 50%;margin-bottom: 20px;min-height:380px;}
+    .service_title{font-size: 20px;}
+
+    /*********technology-partners*******/
+    .unified-solution ul li {width: 32%;}
+    /***********hosted-solutions***********/ 
+    .icon-view p {width:94%;line-height:19px;}
+
+    /************disaster-recovery-business-continuity******************/
+    .aspect-design .aspect-design-list {width: 33%;flex: 0 0 33%;max-width: 33%;}
+    .cl-form label {font-size: 11px;}
+
+    /**********strategic-it-planning-architecture***********/
+    h5.icon_title{font-size: 14px;line-height: 20px;}
+
+    /************network-end-point-security**********/
+    .network-end-point-security .row{margin-right: 0px;margin-left: 0px;}
+    .single-img img {width: 100%;}
+    .recommend-section {width: 50%;margin-bottom: 10px;min-height:180px;}
+    .network-end-point-security .aspect-design .aspect-design-list {width: 50%;flex: 0 0 50%;max-width: 50%;margin-bottom: 10px;}
+
+     /**********************/
+    .nxt-pre-solution .col-sm-4{padding:0;}
+    .nxt-pre-solution p a {font-size:13px;}
+    /***********it-office-setup-uae-philippines************/
+    .office-city .iocn-with-text {max-width: 50%;flex: 0 0 50%;margin-bottom: 30px;}
+    .office-city .row:nth-child(2) {margin-top: 0px;}
+    /***************structured-cabling-wireless************/
+    .fiber-stk .row {margin: 0;}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    /****************menu**********/
+    .menus .wide .second ul li {width: 235px;padding: 0 5px;}
+    /*********technology-partners*******/
+    .unified-solution ul li {width: 24%;}
+    /***********hosted-solutions***********/ 
+    .icon-view p {width: 95%;line-height:22px;padding: 0 0 0 9px;}
+    /***************structured-cabling-wireless************/
+    .fiber-stk .row {margin: 0;}
+}
+
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+    .container {max-width: 580px;}
+    .work-flow .qode-workflow-item {max-width: 100%;}
+    .work-flow .qode-workflow-item .qode-workflow-item-inner .qode-workflow-text {padding:0 30px;}
+    /*********technology-partners*******/
+    .unified-solution ul li {width:49%;}
+}
+
+@media only screen and (max-width: 1000px){
+    .mobile_menu_button{display:table;}
+    .logo-lg {height:100px!important;/*left: 40%;position: absolute;*/float:left;align-items:center;}
+    .logos {position:relative;top: auto;vertical-align:middle;text-align:center;}
+    .logos a {/*left:-50%;*/width:auto!important;/*position:relative;*/}
+    .logos img {width:auto;}
+    .menu-lg .menus li {display:none;}
+    .menu-lg .menus li.search{display:inline-block;}
+    .side_menu_button{height:100px;}
+    .fixed .side_menu_button{height:100px;}
+    .menus li a{line-height:100px;height:100px;}
+    .mobile_menu_button{flex:0 0 16.666667%;max-width:16.666667%;}
+    .d-flex.justify-content-start.logo-lg{-webkit-box-flex:0;-ms-flex: 0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+    .d-flex.justify-content-end.menu-lg{-webkit-box-flex:0;-ms-flex: 0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}
+    .header-top .left{-webkit-box-flex:0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width:100%;}
+    .header-top .right{-webkit-box-flex:0;-ms-flex:0 0 100%;flex: 0 0 100%;max-width:100%;}
+    .header-top .right .justify-content-end{justify-content:center !important;align-items:center;}
+    .header-top {padding-bottom: 10px;}
+    .header-top .left .full_section_inner .column-inner{text-align:center;display:flex;align-items:center;justify-content:center;      padding-bottom:4px;padding-top:2px;
+    }
+    .banner-content .full-section{max-width:540px;word-wrap:break-word;word-break:break-all;}
+    .bn-head{white-space:inherit;font-size:45px;}
+    .header-logo-bottom.fixed{position:relative;background:#fff !important;}
+
+}
+
+@media only screen and (min-width:481px) and (max-width: 767px) {
+    .unified-approach .delivery-circles-holder.four_columns .delivery-circle-outer{width:50%;margin-bottom:20px;min-height:470px;}
+    .delivery-circles-holder.four_columns:before{display:none;}
+    .delivery-circles-holder.four_columns .delivery-circle-outer{width:50%;margin-bottom:20px;min-height:420px;}
+}
+
+
+@media only screen and (max-width:480px){
+    .logo-lg .logos img{width:200px;}
+    .mobile_menu_button{margin:0 0px 0 0;}
+    .d-flex.justify-content-end.menu-lg{padding-left:16%;}
+    .menus li a{height:100px;}
+    .bn-title h1{font-size:20px!important;line-height:25px!important;}
+    .unified-approach .delivery-circles-holder.four_columns .delivery-circle-outer{width:100%;margin-bottom:20px;}
+    .delivery-circles-holder.four_columns:before{display:none;}
+    .working-right {display:none;}
+    .delivery-circles-holder.four_columns .delivery-circle-outer{width:100%;margin-bottom:20px;}
+
+}
