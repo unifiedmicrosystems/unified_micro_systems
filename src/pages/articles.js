@@ -27,7 +27,7 @@ console.log(data)
             <div className="blog-post-text">
               <div className="blog-post-text-inner">
                 <h2 itemprop="name" className="entry_title">
-                  <div key={node.id}><Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link></div>
+                  <div key={node.id}><Link to={node.fields.path}>{node.frontmatter.title}{" "}</Link></div>
                 </h2>
                 <div className="blog-post-info">
                   <span className="time">{node.frontmatter.date}</span> in Articles
