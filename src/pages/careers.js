@@ -94,7 +94,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Infrastructure Manager (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Infrastructure Manager (Manila and Dubai)</span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -128,7 +128,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name">  Server Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name">  Server Engineer (Manila and Dubai)</span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -167,7 +167,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Remote Desktop Support Engineer (Manila) </span><i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Remote Desktop Support Engineer (Manila) </span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -206,7 +206,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Project Manager (Manila)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Project Manager (Manila)</span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -242,7 +242,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Sales Engineer (Manila and Dubai)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span> <span className="fq-name">Sales Engineer (Manila and Dubai)</span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -273,7 +273,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Senior BMS Engineer (Manila) </span><i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Senior BMS Engineer (Manila) </span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">
@@ -306,7 +306,7 @@ const careers = () => (
                      <div className="set">
                         <AccordionItem>
                            <AccordionItemHeading>
-                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Software Engineer (Manila)</span> <i className="fa fa-plus"></i> </AccordionItemButton>
+                              <AccordionItemButton><span className="qode_icon_font_awesome fa fa-users "></span><span className="fq-name"> Software Engineer (Manila)</span> </AccordionItemButton>
                            </AccordionItemHeading>
                            <AccordionItemPanel>
                               <div className="content">

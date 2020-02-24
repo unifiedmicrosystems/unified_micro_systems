@@ -5,6 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/Unified-Logo-2-2.png"
 import OwlCarousel from 'react-owl-carousel';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
+ 
+// Demo styles, see 'Styles' section below for some notes on use.
+import 'react-accessible-accordion/dist/fancy-example.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
@@ -445,8 +455,13 @@ const strategic_it_planning_architecture = () => (
          <div className="empty-space-25">&nbsp;</div>
         <div className="col-md-12 padding-zero careers-accordion">
           <div className="accordion-container">
+          <Accordion>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="fq-name">IT Governance</span> <i className="fa fa-plus"></i> </a>
+                <AccordionItem>
+                <AccordionItemHeading>
+                <AccordionItemButton><span className="fq-name">IT Governance</span></AccordionItemButton>
+                 </AccordionItemHeading>
+                 <AccordionItemPanel>
                   <div className="content">
                       <p>There are many aspects of regulatory compliance that must be tackled, from recording of voice calls, retention of emails (even if users delete), through to the security of data both from leakage and loss.&nbsp;In many cases, compliance simply cannot be achieved as a manual process and must be implemented as an IT system.</p>
                       <p>Compliance failures can result in heavy fines, severe damage to reputation, and potentially crippling loss of revenue from inability to trade. In the worst-case, process failures may even force companies to close.</p>
@@ -466,9 +481,15 @@ const strategic_it_planning_architecture = () => (
                         </ul>
                     </div>
                   </div>
+                  </AccordionItemPanel>
+                </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="fq-name">Outsourced Chief Technology (CTO) & Chief Information (CIO) Officers</span> <i className="fa fa-plus"></i> </a>
+              <AccordionItem>
+                           <AccordionItemHeading>
+                              <AccordionItemButton><span className="fq-name">Outsourced Chief Technology (CTO) & Chief Information (CIO) Officers</span></AccordionItemButton>
+                           </AccordionItemHeading>
+                           <AccordionItemPanel>
                   <div className="content">
                      <div className="content-box">
                         <p>For regulated entities, IT is a primary focus and companies that demonstrate capability in these areas will certainly on-board and retain more business than those at risk with poor IT infrastructure.</p>
@@ -489,9 +510,15 @@ const strategic_it_planning_architecture = () => (
                         </ul>
                       </div>
                   </div>
+                  </AccordionItemPanel>
+                  </AccordionItem>
               </div>
               <div className="set">
-                  <a href="javascript:void(0);"><span className="fq-name">Enterprise Architecture </span><i className="fa fa-plus"></i> </a>
+                 <AccordionItem>
+                           <AccordionItemHeading>
+                              <AccordionItemButton><span className="fq-name">Enterprise Architecture </span></AccordionItemButton>
+                              </AccordionItemHeading>
+                           <AccordionItemPanel>
                   <div className="content">
                     <div className="content-box">
                       <p>We provide you the relevant, proportional and precise expert advise for all IT facets of your business, such as:</p>
@@ -509,8 +536,11 @@ const strategic_it_planning_architecture = () => (
                       </ul>
                     </div>
                   </div>
+                   </AccordionItemPanel>
+</AccordionItem>
               </div>
 
+                  </Accordion>
           </div>
       </div>  
       </div>
