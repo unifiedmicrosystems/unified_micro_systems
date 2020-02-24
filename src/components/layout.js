@@ -12,9 +12,7 @@ import { Link } from "gatsby"
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
-import OwlCarousel from 'react-owl-carousel';
-import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
-import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+
 
 
  const Layout = ({ children }) => {
@@ -273,24 +271,7 @@ return (
     </div>
   </footer>
   <span id="back-top" class="fa fa-arrow-up"></span>
-  <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-</script>
+  
     </body>
   )
 }
