@@ -491,22 +491,17 @@ const SecondPage = () => (
       <div className="empty-space-50">&nbsp;</div>
       <div className="owlcarousel-cstm-clas" style={{float: 'left', width: '100%'}}>
       {(typeof window !== 'undefined') ? (
-      <OwlCarousel className="owl-theme" loop margin={10} items={5} autoplay={true} autoplayTimeout={2000}           options:{
-                loop: true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
+      <OwlCarousel className="owl-theme" loop margin={10} items={5} autoplay={true} autoplayTimeout={2000} responsive={
+                    0={
                         items:1
                     },
-                    600:{
+                    600={
                         items:3
                     },
-                    1000:{
+                    1000={
                         items:5
                     }
-                }
-            }  dots={false}>
+                }>
       
             <div className="item">
               <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/09/carrerfour-1.png" alt="carousel image" />
