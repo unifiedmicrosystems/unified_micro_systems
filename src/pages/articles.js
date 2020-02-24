@@ -7,8 +7,8 @@ import Img from "gatsby-image"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */
-export default ({ children,data }) => {
-console.log(data)
+export default ({ data }) => {
+//console.log(data)
   return (
     <Layout>
         {
@@ -20,7 +20,7 @@ console.log(data)
             <div className="blog-post-image">
               <a itemprop="url" href="#" title="">
                 <img fluid={node.frontmatter.featuredImage.childImageSharp.fluid.src} className="attachment-full" alt="strategy" />
-                {children}
+                
               </a>
             </div>
 
