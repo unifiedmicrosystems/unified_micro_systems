@@ -22,16 +22,20 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+    edges {
+      node {
       html
-      frontmatter {
-        title
-        featuredImage{ 
-              childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_noBase64
+        frontmatter {
+          title
+          featuredImage{ 
+                childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
-          }
+        }
       }
+    }
     }
   }`
