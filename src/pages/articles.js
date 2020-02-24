@@ -10,7 +10,18 @@ const module = typeof window !== `undefined` ? require("module") : null
 export default ({ data }) => {
 //console.log(data)
   return (
+
     <Layout>
+    
+  <div class="banner-with-title">
+    <div class="bn-title">
+      <div class="container">
+        <div class="main-st">
+          <h1><span>Articles</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
       <div class="blog-posts">
       <div class="container">
       <div class="blog-st">
