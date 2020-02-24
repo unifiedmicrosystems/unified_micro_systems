@@ -15,7 +15,7 @@ import "./layout.css"
 
 
 
- const Layout = ({ children }) => {
+ const Layout = ({}) => {
 return (
 
 	    <body>
@@ -258,7 +258,6 @@ return (
     </div>
 
     </header>
-    {children}
 
   <footer className="footer-section">
     <div className="footer-set">
