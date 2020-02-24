@@ -100,9 +100,9 @@ return (
                   </div>
                   <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
                       <ul className="menus">
-                        <li><Link to="/" activeStyle={{ color: "red" }} partiallyActive={true}><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
+                        <li><Link to="/" partiallyActive={true}><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
-                          <Link to="javascript:void(0)"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
+                          <Link to="#"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
                           <div className="second">
                             <div className="inner">
                               <ul>
@@ -116,7 +116,7 @@ return (
                           </div>
                         </li>
                         <li className="menu-item wide">
-                          <Link to="javascript:void(0)" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></Link>
+                          <Link to="#" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></Link>
                            <div className="second" style={{width:'1140px'}}>
                             <div className="inner">
                               <ul>
@@ -128,7 +128,7 @@ return (
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">
-                                  <Link to="javascript:void(0)" className="no_link"><i className="menu_icon blank fa"></i><span>Consultancy</span></Link>
+                                  <Link to="#" className="no_link"><i className="menu_icon blank fa"></i><span>Consultancy</span></Link>
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/strategic_it_planning_architecture" className=""><i className="menu_icon blank fa"></i><span>Strategic IT Planning &amp; Architecture</span><span className="plus"></span></Link></li>
                                     <li className="sub-menu-item"><Link to="/network_end_point_security" className=""><i className="menu_icon blank fa"></i><span>Network &amp; End-Point Security Solutions</span><span className="plus"></span></Link></li>
@@ -136,7 +136,7 @@ return (
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">
-                                  <Link to="javascript:void(0)" className="no_link"><i className="menu_icon blank fa"></i><span>Infrastructure</span></Link>
+                                  <Link to="#" className="no_link"><i className="menu_icon blank fa"></i><span>Infrastructure</span></Link>
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/it_office_setup_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
                                     <li className="sub-menu-item"><Link to="/smart_building_home_automation" className=""><i className="menu_icon blank fa"></i><span>Smart Building, Office &amp; Home Automation Solutions</span></Link></li>
@@ -144,7 +144,7 @@ return (
                                   </ul>
                                 </li>
                                 <li className="sub-menu-item">
-                                  <Link to="javascript:void(0)" className=" no_link" style={{cursor: 'default'}} ><i className="menu_icon blank fa"></i><span>Communications</span></Link>
+                                  <Link to="#" className=" no_link" style={{cursor: 'default'}} ><i className="menu_icon blank fa"></i><span>Communications</span></Link>
                                   <ul>
                                     <li className="sub-menu-item"><Link to="/unified_communications" className=""><i className="menu_icon blank fa"></i><span>Unified Communications</span><span className="plus"></span></Link></li>
                                     <li className="sub-menu-item"><Link to="/contact_centers" className=""><i className="menu_icon blank fa"></i><span>Contact Centers</span><span className="plus"></span></Link></li>
@@ -156,7 +156,7 @@ return (
                           </div> 
                         </li>
                         <li className="menu-item">
-                          <Link to="javascript:void(0)" className=""><i className="menu_icon blank fa"></i><span>Resources</span><span className="plus"></span></Link>
+                          <Link to="#" className=""><i className="menu_icon blank fa"></i><span>Resources</span><span className="plus"></span></Link>
                           <div className="second">
                             <div className="inner">
                               <ul>
