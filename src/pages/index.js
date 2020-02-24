@@ -11,7 +11,7 @@ import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Home" />
           
   <div className="banner-section">
     <div id="demo" className="carousel slide" data-ride="carousel">

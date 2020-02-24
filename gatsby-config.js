@@ -5,12 +5,8 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks:[
       {
-        name:'home',
+        name:'Home',
          link:'/'
-      },
-      {
-         name:'Home',
-         link:'/page-2'
       }
     ]
   },
@@ -52,7 +48,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/Fav-icon.png`, // This path is relative to the root of the site.
       },
       resolve: `gatsby-remark-relative-images`,
       options: {

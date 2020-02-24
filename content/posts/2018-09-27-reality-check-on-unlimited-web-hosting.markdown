@@ -3,13 +3,12 @@ author: chris-admin
 comments: true
 date: 2018-09-27 07:28:11+00:00
 layout: post
-link: https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/
 slug: reality-check-on-unlimited-web-hosting
 title: A Reality Check on Unlimited Web Hosting
 wordpress_id: 575
-categories:
-- Articles
-featuredImage: "../../connect-1586220__340.jpg"
+path: "article/blogs"
+categories: Articles
+featuredImage: "/static/connect-1586220__340.jpg"
 ---
 
 Web hosting service providers are a dime a dozen on the internet. When you are looking for shared web hosting, chances are that finding service providers would not be difficult at all. On the contrary, you are more likely to be spoilt for choice and have a hard time deciding which company to work with. A staggering number of companies provide shared web hosting services of different kinds. Most of these companies use a concept to market their services and lure customers in, and they call it “Unlimited Hosting.” They frequently adorn their service offer by including phrases like “Unlimited Disk Space” and “Unlimited Bandwidth”.

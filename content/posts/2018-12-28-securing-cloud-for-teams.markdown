@@ -3,13 +3,12 @@ author: shalom-admin
 comments: true
 date: 2018-12-28 10:04:34+00:00
 layout: post
-link: https://www.unifiedmicro.systems/articles/securing-cloud-for-teams/
 slug: securing-cloud-for-teams
 title: 'Data Security: Securing the Cloud for Teams'
 wordpress_id: 1491
-featuredImage: "../../home-banner-1.jpg"
-categories:
-- Articles
+path: "article/blogs"
+featuredImage: "/static/home-banner-1.jpg"
+categories: Articles
 ---
 
 Enterprise grade cloud tools such as Google Docs, social media, Dropbox, private emails, as well as several other sharing resources that are used by your employees add an immense productivity boost. They help your workforce stay accessible and stay productive anytime, anywhere. However it is also equally true that these tools often fail to provide the necessary security, thus creating loopholes in the corporate network.

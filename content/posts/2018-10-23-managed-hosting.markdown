@@ -3,13 +3,12 @@ author: chris-admin
 comments: true
 date: 2018-10-23 10:43:50+00:00
 layout: post
-link: https://www.unifiedmicro.systems/articles/managed-hosting/
 slug: managed-hosting
 title: Managed Web Hosting - An Option Worth Considering for Your Business
 wordpress_id: 987
-categories:
-- Articles
-featuredImage: "../../pexels-photo-267507.jpg"
+path: "article/blogs"
+categories: Articles
+featuredImage: "/static/pexels-photo-267507.jpg"
 ---
 
 For those unfamiliar with technical online terminology like ‘web hosting’, it may be difficult to fully grasp its importance and understand how it affects companies conducting business on the World Wide Web. Web hosting basically refers to the particular service which enables your website to be accessible through the Internet.

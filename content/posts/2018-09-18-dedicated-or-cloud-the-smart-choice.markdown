@@ -6,7 +6,7 @@ layout: "post"
 title: "Dedicated or Cloud - The Smart Choice"
 path: "article/blogs"
 categories: "Articles"
-featuredImage: "../../shutterstock_397574752-2.jpg"
+featuredImage: "/static/shutterstock_397574752-2.jpg"
 ---
 
 The trend observed in the web hosting industry over the last few years has been one that promotes the several advantages that cloud servers bring to the table. Clearly, cloud servers have their benefits – you are able to rent resources like on-demand storage, processing power and bandwidth according to your requirements and also scale things up when required. This can be a great way to make IT systems more agile and cost-effective. However, in spite of the much talked about advantages of cloud servers, there are also clear scenarios where using a dedicated server is a smarter way of doing things.

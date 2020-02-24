@@ -3,13 +3,12 @@ author: shalom-admin
 comments: true
 date: 2019-04-05 10:15:33+00:00
 layout: post
-link: https://www.unifiedmicro.systems/articles/designing-and-executing-bc-dr-strategy/
 slug: designing-and-executing-bc-dr-strategy
 title: Key Essentials to Consider when Designing and Executing a BC/DR Strategy
 wordpress_id: 1483
-featuredImage: "../../ransomware-2321110__340.jpg"
-categories:
-- Articles
+path: "article/blogs"
+featuredImage: "/static/ransomware-2321110__340.jpg"
+categories: Articles
 ---
 
 Defining disaster recovery tactics and responses to maintain business continuity will help you master the art of responding to potentially disruptive IT scenarios and ensure that your stakeholders continue getting access to valuable IT, data, and information resources.

@@ -76,7 +76,7 @@ return (
                     <div className="inner">
                       <div className="d-flex justify-content-end">
                         <Link itemProp="url" to="tel:+97142432025" target="_self" className="call-to-action-button">Call Now: +971 4 243 2025</Link>
-                        <Link itemProp="url" to="contact.html" target="_self" className="call-to-quote">Request A Quote</Link>
+                        <Link itemProp="url" to="/contact" target="_self" className="call-to-quote">Request A Quote</Link>
                       </div>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ return (
                   </div>
                   <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
                       <ul className="menus">
-                        <li><Link to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
+                        <li><Link to="/" activeStyle={{ color: "red" }} partiallyActive={true}><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
                           <Link to="javascript:void(0)" className="current"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
                           <div className="second">

@@ -3,13 +3,12 @@ author: shalom-admin
 comments: true
 date: 2019-04-05 10:06:55+00:00
 layout: post
-link: https://www.unifiedmicro.systems/articles/understanding-ransomware/
 slug: understanding-ransomware
 title: Understanding Ransomware and measures to avoid being held hostage
 wordpress_id: 1549
-featuredImage: "../../connect-1586220__340.jpg"
-categories:
-- Articles
+path: "article/blogs"
+featuredImage: "/static/connect-1586220__340.jpg"
+categories: Articles
 ---
 
 For the layman, a bleak yet thorough description of the term ‘ransomware’, can be summarized in the following manner: Imagine a situation where someone important to you is held hostage and the perpetrators demand a ransom. The only difference in the case of ransomware, is that your data is held hostage and you will have to pay a hefty price to retrieve it.
