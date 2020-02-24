@@ -100,7 +100,7 @@ return (
                   </div>
                   <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
                       <ul className="menus">
-                        <li><Link to="/page-2/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
+                        <li><Link to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></Link></li>
                         <li className="menu-item">
                           <Link to="javascript:void(0)" className="current"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></Link>
                           <div className="second">
