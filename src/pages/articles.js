@@ -14,7 +14,7 @@ export default ({ children,data }) => {
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
 
-          <div key={node.id}>
+          
         <article className="post-view">
           <div className="post-blog-content">
             <div className="blog-post-image">
@@ -27,7 +27,7 @@ export default ({ children,data }) => {
             <div className="blog-post-text">
               <div className="blog-post-text-inner">
                 <h2 itemprop="name" className="entry_title">
-                  <Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link>
+                  <div key={node.id}><Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link></div>
                 </h2>
                 <div className="blog-post-info">
                   <span className="time">{node.frontmatter.date}</span> in Articles
@@ -41,7 +41,6 @@ export default ({ children,data }) => {
             </div>
           </div>
         </article>
-          </div>
         ))}
     </Layout>
     )
