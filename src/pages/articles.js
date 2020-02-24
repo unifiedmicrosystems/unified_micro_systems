@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 const module = typeof window !== `undefined` ? require("module") : null
 */
 export default ({ children,data }) => {
-//console.log(data)
+console.log(data)
   return (
     <Layout>
         {
