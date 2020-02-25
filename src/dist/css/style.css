@@ -234,7 +234,7 @@ div#our-customers-owl {float:left;width:100%;}
 .testimonials-service{float:left;width:100%;}
 div#client-testimonials-owl {display:block;float:left;width:100%;}
 .testimonial_content_inner {
-    padding:53px 45px 39px;box-shadow:0 4px 9px 0 rgba(23,28,33,.06);background:#ffffff;box-sizing: border-box;text-align:center;
+    padding:53px 45px 39px;box-shadow:0 4px 9px 0 rgba(23,28,33,.06);background:#ffffff;box-sizing: border-box;text-align:center;min-height: 495px;
 }
 .testimonial_title_holder h5 {color: #4f4f4f; margin: 0 0 22px;}
 .testimonial_rating_holder {margin:17px 0 20px;line-height:1em;color:#bebebe;}
