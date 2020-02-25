@@ -29,7 +29,7 @@ const SecondPage = () => (
                 <h3 className="bn-head">MANAGED SERVICES</h3>
                 <p>Let us manage your systems, giving you peace of mind <br /> and time to concentrate on running your business. </p>
                 <div className="read-more"> 
-                  <a href="#">Read More </a>
+                  <Link to="/managed_services_uae_phillippines">Read More </Link>
                 </div>
               </div>  
             </div>
