@@ -21,7 +21,9 @@ const SecondPage = () => (
         <li data-target="#demo" data-slide-to="2"></li>
       </ul>
       <div className="home-slide carousel-inner">
-        <div className="carousel-item active">
+      {(typeof window !== 'undefined') ? (
+      <OwlCarousel className="owl-theme" loop items={1} autoplay={true} autoplayTimeout={2000} >
+        <div className="item">
           <img src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/home-banner-1.1.jpg" alt="Los Angeles" width="1100" height="500" />
           <div className="banner-content"> 
             <div className="full-section">
@@ -35,7 +37,7 @@ const SecondPage = () => (
             </div>
         </div>
         </div>
-        <div className="carousel-item">
+        <div className="item">
           <img src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/home-banner-3.1.jpg" alt="Chicago" width="1100" height="500" />
           <div className="banner-content"> 
             <div className="full-section">
@@ -43,13 +45,13 @@ const SecondPage = () => (
                   <h3 className="bn-head">NETWORK & ENDPOINT SECURITY </h3>
                   <p>Next generation security appliances and software, <br /> enabling faster and safer communications.</p>
                   <div className="read-more"> 
-                    <a href="#">Read More </a>
+                    <Link to="/network_end_point_security">Read More </Link>
                   </div>
                 </div>
             </div>
           </div>
         </div>
-        <div className="carousel-item">
+        <div className="item">
           <img src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/home-banner-2.1.jpg" alt="New York" width="1100" height="500" />
           <div className="banner-content"> 
             <div className="full-section">
@@ -57,13 +59,15 @@ const SecondPage = () => (
                 <h3 className="bn-head">UNIFIED <br /> COMMUNICATIONS   </h3>
                 <p>Communicate without limits, with voice <br /> video and meeting collaboration solutions. </p>
                 <div className="read-more"> 
-                  <a href="#">Read More </a>
+                  <Link to="/unified_communications">Read More </Link>
                 </div>
               </div> 
             </div>
           </div>
         </div>
-      </div>      
+        </OwlCarousel>
+           ) : null}
+      </div>  
       <a className="carousel-control-prev" href="#demo" data-slide="prev">
         <span className="carousel-control-prev-icon"></span>
       </a>
