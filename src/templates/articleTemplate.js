@@ -22,6 +22,13 @@ export const query = graphql`
       html
       frontmatter {
         title
+        featuredImage{ 
+              childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
       }
     }
   }`
