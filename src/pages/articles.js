@@ -4,6 +4,9 @@ import { Link, graphql } from "gatsby"
 //import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import OwlCarousel from 'react-owl-carousel';
+import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */
