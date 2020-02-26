@@ -480,7 +480,7 @@ const SecondPage = () => (
             </div>
           </div>
           <div className="career-lg"> 
-            <Link to="/our-story/" itemProp="url" target="_self" className="qbutton">VIEW AVAILABLE CAREERS</Link>
+            <Link to="/careers" itemProp="url" target="_self" className="qbutton">VIEW AVAILABLE CAREERS</Link>
           </div>
         </div>
     </div>
