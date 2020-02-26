@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+import Img from "gatsby-image"
 //const webpack = require('webpack');
 //const module = typeof window !== `undefined` ? require("module") : null
 
@@ -317,111 +318,26 @@ const SecondPage = () => (
       <div className="blog-post"> 
         <div className="container-fluid">
           <div className="row">
+            {
+          data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="col-sm-12 col-md-4">
               <div className="blog-art">
                 <div className="blog-post-img">
                     <a itemProp="url" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/home-banner-3.1.jpg" />
+                     <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className="attachment-full" alt="strategy" />
                     </a>
                 </div>
                 <div className="blog-post-text">
                   <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/">A Reality Check on Unlimited Web Hosting</a>
+                    <div key={node.id}><Link to={node.fields.slug}>{node.frontmatter.title}{" "}</Link></div>
                   </h5>
-                  <p className="blog-description">Web hosting service providers are a dime a dozen on the internet. When you are looking for shared we...</p>
+                  <p className="blog-description">{node.excerpt}</p>
                   <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">27 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
+                    <span itemProp="dateCreated" className="time entry_date updated">{node.frontmatter.date}</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
                 </div>
               </div>  
             </div>
-            <div className="col-sm-12 col-md-4">
-              <div className="blog-art">
-                <div className="blog-post-img">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/securing-cloud-for-teams/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/10/home-banner-1.jpg" />
-                    </a>
-                </div>
-                <div className="blog-post-text">
-                  <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/securing-cloud-for-teams/">Data Security: Securing the Cloud for Teams</a>
-                  </h5>
-                  <p className="blog-description">Enterprise grade cloud tools such as Google Docs, social media, Dropbox, private emails, as well as ...</p>
-                  <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">28 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-4">
-              <div className="blog-art">
-                <div className="blog-post-img">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/09/shutterstock_397574752-2.jpg" />
-                    </a>
-                </div>
-                <div className="blog-post-text">
-                  <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/">Dedicated or Cloud – The Smart Choice</a>
-                  </h5>
-                  <p className="blog-description">The trend observed in the web hosting industry over the last few years has been one that promotes th...</p>
-                  <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">27 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-12 col-md-4">
-              <div className="blog-art">
-                <div className="blog-post-img">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/09/shutterstock_397574752-2.jpg" />
-                    </a>
-                </div>
-                <div className="blog-post-text">
-                  <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/">Dedicated or Cloud – The Smart Choice</a>
-                  </h5>
-                  <p className="blog-description">The trend observed in the web hosting industry over the last few years has been one that promotes th...</p>
-                  <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">27 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-12 col-md-4">
-              <div className="blog-art">
-                <div className="blog-post-img">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/09/shutterstock_397574752-2.jpg" />
-                    </a>
-                </div>
-                <div className="blog-post-text">
-                  <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/">Dedicated or Cloud – The Smart Choice</a>
-                  </h5>
-                  <p className="blog-description">The trend observed in the web hosting industry over the last few years has been one that promotes th...</p>
-                  <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">27 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-sm-12 col-md-4">
-              <div className="blog-art">
-                <div className="blog-post-img">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/" target="_self">
-                      <img itemProp="image" src="https://www.unifiedmicro.systems/wp-content/uploads/2018/09/shutterstock_397574752-2.jpg" />
-                    </a>
-                </div>
-                <div className="blog-post-text">
-                  <h5 itemProp="name" className="blog_title">
-                    <a itemProp="url" href="https://www.unifiedmicro.systems/articles/dedicated-or-cloud-the-smart-choice/">Dedicated or Cloud – The Smart Choice</a>
-                  </h5>
-                  <p className="blog-description">The trend observed in the web hosting industry over the last few years has been one that promotes th...</p>
-                  <div className="post_info">
-                    <span itemProp="dateCreated" className="time entry_date updated">27 September, 2018</span> / <a itemProp="url" className="post_comments" href="https://www.unifiedmicro.systems/articles/reality-check-on-unlimited-web-hosting/#respond">No comment</a></div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>  
@@ -793,3 +709,30 @@ const SecondPage = () => (
 )
 
 export default SecondPage
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+            date(formatString: "DD MMMM, YYYY")
+            featuredImage{ 
+              childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }`
