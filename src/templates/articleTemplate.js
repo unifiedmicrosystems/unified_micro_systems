@@ -6,7 +6,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
+      <div className="container">
         <h1>{post.frontmatter.title}</h1>
         <div className="blog-post-image">
           <Img fluid={post.frontmatter.featuredImage.childImageSharp.fluid} className="attachment-full" alt="strategy" />
