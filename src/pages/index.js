@@ -10,7 +10,7 @@ import Img from "gatsby-image"
 //const webpack = require('webpack');
 //const module = typeof window !== `undefined` ? require("module") : null
 
-const SecondPage = () => (
+const SecondPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
           
