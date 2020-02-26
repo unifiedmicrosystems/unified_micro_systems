@@ -99,7 +99,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/managed-services-uae-philippines/">Managed Services in UAE &amp; Philippines</a>
                         </td>
                       </tr>
@@ -111,7 +111,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/hosted-solutions/"> Hosted Solutions</a>
                         </td>
                       </tr>
@@ -123,7 +123,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}><a href="https://www.unifiedmicro.systems/disaster-recovery-business-continuity/"> Disaster Recovery &amp; Business Continuity </a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/disaster-recovery-business-continuity/"> Disaster Recovery &amp; Business Continuity </a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -148,7 +148,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/strategic-it-planning-architecture/"> Strategic IT Planning &amp; Architecture</a>
                         </td>
                       </tr>
@@ -160,7 +160,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/network-end-point-security/"> Network &amp; End-Point Security</a>
                         </td>
                       </tr>
@@ -172,7 +172,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}><a href="https://www.unifiedmicro.systems/software-development/"> Software Development</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/software-development/"> Software Development</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -198,7 +198,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/it-office-setup-uae-philippines/"> IT Office Setup in UAE &amp; Philippines</a>
                         </td>
                       </tr>
@@ -210,7 +210,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/smart-building-home-automation/"> Smart Building &amp; Home Automation</a>
                         </td>
                       </tr>
@@ -222,7 +222,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}><a href="https://www.unifiedmicro.systems/structured-cabling-wireless/"> Structured Cabling &amp; Wireless</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/structured-cabling-wireless/"> Structured Cabling &amp; Wireless</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -248,7 +248,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/unified-communications/"> Unified Communications</a>
                         </td>
                       </tr>
@@ -260,7 +260,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
                           <a href="https://www.unifiedmicro.systems/contact-centers/"> Contact Centres</a>
                         </td>
                       </tr>
@@ -272,7 +272,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textalign: 'left', fontweight: '400', fontsize: '15px'}}><a href="https://www.unifiedmicro.systems/hold-music-ivr-voice-recording/"> Hold Music &amp; IVR Voice Recording</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/hold-music-ivr-voice-recording/"> Hold Music &amp; IVR Voice Recording</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -314,7 +314,7 @@ const SecondPage = ({data}) => (
   <div className="our-blog">
     <div className="container">
     <div className="blog-section">
-      <h3 style={{textalign: 'center'}}>Latest From Our Blog</h3>
+      <h3 style={{textAlign: 'center'}}>Latest From Our Blog</h3>
       <div className="blog-post"> 
         <div className="container-fluid">
           <div className="row">
@@ -477,7 +477,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>Rather than a template based solution as my previous supplier suggested, I can pick up the phone and feel confident that the team will respond quickly and efficiently, providing me with a service and solution that suits my requirements.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Debbie&nbsp;Rogers (Owner,&nbsp;CoffeCakesAndRunning.com)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Debbie&nbsp;Rogers (Owner,&nbsp;CoffeCakesAndRunning.com)</p>
               </div>
             </div>
           </div>
@@ -507,7 +507,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>The support is on time and professional, and the advice we receive is unbiased and factual. I highly recommend their services – it’s a pleasure to work with such a professional IT provider.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Brian Ballinger (General Manager, Heidi Chef Solutions LLC)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Brian Ballinger (General Manager, Heidi Chef Solutions LLC)</p>
               </div>
             </div>
           </div>
@@ -537,7 +537,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>In addition to comprehensive support, an office move and setup of infrastructure for two new businesses in other GCC countries. In all these endeavours Unified Microsystems have been of immense help and support.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Paul Loke (Regional Director, Edmundson Electrical)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Paul Loke (Regional Director, Edmundson Electrical)</p>
               </div>
             </div>
           </div>
@@ -568,7 +568,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>I am impressed the professionalism, response time and quality of service. They take their time to explain how things work and make excellent recommendations.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Blagoy Savov (Clinic Director, Orthosports)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Blagoy Savov (Clinic Director, Orthosports)</p>
               </div>
             </div>
           </div>
@@ -599,7 +599,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>I appreciate the timely response whenever I need technical support or changes, they always respond with excellent knowledge. I am satisfied with their support and I highly recommend them.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
               </div>
             </div>
           </div>
@@ -630,7 +630,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>I appreciate the timely response whenever I need technical support or changes, they always respond with excellent knowledge. I am satisfied with their support and I highly recommend them.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
               </div>
             </div>
           </div>
@@ -662,7 +662,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>I appreciate the timely response whenever I need technical support or changes, they always respond with excellent knowledge. I am satisfied with their support and I highly recommend them.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
               </div>
             </div>
           </div>
@@ -693,7 +693,7 @@ const SecondPage = ({data}) => (
             <div className="testimonial_text_holder">
               <div className="testimonial_text_inner" >
                 <p>I appreciate the timely response whenever I need technical support or changes, they always respond with excellent knowledge. I am satisfied with their support and I highly recommend them.</p>
-                <p className="testimonial_author" style={{fontweight: '500',color: '#be1522',fontsize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
+                <p className="testimonial_author" style={{fontWeight: '500',color: '#be1522',fontSize: '13px'}}>- Khurram Shehzad (Software Developer, Property Monitor)</p>
               </div>
             </div>
           </div>
