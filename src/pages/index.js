@@ -16,11 +16,6 @@ const SecondPage = ({data}) => (
           
   <div className="banner-section">
     <div id="demo" className="carousel slide" data-ride="carousel">
-      <ul className="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" className="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
       <div className="home-slide carousel-inner">
       {(typeof window !== 'undefined') ? (
       <OwlCarousel className="owl-theme" loop items={1} autoplay={true} autoplayTimeout={2000} >
