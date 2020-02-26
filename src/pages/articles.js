@@ -33,7 +33,7 @@ export default ({ data }) => {
           <div className="post-blog-content">
             <div className="blog-post-image">
               <a itemprop="url" href="#" title="">
-                <img fluid={node.frontmatter.featuredImage.childImageSharp.fluid.src} className="attachment-full" alt="strategy" />
+                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className="attachment-full" alt="strategy" />
                 
               </a>
             </div>
