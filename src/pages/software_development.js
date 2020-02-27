@@ -129,7 +129,7 @@ const software_development = () => (
           <div className="row">
             <div className="link-pre">
               <div className="empty-space-50">&nbsp;</div>
-              <a itemprop="url" href="open-source-software.html" target="_self" className="qbutton">View Our Open Source Libaries</a>
+              <a itemprop="url" href="/open_source_software" target="_self" className="qbutton">View Our Open Source Libaries</a>
             </div>
           </div>
         </div>
