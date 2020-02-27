@@ -20,7 +20,7 @@ return (
 
 	    <body>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-      <header className="page_header">
+	  <header className="page_header">
         <div className="header_inner">
         <form role="search" id="searchform" action="#" className="qode_search_form" method="get">
           <div className="container">
@@ -273,8 +273,6 @@ return (
   <span id="back-top" class="fa fa-arrow-up"></span>
   
     </body>
-
-
   )
 }
 

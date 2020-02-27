@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: unifiedmicrosystems/unified_micro_systems
+  branch: master # Branch to update (optional; defaults to master)
+  # This line should *not* be indented
+publish_mode: editorial_workflow
+media_folder: "content/posts/static/" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/public" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+
+
+
+
