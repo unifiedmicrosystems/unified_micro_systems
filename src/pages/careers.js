@@ -17,6 +17,24 @@ import logo from "../images/Unified-Logo-2-2.png"
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+const options = {
+      responsiveRefreshRate: 200,
+      responsive:{
+          0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+      }
+    };
 
 const careers = () => (
  <Layout>
@@ -453,8 +471,9 @@ const careers = () => (
          </div>
          <div className="empty-space-50">&nbsp;</div>
          <div id="client-testimonials-owl" className="owl-carousel owl-theme">
+
             {(typeof window !== 'undefined') ? (
-            <OwlCarousel classNameName="owl-carousel owl-theme test" loop margin={10} items={3} autoplay={true} autoplayTimeout={2000}>
+            <OwlCarousel className="owl-carousel owl-theme test" items= {3} rewind= {true} autoplay={true} slideBy= {1} dots= {true} options={options}>
                <div className="item">
                   <div className="testimonial_content_inner">
                      <div className="testimonial_title_holder">
@@ -697,9 +716,11 @@ const careers = () => (
                </div>
             </OwlCarousel>
             ) : null}
+
          </div>
       </div>
    </div>
+ 
 </Layout>
   
 )
