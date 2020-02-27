@@ -12,7 +12,8 @@ module.exports = {
   },
   plugins: [
   `gatsby-plugin-netlify-cms`,
-  options: {
+    {
+      options: {
       /**
        * One convention is to place your Netlify CMS customization code in a
        * `src/cms` directory.
@@ -24,6 +25,7 @@ module.exports = {
       htmlTitle: `Content Manager`,
       htmlFavicon: `path/to/favicon`,
       includeRobots: false,
+    },
     },
     `gatsby-plugin-react-helmet`,
     {
