@@ -42,8 +42,8 @@ return (
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
-        <ReactModal isOpen={this.state.isModalOpen} onRequestClose={this.handleModalClose}
-          contentLabel="search">
+        /*<ReactModal isOpen={this.state.isModalOpen} onRequestClose={this.handleModalClose}
+          contentLabel="search">*/
         <form role="search" id="searchform" action="#" className="qode_search_form" method="get">
           <div className="container">
             <div className="container_inner clearfix">
@@ -56,7 +56,7 @@ return (
             </div>
           </div>
         </form>
-        </ReactModal>
+        /*</ReactModal>*/
         <div className="header_top_bottom_holder">
           <div className="header-top">
             <div className="container">
@@ -194,7 +194,7 @@ return (
                         <li className="search">
                           <div className="header_inner_right">
                             <div className="side_menu_button">
-                              <Link onClick={this.handleModalOpen}>
+                              <Link to="/" /*onClick={this.handleModalOpen}*/>
                                 <i className="qode_icon_font_awesome fa fa-search "></i>  
                               </Link>
                             </div>
