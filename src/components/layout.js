@@ -13,7 +13,7 @@ import { Link } from "gatsby"
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
-ReactModal.setAppElement('body')
+ReactModal.setAppElement('#searchform')
 
 class IndexPage extends Component {
   constructor(props) {
