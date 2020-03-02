@@ -20,14 +20,10 @@ const BlogIndex = props => {
     const posts = data.allMarkdownRemark.edges || []
 
     const filteredData = posts.filter(post => {
-      const { description, title, tags } = post.node.frontmatter
+      const { path, title } = post.node.frontmatter
       return (
-        description.toLowerCase().includes(query.toLowerCase()) ||
+        path.toLowerCase().includes(query.toLowerCase()) ||
         title.toLowerCase().includes(query.toLowerCase()) ||
-        tags
-          .join("")
-          .toLowerCase()
-          .includes(query.toLowerCase())
       )
     })
 
@@ -59,7 +55,7 @@ const BlogIndex = props => {
         const { excerpt } = node
 
         const { slug } = node.fields
-        const { tags, title, date, description } = node.frontmatter
+        const { title, date, path } = node.frontmatter
         return (
           <article key={slug}>
             <header>
@@ -69,13 +65,6 @@ const BlogIndex = props => {
 
               <p>{date}</p>
             </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: description || excerpt,
-                }}
-              />
-            </section>
             <hr />
           </article>
         )
@@ -95,10 +84,8 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            description
-            date(formatString: "MMMM DD, YYYY")
-
-            tags
+            path
+            date(formatString: "MMMM DD, YYYY")          
           }
 
           fields {
