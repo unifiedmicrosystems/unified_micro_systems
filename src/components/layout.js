@@ -8,36 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Search from "/SearchContainer"
 import ReactModal from 'react-modal'
 import { Link } from "gatsby"
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
 
-class IndexPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isModalOpen: false,
-    }
-  }
-  handleModalOpen = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: true })
-  }
-
-  handleModalClose = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
-  }
-
-  render() {
-    return (
-
  const Layout = ({ children }) => {
+return (
 
-	    <body>
+	    <Layout>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
@@ -294,14 +274,12 @@ class IndexPage extends Component {
   </footer>
   <span id="back-top" class="fa fa-arrow-up"></span>
   
-    </body>
-
-}
+    </Layout>
 )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-}
-export default IndexPage
+
+export default Layout
