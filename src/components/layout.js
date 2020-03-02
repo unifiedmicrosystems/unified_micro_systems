@@ -305,4 +305,4 @@ Layout.propTypes = {
 }
 
 
-export default IndexPage
+export default Layout
