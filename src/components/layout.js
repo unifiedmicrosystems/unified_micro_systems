@@ -37,7 +37,7 @@ class IndexPage extends Component {
  const Layout = ({ children }) => {
 
 
-	    <Layout>
+	    <body>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
@@ -294,7 +294,7 @@ class IndexPage extends Component {
   </footer>
   <span id="back-top" class="fa fa-arrow-up"></span>
   
-    </Layout>
+    </body>
 
 }
 
