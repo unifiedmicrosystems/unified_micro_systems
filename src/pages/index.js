@@ -95,7 +95,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/managed-services-uae-philippines/">Managed Services in UAE &amp; Philippines</a>
+                          <Link to="/managed_services_uae_phillippines">Managed Services in UAE &amp; Philippines</Link>
                         </td>
                       </tr>
                       <tr>
@@ -107,7 +107,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/hosted-solutions/"> Hosted Solutions</a>
+                          <Link to="/hosted_solutions"> Hosted Solutions</link>
                         </td>
                       </tr>
                       <tr>
@@ -118,7 +118,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/disaster-recovery-business-continuity/"> Disaster Recovery &amp; Business Continuity </a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><Link to="/disaster_recovery_business_continuity"> Disaster Recovery &amp; Business Continuity </Link></td>
                       </tr>
                     </tbody>
                   </table>
@@ -144,7 +144,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/strategic-it-planning-architecture/"> Strategic IT Planning &amp; Architecture</a>
+                          <Link to="/strategic_it_planning_architecture"> Strategic IT Planning &amp; Architecture</Link>
                         </td>
                       </tr>
                       <tr>
@@ -156,7 +156,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/network-end-point-security/"> Network &amp; End-Point Security</a>
+                          <link to="/network_end_point_security"> Network &amp; End-Point Security</link>
                         </td>
                       </tr>
                       <tr>
@@ -167,7 +167,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/software-development/"> Software Development</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><link to="/software_development"> Software Development</link></td>
                       </tr>
                     </tbody>
                   </table>
@@ -194,7 +194,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/it-office-setup-uae-philippines/"> IT Office Setup in UAE &amp; Philippines</a>
+                          <Link to="/it_office_setup_uae_phillippines"> IT Office Setup in UAE &amp; Philippines</Link>
                         </td>
                       </tr>
                       <tr>
@@ -206,7 +206,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/smart-building-home-automation/"> Smart Building &amp; Home Automation</a>
+                          <Link to="/smart_building_home_automation"> Smart Building &amp; Home Automation</Link>
                         </td>
                       </tr>
                       <tr>
@@ -217,7 +217,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/structured-cabling-wireless/"> Structured Cabling &amp; Wireless</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><Link to="/structured_cabling_wireless"> Structured Cabling &amp; Wireless</Link></td>
                       </tr>
                     </tbody>
                   </table>
@@ -244,7 +244,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/unified-communications/"> Unified Communications</a>
+                          <Link to="/unified_communications"> Unified Communications</Link>
                         </td>
                       </tr>
                       <tr>
@@ -256,7 +256,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <a href="https://www.unifiedmicro.systems/contact-centers/"> Contact Centres</a>
+                          <Link to="/contact_centers"> Contact Centres</Link>
                         </td>
                       </tr>
                       <tr>
@@ -267,7 +267,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><a href="https://www.unifiedmicro.systems/hold-music-ivr-voice-recording/"> Hold Music &amp; IVR Voice Recording</a></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><Link to="/hold_music_ivr_voice_recording"> Hold Music &amp; IVR Voice Recording</Link></td>
                       </tr>
                     </tbody>
                   </table>
