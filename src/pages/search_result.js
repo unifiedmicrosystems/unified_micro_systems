@@ -20,9 +20,8 @@ const BlogIndex = props => {
     const posts = data.allMarkdownRemark.edges || []
 
     const filteredData = posts.filter(post => {
-      const { path, title } = post.node.frontmatter
+      const { title } = post.node.frontmatter
       return (
-        path.toLowerCase().includes(query.toLowerCase()) ||
         title.toLowerCase().includes(query.toLowerCase()) ||
       )
     })
