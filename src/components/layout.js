@@ -13,7 +13,26 @@ import { Link } from "gatsby"
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
+ReactModal.setAppElement('body')
 
+class IndexPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isModalOpen: false,
+    }
+  }
+  handleModalOpen = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpen: true })
+  }
+
+  handleModalClose = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpen: false })
+  }
+
+  render() {
  const Layout = ({ children }) => {
 return (
 
@@ -277,9 +296,10 @@ return (
     </Layout>
 )
 }
-
+}
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+}
 
-export default Layout
+export default IndexPage
