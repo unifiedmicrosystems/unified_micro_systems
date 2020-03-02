@@ -18,7 +18,16 @@ const isActive = ({ isCurrent }) => {
 }
 
 const ExactNavLink = props => (
-  <Link getProps={isActive} {...props} />
+  <Link {...props} getProps={({ isCurrent }) => {
+      // the object returned here is passed to the
+      // anchor element's props
+      return {
+        style: {
+          color: isCurrent ? "red" : "white"
+        }
+      };
+    }}
+  />
 )
 
 // this link will be active when itself or deeper routes
