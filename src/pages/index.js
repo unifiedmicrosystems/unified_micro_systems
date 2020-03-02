@@ -107,7 +107,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <Link to="/hosted_solutions"> Hosted Solutions</link>
+                          <Link to="/hosted_solutions"> Hosted Solutions</Link>
                         </td>
                       </tr>
                       <tr>
@@ -156,7 +156,7 @@ const SecondPage = ({data}) => (
                           </span>
                         </td>
                         <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}>
-                          <link to="/network_end_point_security"> Network &amp; End-Point Security</link>
+                          <Link to="/network_end_point_security"> Network &amp; End-Point Security</Link>
                         </td>
                       </tr>
                       <tr>
@@ -167,7 +167,7 @@ const SecondPage = ({data}) => (
                             </a>
                           </span>
                         </td>
-                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><link to="/software_development"> Software Development</link></td>
+                        <td style={{textAlign: 'left', fontWeight: '400', fontSize: '15px'}}><Link to="/software_development"> Software Development</Link></td>
                       </tr>
                     </tbody>
                   </table>
