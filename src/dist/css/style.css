@@ -626,7 +626,9 @@ h6, .h6, h6 a {color: #bcbcbc; font-size: 13px;line-height: 23px;font-style: nor
 li.search {
     float: right;
 }
-
+.menus .second .inner ul li a[aria-current="page"] {
+    color: red !important;
+}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
