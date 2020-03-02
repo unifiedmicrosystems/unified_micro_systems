@@ -8,20 +8,41 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Search from "/SearchContainer"
+import ReactModal from 'react-modal'
 import { Link } from "gatsby"
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
 
+class IndexPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isModalOpen: false,
+    }
+  }
+  handleModalOpen = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpen: true })
+  }
 
+  handleModalClose = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpen: false })
+  }
+
+  render() {
+    return (
 
  const Layout = ({ children }) => {
-return (
 
 	    <body>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
+        <ReactModal isOpen={this.state.isModalOpen} onRequestClose={this.handleModalClose}
+          contentLabel="search">
         <form role="search" id="searchform" action="#" className="qode_search_form" method="get">
           <div className="container">
             <div className="container_inner clearfix">
@@ -34,6 +55,7 @@ return (
             </div>
           </div>
         </form>
+        </ReactModal>
         <div className="header_top_bottom_holder">
           <div className="header-top">
             <div className="container">
@@ -171,9 +193,9 @@ return (
                         <li className="search">
                           <div className="header_inner_right">
                             <div className="side_menu_button">
-                              <a className="search_button fullscreen_search normal" href="javascript:void(0)">
+                              <Link onClick={this.handleModalOpen}>
                                 <i className="qode_icon_font_awesome fa fa-search "></i>  
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </li>
@@ -273,11 +295,13 @@ return (
   <span id="back-top" class="fa fa-arrow-up"></span>
   
     </body>
-  )
+
+}
+)
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout
+}
+export default IndexPage
