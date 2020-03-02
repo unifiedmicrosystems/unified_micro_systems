@@ -33,8 +33,9 @@ class IndexPage extends Component {
   }
 
   render() {
+    return (
  const Layout = ({ children }) => {
-return (
+
 
 	    <Layout>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -294,8 +295,8 @@ return (
   <span id="back-top" class="fa fa-arrow-up"></span>
   
     </Layout>
-)
-}
+
+})
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
