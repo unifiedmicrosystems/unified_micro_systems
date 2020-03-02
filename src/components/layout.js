@@ -296,11 +296,12 @@ class IndexPage extends Component {
   
     </Layout>
 
-})
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+)
 }
 }
 
