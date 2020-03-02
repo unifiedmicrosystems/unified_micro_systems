@@ -296,9 +296,10 @@ return (
     </Layout>
 )
 }
-}
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
 }
 }
 
