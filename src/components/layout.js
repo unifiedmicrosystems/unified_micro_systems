@@ -9,33 +9,34 @@ import React, {Component} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import ReactModal from 'react-modal'
-import { Link } from "gatsby"
+import { Link } from '@reach/router'
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
-ReactModal.setAppElement('#searchform')
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: "active" } : {}
+}
 
-class IndexPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isModalOpen: false,
-    }
-  }
-  handleModalOpen = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: true })
-  }
+const ExactNavLink = props => (
+  <Link getProps={isActive} {...props} />
+)
 
-  handleModalClose = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
-  }
+// this link will be active when itself or deeper routes
+// are current
+const isPartiallyActive = ({
+  isPartiallyCurrent
+}) => {
+  return isPartiallyCurrent
+    ? { className: "active" }
+    : {}
+}
 
-  render() {
-    return (
+const PartialNavLink = props => (
+  <Link getProps={isPartiallyActive} {...props} />
+)
+    
  const Layout = ({ children }) => {
-
+return (
 
 	    <body>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -296,13 +297,12 @@ class IndexPage extends Component {
   
     </body>
 
+)
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-)
-}
-}
+
 
 export default IndexPage
