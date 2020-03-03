@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/Unified-Logo-2-2.png"
+import { withFormik } from 'formik';
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
@@ -105,14 +106,36 @@ const contact = () => (
           </div>
           <div className="empty-space-100">&nbsp;</div>
           <div className="contact-form-view">
+              <Formik
+      initialValues={{ email: '', password: '' }}
+      validate={values => {
+        const errors = {};
+        if (!values.email) {
+          errors.email = 'Required';
+        } else if (
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+        ) {
+          errors.email = 'Invalid email address';
+        }
+        return errors;
+      }}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      {({ isSubmitting }) => (
             <form name="contact-form" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <input type="hidden" name="bot-field" />
                 <p><label> Your Name (required)<br />
-                <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" required="required" /></span> </label></p>
+                <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" required="required" />                
+          			<ErrorMessage name="your-name" component="div" /></span> </label></p>
                 
                 <p><label> Your Email (required)<br />
-                  <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                  <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="your-email" component="div" /></span> </label>
                 </p>
                 <p><label> Your Message<br />
                   <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="textarea" aria-invalid="false"></textarea></span> </label>
@@ -120,6 +143,8 @@ const contact = () => (
                 <p><input type="submit" value="Send" className="qbutton" /></p>  
 
             </form>
+             )}
+    </Formik>
           </div>
         </div>
       </div>
