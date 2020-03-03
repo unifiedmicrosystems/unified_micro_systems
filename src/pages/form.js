@@ -26,7 +26,9 @@ const Basic = () => (
       }}
     >
       {({ isSubmitting }) => (
-        <Form>
+        <Form name="contact-form1" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-form1" />
+            <input type="hidden" name="bot-field" />
         <p><label> Your Name (required)<br />
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="email" name="email" />
