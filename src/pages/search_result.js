@@ -30,7 +30,7 @@ const handleInputChange = event => {
     const filteredData = posts.filter(post => {
       const { title } = post.node.frontmatter
       return (
-        title.toLowerCase().includes(query.toLowerCase()) ||
+        title.toLowerCase().includes(query.toLowerCase()) || []
       )
     })
 
