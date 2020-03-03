@@ -5,7 +5,27 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
-*/export default ({ data }) => {
+*/
+const handleInputChange = event => {
+    console.log(event.target.value)
+    const query = event.target.value
+    const { data } = props
+
+    const posts = data.allMarkdownRemark.edges || []
+
+    const filteredData = posts.filter(post => {
+      const { title } = post.node.frontmatter
+      return (
+        title.toLowerCase().includes(query.toLowerCase()) ||
+      )
+    })
+
+    setState({
+      query,
+      filteredData,
+    })
+  }
+export default ({ data }) => {
   return (
     <Layout>
     <h1 style={{ textAlign: `center` }}>Writing</h1>
