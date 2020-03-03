@@ -6,9 +6,10 @@ import Layout from "../components/layout"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */
+
 const handleInputChange = event => {
-    console.log(event.target.value)
-    const query = event.target.value
+    console.log(event)
+    /*const query = event.target.value
     const { data } = props
 
     const posts = data.allMarkdownRemark.edges || []
@@ -23,7 +24,7 @@ const handleInputChange = event => {
     setState({
       query,
       filteredData,
-    })
+    })*/
   }
 export default ({ data }) => {
   return (
