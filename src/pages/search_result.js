@@ -75,7 +75,7 @@ const BlogIndex = props => {
 
 export default BlogIndex
 
-export const pageQuery = graphql`
+/*export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
       edges {
@@ -94,4 +94,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`*/
