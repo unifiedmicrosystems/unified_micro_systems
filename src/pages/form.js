@@ -31,11 +31,11 @@ const Basic = () => (
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="email" name="email" />
 
-          <ErrorMessage name="email" component="div" /></span></p>
+          <ErrorMessage name="email" component="div" /></span></label></p>
           <p><label> Your password (required)<br />
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="password" name="password" />
-          <ErrorMessage name="password" component="div" /></span></p>
+          <ErrorMessage name="password" component="div" /></span></label></p>
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
