@@ -6,7 +6,9 @@ import Layout from "../components/layout"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */
-  const { data } = props
+
+export default ({ data }) => {
+    //const { data } = props
   const allPosts = data.allMarkdownRemark.edges
 
   const emptyQuery = ""
@@ -18,7 +20,7 @@ const module = typeof window !== `undefined` ? require("module") : null
 const handleInputChange = event => {
     console.log(event)
     const query = event.target.value
-    const { data } = props
+    //const { data } = props
 
     const posts = data.allMarkdownRemark.edges || []
 
@@ -37,7 +39,6 @@ const handleInputChange = event => {
       filteredData,
     })*/
   }
-export default ({ data }) => {
   return (
     <Layout>
     <h1 style={{ textAlign: `center` }}>Writing</h1>
