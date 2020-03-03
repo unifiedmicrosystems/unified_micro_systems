@@ -18,10 +18,10 @@ export default ({ data }) => {
     query: emptyQuery,
   })
 const handleInputChange = event => {
-    console.log(event)
+   
     const query = event.target.value
     //const { data } = props
-
+     console.log(query)
     const posts = data.allMarkdownRemark.edges || []
 
     const filteredData = posts.filter(post => {
