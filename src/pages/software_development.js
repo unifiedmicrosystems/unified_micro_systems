@@ -8,7 +8,11 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
-
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 const software_development = () => (
   <Layout>
     <SEO title="software development" /> 
@@ -231,7 +235,8 @@ const software_development = () => (
                     <p><label> Your Message<br />
                       <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
                     </p>
-                    <p><input type="submit" value="Send" className="qbutton" /></p>  
+                    <p><button type="submit" disabled={isSubmitting} className="qbutton" />Submit
+          </button></p>  
                     </div>
                   </div>
                 </form>
