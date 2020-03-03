@@ -107,7 +107,7 @@ const contact = () => (
           <div className="empty-space-100">&nbsp;</div>
           <div className="contact-form-view">
                   <Formik
-      initialValues={{ youremail: '', password: '' }}
+      initialValues={{ youremail: '' }}
       validate={values => {
         const errors = {};
         if (!values.youremail) {
