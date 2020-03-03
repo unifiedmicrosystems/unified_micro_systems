@@ -6,15 +6,15 @@ const Basic = () => (
   <div>
     <h1>Any place in your app!</h1>
     <Formik
-      initialValues={{ email: '', password: '' }}
+      initialValues={{ youremail: '', password: '' }}
       validate={values => {
         const errors = {};
-        if (!values.email) {
-          errors.email = 'Required';
+        if (!values.youremail) {
+          errors.youremail = 'Required';
         } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
         ) {
-          errors.email = 'Invalid email address';
+          errors.youremail = 'Invalid email address';
         }
         return errors;
       }}
@@ -31,9 +31,9 @@ const Basic = () => (
             <input type="hidden" name="bot-field" />
         <p><label> Your Name (required)<br />
                 <span className="wpcf7-form-control-wrap your-name">
-          <Field type="email" name="email" />
+          <Field type="email" name="youremail" />
 
-          <ErrorMessage name="email" component="div" /></span></label></p>
+          <ErrorMessage name="youremail" component="div" /></span></label></p>
           <p><label> Your password (required)<br />
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="password" name="password" />
