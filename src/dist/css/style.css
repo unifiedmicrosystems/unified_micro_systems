@@ -207,7 +207,7 @@ span.wpcf7-form-control-wrap.your-name div {
 .accordion__button {float:left}
 .accordion__panel {float: left; width: 100%;padding: 0px 20px !important;}
 .accordion__panel .content {display:block !important;}
-.accordion__item [aria-expanded="true"] {
+.accordion__item [aria-expanded="true"], .accordion__item [aria-expanded="true"]:hover {
 background: #be1522;
 color: #fff;
 }
