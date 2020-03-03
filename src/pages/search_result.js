@@ -30,7 +30,7 @@ const handleInputChange = event => {
         title.toLowerCase().includes(query.toLowerCase()) || []
       )
     })
-    //console.log(filteredData)
+    console.log(filteredData)
     setState({
       query,
       filteredData,
