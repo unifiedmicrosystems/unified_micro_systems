@@ -27,10 +27,15 @@ const Basic = () => (
     >
       {({ isSubmitting }) => (
         <Form>
+        <p><label> Your Name (required)<br />
+                <span className="wpcf7-form-control-wrap your-name">
           <Field type="email" name="email" />
-          <ErrorMessage name="email" component="div" />
+
+          <ErrorMessage name="email" component="div" /></span></p>
+          <p><label> Your password (required)<br />
+                <span className="wpcf7-form-control-wrap your-name">
           <Field type="password" name="password" />
-          <ErrorMessage name="password" component="div" />
+          <ErrorMessage name="password" component="div" /></span></p>
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
