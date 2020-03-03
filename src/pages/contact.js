@@ -135,7 +135,7 @@ const contact = () => (
           			<ErrorMessage name="your-name" component="div" /></span> </label></p>
                 
                 <p><label> Your Email (required)<br />
-                  <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="your-email" component="div" /></span> </label>
+                  <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" /><ErrorMessage name="your-email" component="div" /></span> </label>
                 </p>
                 <p><label> Your Message<br />
                   <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="textarea" aria-invalid="false"></textarea></span> </label>
