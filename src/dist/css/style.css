@@ -195,7 +195,7 @@ li.menu-item.wide .second{left: inherit !important;right: 0;}
 .unifi-time{float:left;width:100%;margin-top:40px;}
 .unifi-time h3{color:#4f4f4f;font-size:30px;line-height:42px;font-style:normal;font-weight:600;letter-spacing:0px;text-transform:none;}
 .qbutton{
-    margin:40px 0px 0px 0px;border-radius:34px;-moz-border-radius:34px;-webkit-border-radius:34px;border-color:#be1522;background:#be1522;    font-size:13px;line-height:63px;height:63px;font-style:normal;font-weight:500;letter-spacing:0px;text-transform:none;border-width:0px;        transition:color .1s linear,background-color .1s linear,border-color .1s linear;color:#fff;padding:22px 63px;
+    margin:40px 0px 0px 0px;border-radius:34px;-moz-border-radius:34px;-webkit-border-radius:34px;border-color:#be1522;background:#be1522;    font-size:13px;height:63px;font-style:normal;font-weight:500;letter-spacing:0px;text-transform:none;border-width:0px;        transition:color .1s linear,background-color .1s linear,border-color .1s linear;color:#fff;padding:22px 63px;
 }
 .qbutton:hover{background-color: #f5f5f5;color: #333;}
 
