@@ -21,11 +21,12 @@ const handleInputChange = event => {
    
     const query = event.target.value
     //const { data } = props
-     console.log(query)
+     //console.log(query)
     const posts = data.allMarkdownRemark.edges || []
 
     const filteredData = posts.filter(post => {
       const { title } = post.node.frontmatter.title
+      console.log(title)
       return (
         title.toLowerCase().includes(query.toLowerCase()) || []
       )
