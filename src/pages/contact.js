@@ -107,21 +107,16 @@ const contact = () => (
           <div className="empty-space-100">&nbsp;</div>
           <div className="contact-form-view">
                   <Formik
-      initialValues={{ youremail: '', yourname: '' }}
+      initialValues={{ youremail: '', password: '' }}
       validate={values => {
         const errors = {};
-        if (!values.yourname) {
-          errors.yourname = 'Required';
-        } else if (!values.youremail) {
+        if (!values.youremail) {
           errors.youremail = 'Required';
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
-        ){
+        ) {
           errors.youremail = 'Invalid email address';
-        }if (!values.youremail) {
-          errors.youremail = 'Required';
-        } 
-        
+        }
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
@@ -132,25 +127,25 @@ const contact = () => (
       }}
     >
       {({ isSubmitting }) => (
-            <form name="contact-form" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact-form" />
-                <input type="hidden" name="bot-field" />
+        <Form name="contact-form1" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-form1" />
+            <input type="hidden" name="bot-field" />
+        <p><label> Your Email (required)<br />
+                <span className="wpcf7-form-control-wrap your-name">
+          <Field type="email" name="youremail" />
+
+          <ErrorMessage name="youremail" component="div" /></span></label></p>
                 <p><label> Your Name (required)<br />
                 <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="yourname" size="40" className="" aria-required="true" aria-invalid="false" />                
                 <ErrorMessage name="yourname" component="div" /></span> </label></p>
-                
-                <p><label> Your Email (required)<br />
-                  <span className="wpcf7-form-control-wrap your-email"><Field type="email" name="youremail" size="40" className="email" aria-required="true" aria-invalid="false" /><ErrorMessage name="youremail" component="div" /></span> </label>
-                </p>
-                <p><label> Your Message<br />
-                  <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field></span> </label>
-                </p>
-                <p><button type="submit" className="qbutton" disabled={isSubmitting}>
+          <p><label> Your Message<br />
+            <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="youremail" component="div" /></span> </label>
+          </p>
+          <button type="submit" disabled={isSubmitting}>
             Submit
-          </button></p>  
-
-            </form>
-             )}
+          </button>
+        </Form>
+      )}
     </Formik>
           </div>
         </div>

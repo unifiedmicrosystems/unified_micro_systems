@@ -29,15 +29,14 @@ const Basic = () => (
         <Form name="contact-form1" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact-form1" />
             <input type="hidden" name="bot-field" />
-        <p><label> Your Name (required)<br />
+        <p><label> Your Email (required)<br />
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="email" name="youremail" />
 
           <ErrorMessage name="youremail" component="div" /></span></label></p>
-          <p><label> Your password (required)<br />
-                <span className="wpcf7-form-control-wrap your-name">
-          <Field type="password" name="password" />
-          <ErrorMessage name="password" component="div" /></span></label></p>
+                <p><label> Your Name (required)<br />
+                <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="yourname" size="40" className="" aria-required="true" aria-invalid="false" />                
+                <ErrorMessage name="yourname" component="div" /></span> </label></p>
           <p><label> Your Message<br />
             <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="youremail" component="div" /></span> </label>
           </p>
