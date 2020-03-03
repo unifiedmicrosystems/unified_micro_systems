@@ -112,7 +112,7 @@ const contact = () => (
           <div className="empty-space-100">&nbsp;</div>
           <div className="contact-form-view">
                   <Formik
-      initialValues={{ youremail: '' }}
+      initialValues={{ youremail: '', yourname: '', yourmessage: '' }}
       validate={values => {
         const errors = {};
         if (!values.youremail) {
@@ -127,7 +127,7 @@ const contact = () => (
         } 
         if (!values.yourmessage)
         {
-          errors.youremail = 'Required';
+          errors.yourmessage = 'Required';
         }
         return errors;
       }}
