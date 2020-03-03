@@ -6,7 +6,7 @@ const Basic = () => (
   <div>
     <h1>Any place in your app!</h1>
     <Formik
-      initialValues={{ youremail: '', password: '' }}
+      initialValues={{ youremail: '', yourname: '', yourmessage: '', yourlastname: '', yournumber:'' }}
       validate={values => {
         const errors = {};
         if (!values.youremail) {
@@ -63,7 +63,7 @@ const Basic = () => (
                   <ErrorMessage name="yournumber" component="div" /></span> </label>
                 </p>
                 <p><label> Your Message *<br />
-                  <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="youremail" component="div" /></span> </label>
+                  <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
                 </p>
           <button type="submit" disabled={isSubmitting}>
             Submit
