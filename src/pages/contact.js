@@ -119,7 +119,9 @@ const contact = () => (
           errors.youremail = 'Required';
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
-        ) 
+        ) {
+          errors.youremail = 'Invalid email address';
+        }
         if (!values.yourname) {
           errors.yourname = 'Required';
         } 
