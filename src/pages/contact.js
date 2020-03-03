@@ -107,7 +107,7 @@ const contact = () => (
           <div className="empty-space-100">&nbsp;</div>
           <div className="contact-form-view">
               <Formik
-      initialValues={{ your-email: '', password: '' }}
+      initialValues={{ your-email: '', your-name: '' }}
       validate={values => {
         const errors = {};
         if (!values.your-email) {
@@ -131,7 +131,7 @@ const contact = () => (
                 <input type="hidden" name="form-name" value="contact-form" />
                 <input type="hidden" name="bot-field" />
                 <p><label> Your Name (required)<br />
-                <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" required="required" />                
+                <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" />                
           			<ErrorMessage name="your-name" component="div" /></span> </label></p>
                 
                 <p><label> Your Email (required)<br />
@@ -140,7 +140,9 @@ const contact = () => (
                 <p><label> Your Message<br />
                   <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="textarea" aria-invalid="false"></textarea></span> </label>
                 </p>
-                <p><input type="submit" value="Send" className="qbutton" /></p>  
+                <p><button type="submit" className="qbutton" disabled={isSubmitting}>
+            Submit
+          </button></p>  
 
             </form>
              )}
