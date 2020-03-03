@@ -205,8 +205,8 @@ span.wpcf7-form-control-wrap.your-name div {
 }
 .accordion__heading {float: left; width: 100%;}
 .accordion__button {float:left}
-.accordion__panel {float: left; width: 100%;}
-.accordion__panel ..content {display:block}
+.accordion__panel {float: left; width: 100%;padding: 0px 20px !important;}
+.accordion__panel .content {display:block}
 .qbutton:hover{background-color: #f5f5f5;color: #333;}
 
 /************our-blog***********/
