@@ -9,12 +9,15 @@ const module = typeof window !== `undefined` ? require("module") : null
 
 const handleInputChange = event => {
     console.log(event)
-    /*const query = event.target.value
+    const query = event.target.value
     const { data } = props
 
     const posts = data.allMarkdownRemark.edges || []
 
-    const filteredData = posts.filter(post => {
+    console.log("-------------"+posts)
+
+
+    /*const filteredData = posts.filter(post => {
       const { title } = post.node.frontmatter
       return (
         title.toLowerCase().includes(query.toLowerCase()) ||
