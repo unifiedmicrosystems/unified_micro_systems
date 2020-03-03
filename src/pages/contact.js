@@ -131,11 +131,11 @@ const contact = () => (
                 <input type="hidden" name="form-name" value="contact-form" />
                 <input type="hidden" name="bot-field" />
                 <p><label> Your Name (required)<br />
-                <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" required="required" />                
+                <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="your-name" size="40" className="" aria-required="true" aria-invalid="false" required="required" />                
           			<ErrorMessage name="your-name" component="div" /></span> </label></p>
                 
                 <p><label> Your Email (required)<br />
-                  <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" /><ErrorMessage name="your-email" component="div" /></span> </label>
+                  <span className="wpcf7-form-control-wrap your-email"><Field type="email" name="your-email" size="40" className="email" aria-required="true" aria-invalid="false" /><ErrorMessage name="your-email" component="div" /></span> </label>
                 </p>
                 <p><label> Your Message<br />
                   <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="textarea" aria-invalid="false"></textarea></span> </label>
