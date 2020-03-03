@@ -27,7 +27,7 @@ const handleInputChange = event => {
     console.log("-------------"+posts)
 
 
-    /*const filteredData = posts.filter(post => {
+    const filteredData = posts.filter(post => {
       const { title } = post.node.frontmatter
       return (
         title.toLowerCase().includes(query.toLowerCase()) ||
@@ -37,7 +37,7 @@ const handleInputChange = event => {
     setState({
       query,
       filteredData,
-    })*/
+    })
   }
   return (
     <Layout>
