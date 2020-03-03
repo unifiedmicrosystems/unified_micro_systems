@@ -208,28 +208,28 @@ const software_development = () => (
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
                       <p><label> First Name *<br />
-                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="yourname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yourname" component="div" /></span> </label></p>
+                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="yourname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"/><ErrorMessage name="yourname" component="div" /></span> </label></p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Last Name *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="text" name="yourlastname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yourlastname" component="div" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><input type="text" name="yourlastname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="yourlastname" component="div" /></span> </label>
                       </p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Email *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="youremail" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="youremail" component="div" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="youremail" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="youremail" component="div" /></span> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-6">
                       <p><label>Number *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><Field type="Number" name="yournumber" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yournumber" component="div" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><Field type="Number" name="yournumber" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="yournumber" component="div" /></span> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-12">
                     <p><label> Your Message<br />
-                      <span className="wpcf7-form-control-wrap your-message"><Field name="yourmessage" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
+                      <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
                     </p>
                     <p><input type="submit" value="Send" className="qbutton" /></p>  
                     </div>
