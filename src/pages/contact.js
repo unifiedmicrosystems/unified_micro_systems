@@ -112,7 +112,7 @@ const contact = () => (
         const errors = {};
         if (!values.yourname) {
           errors.yourname = 'Required';
-        } else if (!values.your-email) {
+        } else if (!values.youremail) {
           errors.youremail = 'Required';
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
@@ -132,7 +132,7 @@ const contact = () => (
       }}
     >
       {({ isSubmitting }) => (
-            <form name="contact-form" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact-form" onSubmit={onSubmit} action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <input type="hidden" name="bot-field" />
                 <p><label> Your Name (required)<br />
@@ -140,7 +140,17 @@ const contact = () => (
           			<ErrorMessage name="yourname" component="div" /></span> </label></p>
                 
                 <p><label> Your Email (required)<br />
-                  <span className="wpcf7-form-control-wrap your-email"><Field type="email" name="youremail" size="40" className="email" aria-required="true" aria-invalid="false" /><ErrorMessage name="youremail" component="div" /></span> </label>
+                  <span className="wpcf7-form-control-wrap your-email"><Field type="email" name="youremail"         type="text"
+        value={values.email}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        className={
+          errors.youremail && touched.youremail ? (
+            'email error'
+          ) : (
+            'email'
+          )
+        }/><ErrorMessage name="youremail" component="div" /></span> </label>
                 </p>
                 <p><label> Your Message<br />
                   <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="textarea" aria-invalid="false"></textarea></span> </label>
