@@ -206,41 +206,36 @@ const software_development = () => (
       }}
     >
       {({ isSubmitting }) => (
-                <form name="software_development_contact" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="software_development_contact" />
-                <input type="hidden" name="bot-field" />
-                  <div className="row">
-                    <div className="col-sm-12 col-md-6">
-                      <p><label> First Name *<br />
-                      <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="yourname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"/><ErrorMessage name="yourname" component="div" /></span> </label></p>
-                    </div>
-
-                    <div className="col-sm-12 col-md-6">
-                      <p><label>Last Name *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><Field type="text" name="yourlastname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="yourlastname" component="div" /></span> </label>
-                      </p>
-                    </div>
-
-                    <div className="col-sm-12 col-md-6">
-                      <p><label>Email *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><Field type="email" name="youremail" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="youremail" component="div" /></span> </label>
-                      </p>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-                      <p><label>Number *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><Field type="Number" name="yournumber" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/><ErrorMessage name="yournumber" component="div" /></span> </label>
-                      </p>
-                    </div>
-                    <div className="col-sm-12 col-md-12">
-                    <p><label> Your Message<br />
-                      <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
-                    </p>
-                    <p><button type="submit" disabled={isSubmitting} className="qbutton">Submit</button></p>  
-                    </div>
-                  </div>
-                </form>
-                )}
-    </Formik> 
+            <Form name="software_development_contact" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="software_development_contact" />
+            <input type="hidden" name="bot-field" />
+        
+                <p><label> Your Name *<br />
+                  <span className="wpcf7-form-control-wrap your-name"><Field type="text" name="yourname" size="40" className="" aria-required="true" aria-invalid="false" />                
+                  <ErrorMessage name="yourname" component="div" /></span> </label>
+                </p>
+                <p><label>Last Name *<br />
+                  <span className="wpcf7-form-control-wrap your-email"><Field type="text" name="yourlastname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/>
+                  <ErrorMessage name="yourlastname" component="div" /></span> </label>
+                </p>
+                <p><label> Your Email *<br />
+                  <span className="wpcf7-form-control-wrap your-name">
+                  <Field type="email" name="youremail" />
+                  <ErrorMessage name="youremail" component="div" /></span></label>
+                </p>
+                <p><label>Number *<br />
+                  <span className="wpcf7-form-control-wrap your-email"><Field type="Number" name="yournumber" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/>
+                  <ErrorMessage name="yournumber" component="div" /></span> </label>
+                </p>
+                <p><label> Your Message *<br />
+                  <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
+                </p>
+          <button type="submit" disabled={isSubmitting}>
+            Submit
+          </button>
+        </Form>
+      )}
+    </Formik>
               </div>
             </div> 
           </div> 
