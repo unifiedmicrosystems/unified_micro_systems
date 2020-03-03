@@ -156,39 +156,86 @@ const software_development = () => (
             <div className="col-sm-12 col-md-6">
               <div className="empty-space-25">&nbsp;</div>
               <div className="partner-content">
+              <Formik
+      initialValues={{ youremail: '', yourname: '', yourmessage: '', yourlastname: '', yournumber:'' }}
+      validate={values => {
+        const errors = {};
+        if (!values.youremail) {
+          errors.youremail = 'Required';
+        } else if (
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
+        ) {
+          errors.youremail = 'Invalid email address';
+        }
+        if (!values.yourname) {
+          errors.yourname = 'Required';
+        } 
+        if (!values.yourmessage)
+        {
+          errors.yourmessage = 'Required';
+        }
+        if (!values.yourlastname)
+        {
+          errors.yourlastname = 'Required';
+        }
+        if (!values.yournumber)
+        {
+          errors.yournumber = 'Required';
+        }
+        return errors;
+      }}
+      onSubmit={(values, actions) => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "software_development_contact", ...values })
+        })
+        .then(() => {
+          alert('Success');
+          actions.resetForm()
+        })
+        .catch(() => {
+          alert('Error');
+        })
+        .finally(() => actions.setSubmitting(false))
+      }}
+    >
+      {({ isSubmitting }) => (
                 <form name="software_development_contact" action="thank-you" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="software_development_contact" />
                 <input type="hidden" name="bot-field" />
                   <div className="row">
                     <div className="col-sm-12 col-md-6">
                       <p><label> First Name *<br />
-                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /></span> </label></p>
+                      <span className="wpcf7-form-control-wrap your-name"><input type="text" name="yourname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yourname" component="div" /></span> </label></p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Last Name *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="text" name="your-last-name" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><input type="text" name="yourlastname" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yourlastname" component="div" /></span> </label>
                       </p>
                     </div>
 
                     <div className="col-sm-12 col-md-6">
                       <p><label>Email *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><input type="email" name="youremail" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="youremail" component="div" /></span> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-6">
                       <p><label>Number *<br />
-                        <span className="wpcf7-form-control-wrap your-email"><input type="Number" name="your-number" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /></span> </label>
+                        <span className="wpcf7-form-control-wrap your-email"><Field type="Number" name="yournumber" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required="required" /><ErrorMessage name="yournumber" component="div" /></span> </label>
                       </p>
                     </div>
                     <div className="col-sm-12 col-md-12">
                     <p><label> Your Message<br />
-                      <span className="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label>
+                      <span className="wpcf7-form-control-wrap your-message"><Field name="yourmessage" cols="40" rows="10" className="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></Field><ErrorMessage name="yourmessage" component="div" /></span> </label>
                     </p>
                     <p><input type="submit" value="Send" className="qbutton" /></p>  
                     </div>
                   </div>
-                </form> 
+                </form>
+                )}
+    </Formik> 
               </div>
             </div> 
           </div> 
