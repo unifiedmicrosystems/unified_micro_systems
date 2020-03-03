@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from "../images/Unified-Logo-2-2.png"
-import { withFormik } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
