@@ -18,7 +18,7 @@ export default ({ data }) => {
     query: emptyQuery,
   })
 const handleInputChange = event => {
-    //console.log(event)
+    console.log(event)
     const query = event.target.value
     //const { data } = props
 
@@ -30,7 +30,7 @@ const handleInputChange = event => {
         title.toLowerCase().includes(query.toLowerCase()) || []
       )
     })
-    console.log(filteredData)
+    //console.log(filteredData)
     setState({
       query,
       filteredData,
