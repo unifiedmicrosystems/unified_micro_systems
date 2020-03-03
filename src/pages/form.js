@@ -38,6 +38,9 @@ const Basic = () => (
                 <span className="wpcf7-form-control-wrap your-name">
           <Field type="password" name="password" />
           <ErrorMessage name="password" component="div" /></span></label></p>
+          <p><label> Your Message<br />
+            <span className="wpcf7-form-control-wrap your-message"><Field type="textarea" name="yourmessage" cols="40" rows="10" className="textarea" aria-invalid="false"></Field><ErrorMessage name="youremail" component="div" /></span> </label>
+          </p>
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
