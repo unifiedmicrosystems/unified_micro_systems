@@ -8,6 +8,11 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import OwlCarousel from 'react-owl-carousel';
 import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 const contact = () => (
   <Layout>
@@ -114,16 +119,30 @@ const contact = () => (
           errors.youremail = 'Required';
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.youremail)
-        ) {
-          errors.youremail = 'Invalid email address';
+        ) 
+        if (!values.yourname) {
+          errors.yourname = 'Required';
+        } 
+        if (!values.yourmessage)
+        {
+          errors.youremail = 'Required';
         }
         return errors;
       }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+      onSubmit={(values, actions) => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact-demo", ...values })
+        })
+        .then(() => {
+          alert('Success');
+          actions.resetForm()
+        })
+        .catch(() => {
+          alert('Error');
+        })
+        .finally(() => actions.setSubmitting(false))
       }}
     >
       {({ isSubmitting }) => (
