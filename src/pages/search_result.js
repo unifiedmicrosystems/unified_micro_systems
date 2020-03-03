@@ -6,7 +6,15 @@ import Layout from "../components/layout"
 /*const webpack = require('webpack');
 const module = typeof window !== `undefined` ? require("module") : null
 */
+  const { data } = props
+  const allPosts = data.allMarkdownRemark.edges
 
+  const emptyQuery = ""
+
+  const [state, setState] = React.useState({
+    filteredData: [],
+    query: emptyQuery,
+  })
 const handleInputChange = event => {
     console.log(event)
     const query = event.target.value
