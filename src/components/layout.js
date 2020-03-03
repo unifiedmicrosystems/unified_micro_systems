@@ -185,7 +185,7 @@ return (
                         <li className="search">
                           <div className="header_inner_right">
                             <div className="side_menu_button">
-                              <Link to="/search_results">
+                              <Link to="/search_result">
                                 <i className="qode_icon_font_awesome fa fa-search "></i>  
                               </Link>
                             </div>

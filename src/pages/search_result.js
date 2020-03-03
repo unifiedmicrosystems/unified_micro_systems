@@ -8,6 +8,17 @@ const module = typeof window !== `undefined` ? require("module") : null
 */export default ({ data }) => {
   return (
     <Layout>
+    <h1 style={{ textAlign: `center` }}>Writing</h1>
+
+      <div className="searchBox">
+        <input
+          className="searchInput"
+          type="text"
+          aria-label="Search"
+          placeholder="Type to filter posts..."
+          onChange={handleInputChange}
+        />
+      </div>
       <div>
         <h1>ARTICLES</h1>
         <Link to="/page-2/">Home</Link>
