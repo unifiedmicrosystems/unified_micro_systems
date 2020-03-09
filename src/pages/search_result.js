@@ -35,8 +35,8 @@ const BlogIndex = props => {
   const posts = hasSearchResults ? filteredData : allPosts
 
   return (
-    <>
-      <h1 style={{ textAlign: `center` }}>Writing</h1>
+    <Layout>
+      <h1 style={{ textAlign: `center` }}>Search</h1>
 
       <div className="searchBox">
         <input
@@ -73,7 +73,7 @@ const BlogIndex = props => {
           </article>
         )
       })}
-    </>
+    </Layout>
   )
 }
 
