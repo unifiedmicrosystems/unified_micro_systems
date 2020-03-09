@@ -1,55 +1,108 @@
-import React, {Component} from 'react';
-import {Index} from 'elasticlunr';
+import React, {useReact, useState} from "react"
+import { Link, graphql } from "gatsby"
 
-// Graphql query used to retrieve the serialized search index.
-export const query = graphql`query
-SearchIndexExampleQuery {
-    siteSearchIndex {
-      index
-    }
-}`;
+const BlogIndex = props => {
+  const { data } = props
+  const allPosts = data.allMarkdownRemark.edges
 
-// Search component
-export default class Search extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            query: ``,
-            results: [],
-        };
-    }
+  const emptyQuery = ""
 
-    render() {
+  const [state, setState] = useState({
+    filteredData: [],
+    query: emptyQuery,
+  })
+
+  const handleInputChange = event => {
+    console.log(event.target.value)
+    const query = event.target.value
+    const { data } = props
+
+    const posts = data.allMarkdownRemark.edges || []
+
+    const filteredData = posts.filter(post => {
+      const { description, title, tags } = post.node.frontmatter
+      return (
+        description.toLowerCase().includes(query.toLowerCase()) ||
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        tags
+          .join("")
+          .toLowerCase()
+          .includes(query.toLowerCase())
+      )
+    })
+
+    setState({
+      query,
+      filteredData,
+    })
+  }
+
+  const { filteredData, query } = state
+  const hasSearchResults = filteredData && query !== emptyQuery
+  const posts = hasSearchResults ? filteredData : allPosts
+
+  return (
+    <>
+      <h1 style={{ textAlign: `center` }}>Writing</h1>
+
+      <div className="searchBox">
+        <input
+          className="searchInput"
+          type="text"
+          aria-label="Search"
+          placeholder="Type to filter posts..."
+          onChange={handleInputChange}
+        />
+      </div>
+
+      {posts.map(({ node }) => {
+        const { excerpt } = node
+
+        const { slug } = node.fields
+        const { title, date } = node.frontmatter
         return (
-            <div>
-                <input type="text" value={this.state.query} onChange={this.search}/>
-                <ul>
-                    {this.state.results.map(page => (
-                        <li>
-                            {page.title}: {page.keywords.join(`,`)}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
+          <article key={slug}>
+            <header>
+              <h2>
+                <Link to={slug}>{title}</Link>
+              </h2>
 
-    getOrCreateIndex = () => this.index
-        ? this.index
-        // Create an elastic lunr index and hydrate with graphql query results
-        : Index.load(this.props.data.siteSearchIndex.index);
-
-    search = (evt) => {
-        const query = evt.target.value;
-        this.index = this.getOrCreateIndex();
-        this.setState({
-            query,
-            // Query the index with search string to get an [] of IDs
-            results: this.index.search(query)
-                // Map over each ID and return the full document
-                .map(({
-                ref,
-                }) => this.index.documentStore.getDoc(ref)),
-        });
-    }
+              <p>{date}</p>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: excerpt,
+                }}
+              />
+            </section>
+            <hr />
+          </article>
+        )
+      })}
+    </>
+  )
 }
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      edges {
+        node {
+          excerpt(pruneLength: 200)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
