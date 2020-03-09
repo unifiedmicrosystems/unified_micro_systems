@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "axios": "^0.19.2",
     "formik": "^2.1.4",
     "funding": "^1.0.9",
@@ -36,6 +37,7 @@
     "react-use-flexsearch": "^0.1.1"
   },
   "devDependencies": {
+    "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4",
     "prettier": "^1.19.1"
   },
   "keywords": [

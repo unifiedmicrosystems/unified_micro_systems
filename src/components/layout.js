@@ -13,6 +13,8 @@ import { Link } from '@reach/router'
 import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
+import Search from "../components/SearchContainer"
+//import Search from "./search"
 const NavLink = props => (
   <Link
     {...props}
@@ -185,6 +187,7 @@ return (
                         <li className="search">
                           <div className="header_inner_right">
                             <div className="side_menu_button">
+                            
                               <Link to="/search_result">
                                 <i className="qode_icon_font_awesome fa fa-search "></i>  
                               </Link>

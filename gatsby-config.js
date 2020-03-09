@@ -37,6 +37,21 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
+    {  
+  resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,  
+  options: {  
+    // Fields to index  
+    fields: [`title`, `tags`, `html`],  
+    resolvers: {  
+      MarkdownRemark: {  
+        title: node => node.frontmatter.title,  
+        tags: node => node.frontmatter.tags,  
+        path: node => node.frontmatter.path,  
+        html: node => node.internal.content,  
+      },  
+    },  
+  },  
+},
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -8,6 +8,7 @@
 
 const path = require(`path`)
 const webpack = require('webpack');
+const axios = require(`axios`)
 // Requiring function causes error during builds
 // as the code tries to reference window
 // Error
@@ -108,3 +109,4 @@ exports.onCreateWebpackConfig = ({stage, rules, loaders, plugins, actions,}) => 
     ],
   })
 }
+
