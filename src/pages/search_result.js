@@ -1,5 +1,6 @@
 import React, {useReact, useState} from "react"
 import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
 
 const BlogIndex = props => {
   const { data } = props
