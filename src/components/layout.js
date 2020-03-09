@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, {Component} from "react"
+import React, {Component,useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 //import ReactModal from 'react-modal'
@@ -14,6 +14,94 @@ import logo from "../images/Unified-Logo-2-2.png"
 import Header from "./header"
 import "./layout.css"
 import Search from "../components/SearchContainer"
+import NavbarLinks from "./NavbarLinks"
+import styled from 'styled-components'
+
+
+const Navigation = styled.nav`
+  height: 10vh;
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 2px solid #33333320;
+  margin: 0 auto;
+  padding: 0 5vw;
+  z-index: 2;
+  align-self: center;
+
+  @media (max-width: 768px) {
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+`
+
+const Toggle = styled.div`
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10vw;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
+
+const Navbox = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    top: 8vh;
+    left: ${props => (props.open ? "-100%" : "0")};
+  }
+`
+
+const Hamburger = styled.div`
+  background-color: #111;
+  width: 30px;
+  height: 3px;
+  transition: all .3s linear;
+  align-self: center;
+  position: relative;
+  transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
+
+  ::before,
+  ::after {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    content: "";
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+
+  ::before {
+    transform: ${props =>
+      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    top: -10px;
+  }
+
+  ::after {
+    opacity: ${props => (props.open ? "0" : "1")};
+    transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
+    top: 10px;
+  }
+`
 //import Search from "./search"
 const NavLink = props => (
   <Link
@@ -31,9 +119,10 @@ const NavLink = props => (
 );
     
  const Layout = ({ children }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
 return (
 
-	    <body>
+	    <>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	  <header className="page_header">
         <div className="header_inner">
@@ -197,76 +286,8 @@ return (
                         </nav>
                       </ul>
                     </div>
-
-                    <div className="mobile-menu"> 
-                        <ul className="menu-main-menu">
-                          <li className="menu-item">
-                            <Link to="/" className=" current "><span>Home</span></Link>
-                          </li>
-                          <li className="menu-item has-sub-menu open_sub">
-                            <Link to="#" className="current"><span>About</span></Link>
-                            <ul className="sub_menu">
-                              <li className="menu-item">
-                                <Link to="/our_story" className=""><span>Our Story</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/technology_partners" className=""><span>Technology Partners</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/resellers_business_partners" className="">
-                                  <span>Resellers &amp; Business Partners</span>
-                                </Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/terms_and_conditions" className=""><span>Terms and Conditions</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/careers" className=""><span>Careers</span></Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="menu-item has-sub-menu open_sub">
-                            <Link to="#" className=""><span>Solutions</span></Link>
-                              <ul className="sub_menu">
-                              <li className="menu-item menu-item-has-children has_sub open_sub"><h3><span>Service Delivery</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/managed_services_uae_philippines" className=""><span>Managed Services in UAE &amp; Philippines</span></Link></li>
-                                  <li className="menu-item"><Link to="/hosted_solutions" className=""><span>Hosted Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/disaster_recovery_business_continuity" className=""><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item has-sub-menu"><h3><span>Consultancy</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/strategic_it_planning_architecture" className=""><span>Strategic IT Planning &amp; Architecture</span></Link></li>
-                                  <li className="menu-item"><Link to="/network_end_point_security" className=""><span>Network &amp; End-Point Security Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/software_development" className=""><span>Software Development</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item menu-item-has-children has-sub-menu"><h3><span>Infrastructure</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/it_office_setup_uae_philippines" className=""><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
-                                  <li className="menu-item"><Link to="/smart_building_home_automation" className=""><span>Smart Building, Office &amp; Home Automation Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/structured_cabling_wireless" className=""><span>Structured Cabling &amp; Wireless</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item menu-item-has-children has-sub-menu"><h3><span>Communications</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/unified_communications" className=""><span>Unified Communications</span></Link></li>
-                                  <li className="menu-item"><Link to="/contact_centers" className=""><span>Contact Centers</span></Link></li>
-                                  <li className="menu-item"><Link to="/hold_music_ivr_voice_recording" className=""><span>Hold Music &amp; IVR Voice Recording</span></Link></li>
-                                </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="menu-item menu-item-has-children  has-sub-menu"><Link to="#" className=""><span>Resources</span></Link>
-                          <ul className="sub_menu">
-                            <li className="menu-item"><Link to="/articles" className=""><span>Articles</span></Link></li>
-                            <li className="menu-item"><Link to="/open_source_software" className=""><span>Open Source Software</span></Link></li>
-                          </ul>
-                        </li>
-                        <li className="menu-item"><Link to="/contact" className=""><span>Contact</span></Link></li>
-                      </ul>
-                    </div>
+                      
+                    
 
                   </div>
               </div>
@@ -288,9 +309,9 @@ return (
         </div>
     </div>
   </footer>
-  <span id="back-top" class="fa fa-arrow-up"></span>
+  <span id="back-top" className="fa fa-arrow-up"></span>
   
-    </body>
+    </>
 
 )
 }

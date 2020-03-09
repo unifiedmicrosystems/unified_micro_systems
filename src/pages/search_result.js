@@ -38,7 +38,7 @@ const BlogIndex = props => {
   return (
     <Layout>
       <h1 style={{ textAlign: `center` }}>Search</h1>
-
+      <div className="container">
       <div className="searchBox">
         <input
           className="searchInput"
@@ -74,6 +74,7 @@ const BlogIndex = props => {
           </article>
         )
       })}
+      </div>
     </Layout>
   )
 }
