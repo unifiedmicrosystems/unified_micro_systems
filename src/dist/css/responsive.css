@@ -281,6 +281,10 @@
     /*********technology-partners*******/
     .unified-solution ul li {width:49%;}
 }
+@media only screen and (min-width: 1001px){
+    .menu-lg.mobile {display: none !important;}
+    
+}
 
 @media only screen and (max-width: 1000px){
     .mobile_menu_button{display:table;}
@@ -320,6 +324,9 @@
     .menus .second ul li{width: 100% !important;}
     .menus .second .inner ul li a { color: #888 !important;}
     .menus .wide .second ul li {border-left: 0;}
+
+    /*************menu*******************/
+    .menu-lg.dekstop{display: none !important;}
 
 
 }
