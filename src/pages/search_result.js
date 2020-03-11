@@ -72,15 +72,20 @@ const BlogIndex = props => {
                 
               </a>
             </div>
-            <header>
-              <h2>
-                <Link to={slug}>{title}</Link>
+<div className="blog-post-text">
+              <div className="blog-post-text-inner">
+                <h2 itemprop="name" className="entry_title">
+                <div key={node.id}><Link to={slug}>{title}</Link></div>
               </h2>
-
-              <p>{date}</p>
+              <div className="blog-post-info">
+                  <span className="time">{date}</span> in Articles
+                  <span className="dots"><i className="fa fa-square"></i></span>
+                </div>
+              </div>
+              </div>
             </header>
             <section>
-              <p
+              <p itemProp="description" className="blog-excerpt"
                 dangerouslySetInnerHTML={{
                   __html: excerpt,
                 }}
