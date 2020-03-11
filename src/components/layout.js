@@ -203,7 +203,7 @@ return (
                     <div className="logos"><Link to="/"><img src={logo} /></Link></div>
                   </div>
                   
-                      <Navigation>
+                      <Navigation className="test">
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
@@ -211,7 +211,7 @@ return (
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox className="test">
+        <Navbox>
           <NavbarLinks />
         </Navbox>
       ) : (
