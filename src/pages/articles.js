@@ -40,7 +40,6 @@ export default ({ data }) => {
                 
               </a>
             </div>
-
             <div className="blog-post-text">
               <div className="blog-post-text-inner">
                 <h2 itemprop="name" className="entry_title">
