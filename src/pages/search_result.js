@@ -72,7 +72,7 @@ const BlogIndex = props => {
                 
               </a>
             </div>
-<div className="blog-post-text">
+            <div className="blog-post-text">
               <div className="blog-post-text-inner">
                 <h2 itemprop="name" className="entry_title">
                 <div key={node.id}><Link to={slug}>{title}</Link></div>
@@ -83,14 +83,11 @@ const BlogIndex = props => {
                 </div>
               </div>
               </div>
-            </header>
-            <section>
               <p itemProp="description" className="blog-excerpt"
                 dangerouslySetInnerHTML={{
                   __html: excerpt,
                 }}
               />
-            </section>
             <div className="post_more">
                   <Link to={slug} className="qbutton small">Read More</Link>
                 </div>
