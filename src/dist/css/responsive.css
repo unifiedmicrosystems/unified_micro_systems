@@ -320,9 +320,9 @@
 
     .second {position: relative !important;visibility: visible !important;opacity: 1!important;display: inline-block !important;width: 100%;padding-left: 10px;}
     .menus .wide .second ul {width: 100%;}
-    .second .inner ul {width: 100%; background: transparent;border-color: transparent;padding: 0;}
+    .second .inner ul {width: 100%; background: transparent;border-color: transparent;padding: 0 !important;}
     .menus .second ul li{width: 100% !important;}
-    .menus .second .inner ul li a { color: #888 !important;padding-left: 0;font-weight: 400;line-height: 23px;}
+    .menus .second .inner ul li a { color: #888 !important;padding-left: 0 !important;font-weight: 400 !important;line-height:23px !important;}
     .menus .wide .second ul li {border-left: 0;}
 
     /*************menu*******************/
@@ -330,6 +330,8 @@
     .mobile .menus nav {width: 100%;padding-left: 15px;padding-right: 15px;}
     .mobile .menus nav .accordion {border: none;}
     .mobile .menus nav .accordion li{position: relative;}
+    .mobile .menus nav .accordion li {border-bottom: 1px solid #eaeaea !important;}
+    div.mobile .menus nav .accordion li:last-child {border: 0!important;}
     .mobile .menus nav .accordion .accordion__button::before{position: absolute;right: 15px; margin: 0;top: 20px;}
     .mobile .menus nav .accordion .accordion__button{background-color: transparent;padding: 0px;}
     .mobile .menus nav .accordion .accordion__button a {padding-left:0;padding-right:0;font-size:13px !important;    font-weight: 400;color: #888 !important;
@@ -337,7 +339,7 @@
     .mobile .menus li a {height: auto;font-size: 13px;font-weight: 400;padding: 0;}
     .menu-lg.mobile .menus li {border-bottom: 1px solid #eaeaea;}
     .mobile ul li:last-child {border: 0!important;}
-    .mobile .menus nav .accordion .accordion__panel{padding: 0px;}
+    .mobile .menus nav .accordion .accordion__panel{padding: 0px !important;}
 
     .searchBox input.searchInput {float: left;width: 100%;}
     .searchBox:after {right: 50px;}
