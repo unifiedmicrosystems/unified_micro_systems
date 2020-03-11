@@ -1,5 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
+ 
+// Demo styles, see 'Styles' section below for some notes on use.
+import 'react-accessible-accordion/dist/fancy-example.css';
 const NavLink = props => (
   <Link
     {...props}
@@ -21,9 +31,14 @@ const NavbarLinks = () => {
                         <div className="d-flex justify-content-end col-sm-1 col-md-12 menu-lg">
                       <ul className="menus">
                       <nav>
+                      <Accordion>
                         <li><NavLink to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></NavLink></li>
                         <li className="menu-item">
-                          <NavLink to="#"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></NavLink>
+                          <AccordionItem>
+                           <AccordionItemHeading>
+                              <AccordionItemButton><NavLink to="#"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></NavLink></AccordionItemButton>
+                           </AccordionItemHeading>
+                           <AccordionItemPanel>
                           <div className="second">
                             <div className="inner">
                               <ul>
@@ -35,9 +50,16 @@ const NavbarLinks = () => {
                               </ul>
                             </div>
                           </div>
+                          </AccordionItemPanel>
+                        </AccordionItem>
                         </li>
+
                         <li className="menu-item wide">
-                          <NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></NavLink>
+                          <AccordionItem>
+                           <AccordionItemHeading>
+                              <AccordionItemButton><NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></NavLink></AccordionItemButton>
+                           </AccordionItemHeading>
+                           <AccordionItemPanel>
                            <div className="second" style={{width:'1140px'}}>
                             <div className="inner">
                               <ul>
@@ -75,9 +97,15 @@ const NavbarLinks = () => {
                               </ul>
                             </div>
                           </div> 
+                          </AccordionItemPanel>
+                        </AccordionItem>
                         </li>
                         <li className="menu-item">
-                          <NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Resources</span><span className="plus"></span></NavLink>
+                           <AccordionItem>
+                           <AccordionItemHeading>
+                              <AccordionItemButton><NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Resources</span><span className="plus"></span></NavLink></AccordionItemButton>
+                           </AccordionItemHeading>
+                           <AccordionItemPanel>
                           <div className="second">
                             <div className="inner">
                               <ul>
@@ -86,6 +114,8 @@ const NavbarLinks = () => {
                               </ul>
                             </div>
                           </div>
+                          </AccordionItemPanel>
+                        </AccordionItem>
                         </li>
                         <li className="menu-item"><NavLink to="/contact" className=""><i className="menu_icon blank fa"></i><span>Contact</span></NavLink></li>
 
@@ -99,6 +129,7 @@ const NavbarLinks = () => {
                             </div>
                           </div>
                         </li>
+                        </Accordion>
                         </nav>
                       </ul>
                     </div>
