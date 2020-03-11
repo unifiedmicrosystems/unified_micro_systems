@@ -48,7 +48,7 @@ const BlogIndex = props => {
     </div>
   </div>
       <div className="searchBox">
-     
+     <div className="container">
         <input
           className="searchInput"
           type="text"
@@ -56,6 +56,7 @@ const BlogIndex = props => {
           placeholder="Type to filter posts..."
           onChange={handleInputChange}
         />
+        </div>
       </div>
       <div className="blog-posts">
       <div className="container">
