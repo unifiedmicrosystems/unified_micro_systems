@@ -211,7 +211,7 @@ return (
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox>
+        <Navbox className="test">
           <NavbarLinks />
         </Navbox>
       ) : (
