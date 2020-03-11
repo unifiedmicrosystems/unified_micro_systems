@@ -57,7 +57,9 @@ const BlogIndex = props => {
           onChange={handleInputChange}
         />
       </div>
-
+      <div className="blog-posts">
+      <div className="container">
+      <div className="blog-st">
       {posts.map(({ node }) => {
         const { excerpt } = node
 
@@ -96,7 +98,9 @@ const BlogIndex = props => {
           </article>
         )
       })}
-
+      </div>
+      </div>
+      </div>
     </Layout>
   )
 }
