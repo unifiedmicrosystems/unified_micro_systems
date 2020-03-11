@@ -31,7 +31,7 @@ const NavbarLinks = () => {
                         <div className="d-flex justify-content-end col-sm-1 col-md-12 menu-lg">
                       <ul className="menus">
                       <nav>
-                      <Accordion>
+                      <Accordion allowMultipleExpanded="true">
                         <li><NavLink to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></NavLink></li>
                         <li className="menu-item">
                           <AccordionItem>
