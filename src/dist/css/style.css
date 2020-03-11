@@ -45,11 +45,12 @@ padding: 40px 0 80px;
 }
 .searchBox input.searchInput {
 border-bottom: 1px solid #be1522 !important;
-padding: 6px;
+padding:6px 30px 1px 5px;
 font-weight: 100;
 color: #878787;
 border-radius: 0;
 border: none;
+font-size: 20px;
 }
 .searchBox input.searchInput:focus{
 border-bottom: 1px solid #1abc9c !important;
@@ -60,11 +61,18 @@ font: normal normal normal 14px/1 FontAwesome;
 position: relative;
 right: 20px;
 color: #be1522;
+font-size: 20px;
 }
 nav.sc-AxjAm.bcMPWx {
 border-bottom: 0;
 padding-right: 0;
 margin-right: 0;
+}
+.searchBox h1 {
+padding: 15px 10px 35px;
+font-family: Poppins,sans-serif;
+font-weight: bold;
+color: #4f4f4f;
 }
 /**********************************************************/
 .contact-form-view {
