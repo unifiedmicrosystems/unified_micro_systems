@@ -4,73 +4,90 @@ import { Link } from "gatsby"
 const NavbarLinks = () => {
   return (
     <>
-                        <ul className="menu-main-menu">
-                          <li className="menu-item">
-                            <Link to="/" className=" current "><span>Home</span></Link>
-                          </li>
-                          <li className="menu-item has-sub-menu open_sub">
-                            <Link to="#" className="current"><span>About</span></Link>
-                            <ul className="sub_menu">
-                              <li className="menu-item">
-                                <Link to="/our_story" className=""><span>Our Story</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/technology_partners" className=""><span>Technology Partners</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/resellers_business_partners" className="">
-                                  <span>Resellers &amp; Business Partners</span>
-                                </Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/terms_and_conditions" className=""><span>Terms and Conditions</span></Link>
-                              </li>
-                              <li className="menu-item">
-                                <Link to="/careers" className=""><span>Careers</span></Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li className="menu-item has-sub-menu open_sub">
-                            <Link to="#" className=""><span>Solutions</span></Link>
-                              <ul className="sub_menu">
-                              <li className="menu-item menu-item-has-children has_sub open_sub"><h3><span>Service Delivery</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/managed_services_uae_philippines" className=""><span>Managed Services in UAE &amp; Philippines</span></Link></li>
-                                  <li className="menu-item"><Link to="/hosted_solutions" className=""><span>Hosted Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/disaster_recovery_business_continuity" className=""><span>Disaster Recovery &amp; Business Continuity</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item has-sub-menu"><h3><span>Consultancy</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/strategic_it_planning_architecture" className=""><span>Strategic IT Planning &amp; Architecture</span></Link></li>
-                                  <li className="menu-item"><Link to="/network_end_point_security" className=""><span>Network &amp; End-Point Security Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/software_development" className=""><span>Software Development</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item menu-item-has-children has-sub-menu"><h3><span>Infrastructure</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/it_office_setup_uae_philippines" className=""><span>IT Office Setup in UAE &amp; Philippines</span></Link></li>
-                                  <li className="menu-item"><Link to="/smart_building_home_automation" className=""><span>Smart Building, Office &amp; Home Automation Solutions</span></Link></li>
-                                  <li className="menu-item"><Link to="/structured_cabling_wireless" className=""><span>Structured Cabling &amp; Wireless</span></Link></li>
-                                </ul>
-                              </li>
-                              <li className="menu-item menu-item-has-children has-sub-menu"><h3><span>Communications</span></h3>
-                                <ul className="sub_menu">
-                                  <li className="menu-item"><Link to="/unified_communications" className=""><span>Unified Communications</span></Link></li>
-                                  <li className="menu-item"><Link to="/contact_centers" className=""><span>Contact Centers</span></Link></li>
-                                  <li className="menu-item"><Link to="/hold_music_ivr_voice_recording" className=""><span>Hold Music &amp; IVR Voice Recording</span></Link></li>
-                                </ul>
-                            </li>
-                          </ul>
+                        <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
+                      <ul className="menus">
+                      <nav>
+                        <li><NavLink to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></NavLink></li>
+                        <li className="menu-item">
+                          <NavLink to="#"><i className="menu_icon blank fa"></i><span>About</span><span className="plus"></span></NavLink>
+                          <div className="second">
+                            <div className="inner">
+                              <ul>
+                                <li className="sub-menu-item"><NavLink to="/our-story/"><i className="menu_icon blank fa"></i><span>Our Story</span></NavLink></li>
+                                <li className="sub-menu-item"><NavLink to="/technology_partners" className=""><i className="menu_icon blank fa"></i><span>Technology Partners</span></NavLink></li>
+                                <li className="sub-menu-item"><NavLink to="/reseller_business_partners" className=""><i className="menu_icon blank fa"></i><span>Resellers &amp; Business Partners</span></NavLink></li>
+                                <li className="sub-menu-item"><NavLink to="/terms_and_conditions" className=""><i className="menu_icon blank fa"></i><span>Terms and Conditions</span></NavLink></li>
+                               <li className="sub-menu-item"><NavLink to="/careers" className=""><i className="menu_icon blank fa"></i><span>Careers</span></NavLink></li>
+                              </ul>
+                            </div>
+                          </div>
                         </li>
-                        <li className="menu-item menu-item-has-children  has-sub-menu"><Link to="#" className=""><span>Resources</span></Link>
-                          <ul className="sub_menu">
-                            <li className="menu-item"><Link to="/articles" className=""><span>Articles</span></Link></li>
-                            <li className="menu-item"><Link to="/open_source_software" className=""><span>Open Source Software</span></Link></li>
-                          </ul>
+                        <li className="menu-item wide">
+                          <NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Solutions</span><span className="plus"></span></NavLink>
+                           <div className="second" style={{width:'1140px'}}>
+                            <div className="inner">
+                              <ul>
+                                <li className="sub-menu-item"><NavLink to="javascript:void(0)" className=" no_link"><i className="menu_icon blank fa"></i><span>Service Delivery</span></NavLink>
+                                  <ul>
+                                    <li className="sub-menu-item"><NavLink to="/managed_services_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>Managed Services in UAE &amp; Philippines</span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/hosted_solutions" className=""><i className="menu_icon blank fa"></i><span>Hosted Solutions</span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/disaster_recovery_business_continuity" className=""><i className="menu_icon blank fa"></i><span>Disaster Recovery &amp; Business Continuity</span></NavLink></li>
+                                  </ul>
+                                </li>
+                                <li className="sub-menu-item">
+                                  <NavLink to="#" className="no_link"><i className="menu_icon blank fa"></i><span>Consultancy</span></NavLink>
+                                  <ul>
+                                    <li className="sub-menu-item"><NavLink to="/strategic_it_planning_architecture" className=""><i className="menu_icon blank fa"></i><span>Strategic IT Planning &amp; Architecture</span><span className="plus"></span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/network_end_point_security" className=""><i className="menu_icon blank fa"></i><span>Network &amp; End-Point Security Solutions</span><span className="plus"></span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/software_development" className=""><i className="menu_icon blank fa"></i><span>Software Development</span></NavLink></li>
+                                  </ul>
+                                </li>
+                                <li className="sub-menu-item">
+                                  <NavLink to="#" className="no_link"><i className="menu_icon blank fa"></i><span>Infrastructure</span></NavLink>
+                                  <ul>
+                                    <li className="sub-menu-item"><NavLink to="/it_office_setup_uae_phillippines" className=""><i className="menu_icon blank fa"></i><span>IT Office Setup in UAE &amp; Philippines</span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/smart_building_home_automation" className=""><i className="menu_icon blank fa"></i><span>Smart Building, Office &amp; Home Automation Solutions</span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/structured_cabling_wireless" className=""><i className="menu_icon blank fa"></i><span>Structured Cabling &amp; Wireless</span></NavLink></li>
+                                  </ul>
+                                </li>
+                                <li className="sub-menu-item">
+                                  <NavLink to="#" className=" no_link" style={{cursor: 'default'}} ><i className="menu_icon blank fa"></i><span>Communications</span></NavLink>
+                                  <ul>
+                                    <li className="sub-menu-item"><NavLink to="/unified_communications" className=""><i className="menu_icon blank fa"></i><span>Unified Communications</span><span className="plus"></span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/contact_centers" className=""><i className="menu_icon blank fa"></i><span>Contact Centers</span><span className="plus"></span></NavLink></li>
+                                    <li className="sub-menu-item"><NavLink to="/hold_music_ivr_voice_recording" className=""><i className="menu_icon blank fa"></i><span>Hold Music &amp; IVR Voice Recording</span></NavLink></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div> 
                         </li>
-                        <li className="menu-item"><Link to="/contact" className=""><span>Contact</span></Link></li>
+                        <li className="menu-item">
+                          <NavLink to="#" className=""><i className="menu_icon blank fa"></i><span>Resources</span><span className="plus"></span></NavLink>
+                          <div className="second">
+                            <div className="inner">
+                              <ul>
+                                <li className="sub-menu-item"><NavLink to="/articles" className=""><i className="menu_icon blank fa"></i><span>Articles</span><span className="plus"></span></NavLink></li>
+                                <li className="sub-menu-item"><NavLink to="/open_source_software" className=""><i className="menu_icon blank fa"></i><span>Open Source Software</span></NavLink></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="menu-item"><NavLink to="/contact" className=""><i className="menu_icon blank fa"></i><span>Contact</span></NavLink></li>
+
+                        <li className="search">
+                          <div className="header_inner_right">
+                            <div className="side_menu_button">
+                            
+                              <Link to="/search_result">
+                                <i className="qode_icon_font_awesome fa fa-search "></i>  
+                              </Link>
+                            </div>
+                          </div>
+                        </li>
+                        </nav>
                       </ul>
+                    </div>
     </>
   )
 }
