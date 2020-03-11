@@ -116,8 +116,7 @@ const NavLink = props => (
       };
     }}
   />
-);
-    
+);    
  const Layout = ({ children }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 return (
