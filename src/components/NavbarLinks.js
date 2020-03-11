@@ -18,7 +18,7 @@ const NavLink = props => (
 const NavbarLinks = () => {
   return (
     <>
-                        <div className="d-flex justify-content-end col-sm-1 col-md-9 menu-lg">
+                        <div className="d-flex justify-content-end col-sm-1 col-md-12 menu-lg">
                       <ul className="menus">
                       <nav>
                         <li><NavLink to="/"><i className="menu_icon blank fa"></i><span>Home</span><span className="plus"></span></NavLink></li>
