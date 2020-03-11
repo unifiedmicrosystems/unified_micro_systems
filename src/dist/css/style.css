@@ -74,6 +74,12 @@ font-family: Poppins,sans-serif;
 font-weight: bold;
 color: #4f4f4f;
 }
+.blog-st article {
+    float: left;
+    width: 100%;
+    margin-bottom: 85px;
+    padding-bottom: 20px;
+}
 /**********************************************************/
 .contact-form-view {
 float: left;

@@ -304,7 +304,7 @@
     .mobile_menu_button{display: none;}
     .sc-AxirZ.bJCmFu.true{position: fixed;z-index: 99999;top: 40px;right: 0;display: inline-block !important;}
     .menus {width: 100%;}
-
+    div.blog-st article {margin-bottom: 60px;}
 }
 
 @media only screen and (min-width:481px) and (max-width: 767px) {
