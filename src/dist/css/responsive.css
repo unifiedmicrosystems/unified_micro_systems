@@ -349,7 +349,7 @@
     .menus .wide .second li.sub-menu-item ul li.sub-menu-item {margin: 0;}
     .testimonial_title_holder h5{word-wrap:break-word;}
 
-    nav.sc-AxjAm.bcMPWx {float: right;margin: 0;padding: 0;}
+    nav.sc-AxjAm.bcMPWx {float: right;/*margin: 0;*/padding: 0;}
     nav.sc-AxjAm.bcMPWx .sc-AxirZ.bJCmFu {padding: 0 15px;}
     
 }
