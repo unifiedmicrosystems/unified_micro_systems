@@ -77,7 +77,7 @@ const SecondPage = ({data}) => (
       <div className="d-flex cm-services"> 
         <div className="hm-serv">
           <div className="row"> 
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 service-delivery md-comn">
               <div className="service-element"> 
                 <div className="service-title">
                   <h4 className="icon_title aline-center">Service Delivery</h4>
@@ -126,7 +126,7 @@ const SecondPage = ({data}) => (
               </div>
               <div className="empty_space" style={{height: '40px'}}>&nbsp;</div>
             </div>
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 consultancy md-comn">
               <div className="service-element"> 
                 <div className="service-title">
                   <h4 className="icon_title aline-center">Consultancy</h4>
@@ -176,7 +176,7 @@ const SecondPage = ({data}) => (
               <div className="empty_space" style={{height: '40px'}}>&nbsp;</div>
             </div>
 
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 Infrastructure md-comn">
               <div className="service-element"> 
                 <div className="service-title">
                   <h4 className="icon_title aline-center">Infrastructure</h4>
@@ -226,7 +226,7 @@ const SecondPage = ({data}) => (
               <div className="empty_space" style={{height: '40px'}}>&nbsp;</div>
             </div>
 
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 Communications md-comn">
               <div className="service-element"> 
                 <div className="service-title">
                   <h4 className="icon_title aline-center">Communications</h4>

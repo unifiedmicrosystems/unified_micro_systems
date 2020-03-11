@@ -171,8 +171,6 @@
     /***************structured-cabling-wireless************/
     .fiber-stk .row {margin: 0;}
 
-    .hm-serv .icon_title {font-size:17px;word-break: break-all;min-height:30px;}
-    .service-details {word-break: break-all;}
 
 
 }
@@ -317,7 +315,7 @@
     .menus .second ul li{width: 100% !important;}
     .menus .second .inner ul li a { color: #888 !important;}
     .menus .wide .second ul li {border-left: 0;}
-    
+
 
 }
 
