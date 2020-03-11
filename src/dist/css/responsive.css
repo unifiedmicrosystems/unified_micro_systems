@@ -347,8 +347,8 @@
     .mobile ul li:last-child {border: 0!important;}
     .mobile .menus nav .accordion .accordion__panel{padding: 0px !important;}
 
-    .searchBox input.searchInput {float: left;width: 100%;}
-    .searchBox:after {right: 50px;}
+    .searchBox input.searchInput {float: left;width: 96%;}
+    .searchBox:after {/*right:0px;*/top: 10px;}
     .menus .wide .second li.sub-menu-item {margin-bottom: 15px; padding: 0;}
     .menus .wide .second li.sub-menu-item ul li.sub-menu-item {margin: 0;}
     .testimonial_title_holder h5{word-wrap:break-word;}
