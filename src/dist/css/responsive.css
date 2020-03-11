@@ -301,7 +301,7 @@
 
     .sc-AxiKw.cydMlz {top: 0;}
     .mobile_menu_button{display: none;}
-    .sc-AxirZ.bJCmFu.toggle-open {position: fixed;z-index: 99999;top: 40px;right: 0;display: inline-block !important;}
+    .sc-AxirZ.bJCmFu.true{position: fixed;z-index: 99999;top: 40px;right: 0;display: inline-block !important;}
     .menus {width: 100%;}
 
 }
