@@ -283,21 +283,21 @@
 }
 @media only screen and (min-width: 1001px){
     .menu-lg.mobile {display: none !important;}
-    
+
 }
 
 @media only screen and (max-width: 1000px){
     .mobile_menu_button{display:table;}
     .logo-lg {height:100px!important;/*left: 40%;position: absolute;*/float:left;align-items:center;}
-    .logos {position:relative;top: auto;vertical-align:middle;text-align:center;}
+    .logos {position:relative;top: auto;vertical-align:middle;text-align:center;width: auto;}
     .logos a {/*left:-50%;*/width:auto!important;/*position:relative;*/}
     .logos img {width:auto;}
     .menu-lg .menus li {/*display:none;*/width:100%;}
     .side_menu_button {display: inline-block;}
     .menu-lg .menus li.search{display:inline-block;}
-    .side_menu_button{height:50px;}
-    .fixed .side_menu_button{height:50px;}
-    .menus li a{line-height:50px;height:50px;}
+    .side_menu_button{height:40px;}
+    .fixed .side_menu_button{height:40px;}
+    .menus li a{line-height:40px;height:40px;}
     .mobile_menu_button{flex:0 0 16.666667%;max-width:16.666667%;}
     .d-flex.justify-content-start.logo-lg{-webkit-box-flex:0;-ms-flex: 0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
     /*.d-flex.justify-content-end.menu-lg{-webkit-box-flex:0;-ms-flex: 0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}*/
@@ -322,11 +322,22 @@
     .menus .wide .second ul {width: 100%;}
     .second .inner ul {width: 100%; background: transparent;border-color: transparent;}
     .menus .second ul li{width: 100% !important;}
-    .menus .second .inner ul li a { color: #888 !important;}
+    .menus .second .inner ul li a { color: #888 !important;padding-left: 0;font-weight: 400;}
     .menus .wide .second ul li {border-left: 0;}
 
     /*************menu*******************/
     .menu-lg.dekstop{display: none !important;}
+    .mobile .menus nav {width: 100%;padding-left: 10px;padding-right: 10px;}
+    .mobile .menus nav .accordion {border: none;}
+    .mobile .menus nav .accordion li{position: relative;}
+    .mobile .menus nav .accordion .accordion__button::before{position: absolute;right: 15px; margin: 0;top: 20px;}
+    .mobile .menus nav .accordion .accordion__button{background-color: transparent;padding: 0 18px;}
+    .mobile .menus nav .accordion .accordion__button a {padding-left:0;padding-right:0;font-size:13px !important;    font-weight: 400;color: #888 !important;
+    }
+    .mobile .menus li a {height: auto;font-size: 13px;font-weight: 400;}
+    .menu-lg.mobile .menus li {border-bottom: 1px solid #eaeaea;}
+    .mobile .mobile-menu ul li:last-child {border: 0!important;}
+
 
 
 }

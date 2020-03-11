@@ -702,7 +702,7 @@ li.search {
     float: right;
 }
 .menus .second .inner ul li a[aria-current="page"] {
-    color: red !important;
+    color: #be1522 !important;
 }
 
 
