@@ -46,8 +46,9 @@ const BlogIndex = props => {
       </div>
     </div>
   </div>
+  <div className="container">
       <div className="searchBox">
-     <div className="container">
+     
         <input
           className="searchInput"
           type="text"
