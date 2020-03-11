@@ -330,7 +330,7 @@
     .fvSImG::before, .fvSImG::after {background-color:#be1522 !important;}
     .lddUPi{background-color:#be1522 !important;}
     .fvSImG{background-color:#be1522 !important;}
-    
+
     /*************menu*******************/
     .menu-lg.dekstop{display: none !important;}
     .mobile .menus nav {width: 100%;padding-left: 15px;padding-right: 15px;}
@@ -357,6 +357,7 @@
     nav.sc-AxjAm.bcMPWx .sc-AxirZ.bJCmFu {padding: 0 15px;}
     .menus .wide .second ul {margin-top: 15px;}
     .menus .wide .second li.sub-menu-item ul { margin: 0;}
+    .menus .wide .second .inner>ul>li>a.no_link {padding: 0px 10px 10px 0px;border-bottom: 1px solid #eaeaea!important;}
 
 }
 
