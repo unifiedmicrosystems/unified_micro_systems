@@ -71,6 +71,9 @@ const BlogIndex = props => {
                 }}
               />
             </section>
+            <div className="post_more">
+                  <Link to={slug} className="qbutton small">Read More</Link>
+                </div>
             <hr />
           </article>
         )
