@@ -299,6 +299,10 @@
     .bn-head{white-space:inherit;font-size:45px;}
     .header-logo-bottom.fixed{position:relative;background:#fff !important;}
 
+    .sc-AxiKw.cydMlz {top: 0;}
+    .mobile_menu_button{display: none;}
+    .sc-AxirZ.bJCmFu {position: fixed;z-index: 99999;top: 40px;right: 0;display: inline-block !important;}
+
 }
 
 @media only screen and (min-width:481px) and (max-width: 767px) {
@@ -311,8 +315,8 @@
 @media only screen and (max-width:480px){
     .logo-lg .logos img{width:200px;}
     .mobile_menu_button{margin:0 0px 0 0;}
-    .d-flex.justify-content-end.menu-lg{padding-left:16%;}
-    .menus li a{height:100px;}
+    .d-flex.justify-content-end.menu-lg{/*padding-left:16%;*/}
+    .menus li a{/*height:100px;*/}
     .bn-title h1{font-size:20px!important;line-height:25px!important;}
     .unified-approach .delivery-circles-holder.four_columns .delivery-circle-outer{width:100%;margin-bottom:20px;}
     .delivery-circles-holder.four_columns:before{display:none;}
