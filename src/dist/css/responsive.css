@@ -328,8 +328,9 @@
     .menus .wide .second ul li {border-left: 0;}
     .lddUPi::before, .lddUPi::after {background-color:#be1522 !important;}
     .fvSImG::before, .fvSImG::after {background-color:#be1522 !important;}
-
-
+    .lddUPi{background-color:#be1522 !important;}
+    .fvSImG{background-color:#be1522 !important;}
+    
     /*************menu*******************/
     .menu-lg.dekstop{display: none !important;}
     .mobile .menus nav {width: 100%;padding-left: 15px;padding-right: 15px;}
