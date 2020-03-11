@@ -35,7 +35,6 @@ const BlogIndex = props => {
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : allPosts
-
   return (
     <Layout>
         <div className="banner-with-title">
