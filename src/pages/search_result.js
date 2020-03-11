@@ -1,6 +1,7 @@
 import React, {useReact, useState} from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 
 const BlogIndex = props => {
   const { data } = props
@@ -37,10 +38,17 @@ const BlogIndex = props => {
 
   return (
     <Layout>
-      
+        <div className="banner-with-title">
+    <div className="bn-title">
       <div className="container">
+        <div className="main-st">
+          <h1><span>Search</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
       <div className="searchBox">
-      <h1>Search</h1>
+     
         <input
           className="searchInput"
           type="text"
@@ -57,6 +65,13 @@ const BlogIndex = props => {
         const { title, date } = node.frontmatter
         return (
           <article key={slug}>
+          <div className="post-blog-content">
+            <div className="blog-post-image">
+              <a itemprop="url" href="#" title="">
+                <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className="attachment-full" alt="strategy" />
+                
+              </a>
+            </div>
             <header>
               <h2>
                 <Link to={slug}>{title}</Link>
@@ -75,10 +90,11 @@ const BlogIndex = props => {
                   <Link to={slug} className="qbutton small">Read More</Link>
                 </div>
             <hr />
+            </div>
           </article>
         )
       })}
-      </div>
+
     </Layout>
   )
 }
@@ -95,6 +111,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            featuredImage{ 
+              childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
           }
 
           fields {
