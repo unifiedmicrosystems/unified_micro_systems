@@ -267,6 +267,11 @@
     .icon-view p {width: 95%;line-height:22px;padding: 0 0 0 9px;}
     /***************structured-cabling-wireless************/
     .fiber-stk .row {margin: 0;}
+
+    .header-logo-bottom nav.sc-AxjAm.bcMPWx {
+        border-bottom: 0;padding-right: 0;margin-right: 0;/*float: right;width: auto;margin: 0;*/padding: 0;
+    }
+
 }
 
 @media only screen and (min-width: 620px) and (max-width: 767px) {
