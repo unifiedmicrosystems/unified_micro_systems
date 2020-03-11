@@ -240,6 +240,7 @@
     .office-city .row:nth-child(2) {margin-top: 0px;}
     /***************structured-cabling-wireless************/
     .fiber-stk .row {margin: 0;}
+    p.blog-excerpt{font-size: 15px;}
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
@@ -272,7 +273,16 @@
         border-bottom: 0;padding-right: 0;margin-right: 0;/*float: right;width: auto;margin: 0;*/padding: 0;
     }
 
+    p.blog-excerpt{font-size: 15px;}
+
 }
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    p.blog-excerpt{font-size: 25px;line-height: 40px;}
+
+}
+
 
 @media only screen and (min-width: 620px) and (max-width: 767px) {
     .container {max-width: 580px;}
