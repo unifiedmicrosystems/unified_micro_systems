@@ -18,7 +18,7 @@ const NavLink = props => (
       // anchor element's props
       return {
         style: {
-          color: isCurrent ? "red" : "black"
+          color: isCurrent ? "#be1522" : "black"
         }
       };
     }}

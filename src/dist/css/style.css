@@ -893,3 +893,6 @@ ul.check-service li{float:left;width:100%;margin-bottom:15px;padding:2px 0;}
     width: 100%;
     padding-top: 40px;
 }
+li.menu-item.wide a.no_link {
+    pointer-events: none;
+}
