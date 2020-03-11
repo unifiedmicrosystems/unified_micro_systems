@@ -332,7 +332,7 @@
     .mobile .menus nav .accordion li{position: relative;}
     .mobile .menus nav .accordion li {border-bottom: 1px solid #eaeaea !important;}
     div.mobile .menus nav .accordion li:last-child {border: 0!important;}
-    .mobile .menus nav .accordion .accordion__button::before{position: absolute;right: 15px; margin: 0;top: 20px;}
+    .mobile .menus nav .accordion .accordion__button::before{position:absolute;right:20px;margin:0;top:15px;color:#888;}
     .mobile .menus nav .accordion .accordion__button{background-color: transparent;padding: 0px;}
     .mobile .menus nav .accordion .accordion__button a {padding-left:0;padding-right:0;font-size:14px !important;    font-weight: 400;color: #888 !important;
     }
@@ -345,6 +345,7 @@
     .searchBox:after {right: 50px;}
     .menus .wide .second li.sub-menu-item {margin-bottom: 15px;}
     .menus .wide .second li.sub-menu-item ul li.sub-menu-item {margin: 0;}
+
 
 }
 
