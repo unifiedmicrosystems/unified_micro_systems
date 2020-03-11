@@ -170,6 +170,11 @@
 
     /***************structured-cabling-wireless************/
     .fiber-stk .row {margin: 0;}
+
+    .hm-serv .icon_title {font-size:20px;word-break: break-all;min-height: 56px;}
+    .service-details {word-break: break-all;}
+
+
 }
 
 @media only screen and (min-width: 830px) and (max-width: 1000px) {
@@ -331,7 +336,10 @@
 
     .searchBox:after { position: absolute;right: 15px;margin-top: 11px;}
 
-
+    /**************slider**************/
+    .banner-content{top:0%;}
+    .full-section p br{display: none;}
+    div.banner-content .full-section{padding: 15px 15px;}
 
 
 
