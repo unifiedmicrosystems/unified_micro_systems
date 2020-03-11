@@ -204,7 +204,7 @@ return (
                   </div>
                   
                       <Navigation>
-      <Toggle className="{navbarOpen}"
+      <Toggle className={navbarOpen}
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
