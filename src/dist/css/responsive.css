@@ -311,9 +311,13 @@
     .menus {width: 100%;min-height: 450px;overflow: auto;}
     div.blog-st article {margin-bottom: 60px;}
 
-    .second {position: relative !important;visibility: visible !important;opacity: 1 !important;}
+    .second {position: relative !important;visibility: visible !important;opacity: 1!important;display: inline-block !important;width: 100%;}
     .menus .wide .second ul {width: 100%;}
+    .second .inner ul {width: 100%; background: transparent;border-color: transparent;}
     .menus .second ul li{width: 100% !important;}
+    .menus .second .inner ul li a { color: #888 !important;}
+    .menus .wide .second ul li {border-left: 0;}
+    
 
 }
 
