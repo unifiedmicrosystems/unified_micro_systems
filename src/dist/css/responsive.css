@@ -324,8 +324,11 @@
     .menus .wide .second ul {width: 100%;}
     .second .inner ul {width: 100%; background: transparent;border-color: transparent;padding: 0 !important;}
     .menus .second ul li{width: 100% !important;}
-    .menus .second .inner ul li a { color: #888 !important;padding-left: 0 !important;font-weight: 400 !important;line-height:23px !important;text-transform: capitalize !important;font-size: 13px !important;letter-spacing: 0;}
+    .menus .second .inner ul li a { color: #888 !important;padding-left: 0 !important;font-weight: 400 !important;line-height:23px !important;text-transform: capitalize !important;font-size: 13px !important;letter-spacing: 0 !important;}
     .menus .wide .second ul li {border-left: 0;}
+    .lddUPi::before, .lddUPi::after {background-color:#be1522 !important;}
+    .fvSImG::before, .fvSImG::after {background-color:#be1522 !important;}
+
 
     /*************menu*******************/
     .menu-lg.dekstop{display: none !important;}
@@ -351,6 +354,8 @@
 
     nav.sc-AxjAm.bcMPWx {float: right;/*margin: 0;*/padding: 0;}
     nav.sc-AxjAm.bcMPWx .sc-AxirZ.bJCmFu {padding: 0 15px;}
+    .menus .wide .second ul {margin-top: 15px;}
+    .menus .wide .second li.sub-menu-item ul { margin: 0;}
 
 }
 
