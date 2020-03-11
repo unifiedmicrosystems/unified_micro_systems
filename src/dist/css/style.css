@@ -35,6 +35,38 @@ color: #fff;padding: 22px 63px;cursor: pointer;
 .contact-form-view form button:hover{
 background-color: #f5f5f5; color: #333;
 }
+/**********************************************************/
+.searchBox {
+float: left;
+width: 100%;
+margin: 30px 0;
+text-align: center;
+padding: 40px 0 80px;
+}
+.searchBox input.searchInput {
+border-bottom: 1px solid #be1522 !important;
+padding: 6px;
+font-weight: 100;
+color: #878787;
+border-radius: 0;
+border: none;
+}
+.searchBox input.searchInput:focus{
+border-bottom: 1px solid #1abc9c !important;
+}
+.searchBox:after {
+content: "\f002";
+font: normal normal normal 14px/1 FontAwesome;
+position: relative;
+right: 20px;
+color: #be1522;
+}
+nav.sc-AxjAm.bcMPWx {
+border-bottom: 0;
+padding-right: 0;
+margin-right: 0;
+}
+/**********************************************************/
 .contact-form-view {
 float: left;
 width: 100%;
